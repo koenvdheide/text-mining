@@ -1,6 +1,7 @@
 ########################OUTPUT###################################
 #Zoeken naar anthocyanin(s) + stress				#
 #Dan alle zelfstandig naamwoorden checken tegen ncbi taxo	#
+#En van resultaat de wetenscahppelijke naam ophalen  		#
 #################################################################
 Title: High accumulation of anthocyanins via the ectopic expression of AtDFR confers significant salt stress tolerance in Brassica napus L.
 	 - Brassica
