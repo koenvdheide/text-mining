@@ -1,0 +1,430 @@
+########################OUTPUT###################################
+#Zoeken naar anthocyanin(s) + stress							#
+#Dan alle zelfstandig naamwoorden checken tegen ncbi taxo		#
+#################################################################
+Title: High accumulation of anthocyanins via the ectopic expression of AtDFR confers significant salt stress tolerance in Brassica napus L.
+	 - Brassica
+Title: The SUMO E3 ligase MdSIZ1 promotes anthocyanin accumulation by sumoylating MdMYB1 under low temperature conditions in apple.
+	 - Malus domestica
+Title: The mitogen-activated protein kinase kinase 9 (MKK9) modulates nitrogen acquisition and anthocyanin accumulation under nitrogen-limiting condition in Arabidopsis.
+	 - Arabidopsis
+Title: Characterization of two TT2-type MYB transcription factors regulating proanthocyanidin biosynthesis in tetraploid cotton, Gossypium hirsutum.
+	 - Gossypium
+Title: Distribution of apparent activation energy counterparts during thermo - And thermo-oxidative degradation of Aronia melanocarpa (black chokeberry).
+	 - Aronia
+Title: Neuroprotective effect of Aronia melanocarpa extract against glutamate-induced oxidative stress in HT22 cells.
+	 - Aronia
+Title: Subfunctionalization of duplicate MYB genes in Solanum commersonii generated the cold-induced ScAN2 and the anthocyanin regulator ScAN1.
+	 - Solanum
+Title: Foliar-applied ethephon enhances the content of anthocyanin of black carrot roots (Daucus carota ssp. sativus var. atrorubens Alef.).
+	 - Daucus carota
+Title: Induction of anthocyanin in the inner epidermis of red onion leaves by environmental stimuli and transient expression of transcription factors.
+	 - Allium cepa
+Title: Cadmium spiked soil modulates root organic acids exudation and ionic contents of two differentially Cd tolerant maize (Zea mays L.) cultivars.
+	 - Zea mays subsp. mays
+Title: Overexpression of snapdragon Delila (Del) gene in tobacco enhances anthocyanin accumulation and abiotic stress tolerance.
+	 - Antirrhinum majus
+Title: Cleistocalyx nervosum var. paniala berry fruit protects neurotoxicity against endoplasmic reticulum stress-induced apoptosis.
+	 - Syzygium
+Title: An anthocyanin-enriched extract from strawberries delays disease onset and extends survival in the hSOD1G93A mouse model of amyotrophic lateral sclerosis.
+	 - Mus musculus
+Title: Physiological performance of two contrasting rice varieties under water stress.
+	 - Oryza sativa
+Title: UmTco1, a Hybrid Histidine Kinase Gene, is Essential for the Sexual Development and Virulence of Ustilago maydis.
+	 - hybrid
+Title: Health-Promoting Compounds in Pigmented Thai and Wild Rice.
+	 - Oryza sativa
+Title: Aronia berry polyphenol consumption reduces plasma total and low-density lipoprotein cholesterol in former smokers without lowering biomarkers of inflammation and oxidative stress: a randomized controlled trial.
+	 - Aronia
+Title: Neurochemical differences in learning and memory paradigms among rats supplemented with anthocyanin-rich blueberry diets and exposed to acute doses of 56Fe particles.
+	 - Rattus sp.
+Title: Vaccinium virgatum fruit extract as an important adjuvant in biochemical and behavioral alterations observed in animal model of metabolic syndrome.
+	 - Vaccinium
+Title: The Use of Gene Modification and Advanced Molecular Structure Analyses towards Improving Alfalfa Forage.
+	 - Medicago sativa
+Title: Anti-inflammatory effect of Capuli cherry against LPS-induced cytotoxic damage in RAW 264.7 macrophages.
+	 - Physalis pubescens
+Title: LEA gene expression, RNA stability and pigment accumulation in three closely related Linderniaceae species differing in desiccation tolerance.
+	 - Linderniaceae
+Title: Methylglyoxal induces inhibition of growth, accumulation of anthocyanin, and activation of glyoxalase I and II in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: Genome-wide association analysis of seedling traits in diverse Sorghum germplasm under thermal stress.
+	 - Sorghum bicolor
+Title: Non-destructive Phenotyping of Lettuce Plants in Early Stages of Development with Optical Sensors.
+	 - Embryophyta
+Title: Ectopic expression of an apple cytochrome P450 gene MdCYPM1 negatively regulates plant photomorphogenesis and stress response in Arabidopsis.
+	 - Malus domestica
+Title: The chilean superfruit black-berry Aristotelia chilensis (Elaeocarpaceae), Maqui as mediator in inflammation-associated disorders.
+	 - Aristotelia
+Title: Germinated Thai Black Rice Extract Protects Experimental Diabetic Rats from Oxidative Stress and Other Diabetes-Related Consequences.
+	 - Rattus sp.
+Title: Overexpression of AmRosea1 Gene Confers Drought and Salt Tolerance in Rice.
+	 - Oryza sativa
+Title: MADS-Box Genes and Gibberellins Regulate Bolting in Lettuce (Lactuca sativa L.).
+	 - Lactuca
+Title: Cocoplum (Chrysobalanus icaco L.) anthocyanins exert anti-inflammatory activity in human colon cancer and non-malignant colon cells.
+	 - Colon
+Title: Divergent Regulation of CBF Regulon on Cold Tolerance and Plant Phenotype in Cassava Overexpressing Arabidopsis CBF3 Gene.
+	 - Manihot esculenta
+Title: Double-stranded RNA-binding protein DRB3 negatively regulates anthocyanin biosynthesis by modulating PAP1 expression in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: Early Studies on Protoplast Isolation of Ludisia discolor, A Wild Orchid.
+	 - Ludisia
+Title: Chemical composition, phytochemical constituents, antioxidant and anti-inflammatory activities of Urtica urens L. leaves.
+	 - Urtica
+Title: Apple F-Box Protein MdMAX2 Regulates Plant Photomorphogenesis and Stress Response.
+	 - Malus domestica
+Title: Identification of phenolic secondary metabolites from Schotia brachypetala Sond. (Fabaceae) and demonstration of their antioxidant activities in Caenorhabditis elegans.
+	 - Schotia
+Title: Chemical characterization and protective effect of the Bactris setosa Mart. fruit against oxidative/nitrosative stress.
+	 - Bactris
+Title: Anthocyanins abrogate glutamate-induced AMPK activation, oxidative stress, neuroinflammation, and neurodegeneration in postnatal rat brain.
+	 - Rattus norvegicus
+Title: Anthocyanin Rich-Black Soybean Testa Improved Visceral Fat and Plasma Lipid Profiles in Overweight/Obese Korean Adults: A Randomized Controlled Trial.
+	 - Glycine max
+Title: Therapeutic Effects of Blue Honeysuckle on Lesions of Hyperthyroidism in Rats.
+	 - Rattus sp.
+Title: Excess boron responsive regulations of antioxidative mechanism at physio-biochemical and molecular levels in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: The Arabidopsis Transcription Factor ANAC032 Represses Anthocyanin Biosynthesis in Response to High Sucrose and Oxidative and Abiotic Stresses.
+	 - Arabidopsis
+Title: GhJAZ2 negatively regulates cotton fiber initiation by interacting with the R2R3-MYB transcription factor GhMYB25-like.
+	 - Gossypium hirsutum
+Title: Pelargonidin improves memory deficit in amyloid beta25-35 rat model of Alzheimer's disease by inhibition of glial activation, cholinesterase, and oxidative stress.
+	 - Rattus norvegicus
+Title: Oxygen toxicity and antioxidative responses in arsenic stressed Helianthus annuus L. seedlings against UV-B.
+	 - Helianthus
+Title: Maximizing the health effects of strawberry anthocyanins: understanding the influence of the consumption timing variable.
+	 - Fragaria x ananassa
+Title: Preharvest UV-C radiation influences physiological, biochemical, and transcriptional changes in strawberry cv. Camarosa.
+	 - Fragaria x ananassa
+Title: Elodea nuttallii exposure to mercury exposure under enhanced ultraviolet radiation: Effects on bioaccumulation, transcriptome, pigment content and oxidative stress.
+	 - Elodea
+Title: Role of the Tomato Non-Ripening Mutation in Regulating Fruit Quality Elucidated Using iTRAQ Protein Profile Analysis.
+	 - Solanum lycopersicum
+Title: Arogenate Dehydratase Isoforms Differentially Regulate Anthocyanin Biosynthesis in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: Impact of Phenylpropanoid Compounds on Heat Stress Tolerance in Carrot Cell Cultures.
+	 - Daucus carota
+Title: Regulation of the Flavonoid Biosynthesis Pathway Genes in Purple and Black Grains of Hordeum vulgare.
+	 - Hordeum
+Title: Diversifying selection of the anthocyanin biosynthetic downstream gene UFGT accelerates floral diversity of island Scutellaria species.
+	 - Scutellaria
+Title: Use of radiometric indices to evaluate Zn and Pb stress in two grass species (Festuca rubra L. and Vulpia myuros L.).
+	 - Festuca subg. Vulpia
+Title: Genistein and delphinidin antagonize the genotoxic effects of the mycotoxin alternariol in human colon carcinoma cells.
+	 - Colon
+Title: The Arabidopsis UDP-glycosyltransferases UGT79B2 and UGT79B3, contribute to cold, salt and drought stress tolerance via modulating anthocyanin accumulation.
+	 - Arabidopsis
+Title: Metabolic profile and hepatoprotective activity of the anthocyanin-rich extract of Hibiscus sabdariffa calyces.
+	 - Hibiscus
+Title: Drastic anthocyanin increase in response to PAP1 overexpression in fls1 knockout mutant confers enhanced osmotic stress tolerance in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: Nutraceutical Improvement Increases the Protective Activity of Broccoli Sprout Juice in a Human Intestinal Cell Model of Gut Inflammation.
+	 - Brassica oleracea var. italica
+Title: Anthocyanins protect against LPS-induced oxidative stress-mediated neuroinflammation and neurodegeneration in the adult mouse cortex.
+	 - Mus musculus
+Title: Variation in antioxidant enzyme activities, growth and some physiological parameters of bitter melon (Momordica charantia) under salinity and chromium stress.
+	 - Momordica
+Title: Mannitol Stress Directs Flavonoid Metabolism toward Synthesis of Flavones via Differential Regulation of Two Cytochrome P450 Monooxygenases in Coleus forskohlii.
+	 - Coleus
+Title: Effect of seed pre-soaking with 24-epibrassinolide on growth and photosynthetic parameters of Brassica juncea L. in imidacloprid soil.
+	 - Brassica
+Title: Total Antioxidant Capacity and Characterization of Nitraria tangutorum Fruit Extract by Rapid Bioassay-Directed Fractionation.
+	 - Nitraria
+Title: Adaptation of the Long-Lived Monocarpic Perennial Saxifraga longifolia to High Altitude.
+	 - Saxifraga
+Title: A multilevel investigation to discover why Kandelia candel thrives in high salinity.
+	 - Kandelia
+Title: The Molecular Mechanism of Ethylene-Mediated Root Hair Development Induced by Phosphate Starvation.
+	 - root
+Title: BOTRYTIS-INDUCED KINASE1, a plasma membrane-localized receptor-like protein kinase, is a negative regulator of phosphate homeostasis in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: Antioxidant activity and phenolic profiles of the wild currant Ribes magellanicum from Chilean and Argentinean Patagonia.
+	 - Ribes
+Title: Adaptive changes in chlorophyll content and photosynthetic features to low light in Physocarpus amurensis Maxim and Physocarpus opulifolius "Diabolo".
+	 - Physocarpus
+Title: Purple sweet potato anthocyanin attenuates fat-induced mortality in Drosophila melanogaster.
+	 - Melanogaster
+Title: Antioxidant and proapoptotic effects of anthocyanins from bilberry extract in rats exposed to hepatotoxic effects of carbon tetrachloride.
+	 - Vaccinium myrtillus
+Title: Physiological and biochemical parameters for evaluation and clustering of rice cultivars differing in salt tolerance at seedling stage.
+	 - Oryza sativa
+Title: Characterization of antioxidant polyphenols from Myrciaria jaboticaba peel and their effects on glucose metabolism and antioxidant status: A pilot clinical study.
+	 - Myrciaria
+Title: Absence of postmating barriers between a selfing vs. outcrossing Chilean Mimulus species pair.
+	 - Mimulus
+Title: [Content of Osmolytes and Flavonoids under Salt Stress in Arabidopsis thaliana Plants Defective in Jasmonate Signaling].
+	 - Arabidopsis
+Title: Intronic Sequence Regulates Sugar-Dependent Expression of Arabidopsis thaliana Production of Anthocyanin Pigment-1/MYB75.
+	 - Arabidopsis
+Title: Genome-wide identification of microRNAs in pomegranate (Punica granatum L.) by high-throughput sequencing.
+	 - Punica granatum
+Title: The Reaumuria trigyna leucoanthocyanidin dioxygenase (RtLDOX) gene complements anthocyanidin synthesis and increases the salt tolerance potential of a transgenic Arabidopsis LDOX mutant.
+	 - Reaumuria
+Title: Effects of the Herbicide Imazethapyr on Photosynthesis in PGR5- and NDH-Deficient Arabidopsis thaliana at the Biochemical, Transcriptomic, and Proteomic Levels.
+	 - Arabidopsis
+Title: Anthocyanins control neuroinflammation and consequent memory dysfunction in mice exposed to lipopolysaccharide.
+	 - Mus sp.
+Title: Changes in antioxidant enzymes activities and proline, total phenol and anthocyanine contents in Hyssopus officinalis L. plants under salt stress.
+	 - Hyssopus
+Title: Insect stings to change gear for healthy plant: Improving maize drought tolerance by whitefly infestation.
+	 - Zea mays subsp. mays
+Title: Effects of water stress and light intensity on chlorophyll fluorescence parameters and pigments of Aloe vera L.
+	 - Aloe
+Title: Exploring miRNAs involved in blue/UV-A light response in Brassica rapa reveals special regulatory mode during seedling development.
+	 - Rapa
+Title: Proteomic Comparison of Fruit Ripening between 'Hedelfinger' Sweet Cherry (Prunus avium L.) and Its Somaclonal Variant 'HS'.
+	 - Prunus
+Title: Arabidopsis thaliana G2-LIKE FLAVONOID REGULATOR and BRASSINOSTEROID ENHANCED EXPRESSION1 are low-temperature regulators of flavonoid accumulation.
+	 - Arabidopsis
+Title: The effects of anthocyanin-rich wheat diet on the oxidative status and behavior of rats.
+	 - Rattus sp.
+Title: The physiological mechanisms underlying the ability of Cistus monspeliensis L. from Sao Domingos mine to withstand high Zn concentrations in soils.
+	 - Cistus
+Title: Tomato plants acclimate better to elevated temperature and high light than to treatment with each factor separately.
+	 - Solanum lycopersicum
+Title: Protective Effects of Selenium, Vitamin E, and Purple Carrot Anthocyanins on D-Galactose-Induced Oxidative Damage in Blood, Liver, Heart and Kidney Rats.
+	 - Rattus sp.
+Title: Protective activity of an anthocyanin-rich extract from bilberries and blackcurrants on acute acetaminophen-induced hepatotoxicity in rats.
+	 - Rattus sp.
+Title: Sweet potato NAC transcription factor, IbNAC1, upregulates sporamin gene expression by binding the SWRE motif against mechanical wounding and herbivore attack.
+	 - Solanum tuberosum
+Title: Characterization of Arabidopsis thaliana FLAVONOL SYNTHASE 1 (FLS1) -overexpression plants in response to abiotic stress.
+	 - Arabidopsis
+Title: The Tomato Hoffman's Anthocyaninless Gene Encodes a bHLH Transcription Factor Involved in Anthocyanin Biosynthesis That Is Developmentally Regulated and Induced by Low Temperatures.
+	 - Solanum lycopersicum
+Title: Identification of MicroRNAs and Their Targets Associated with Fruit-Bagging and Subsequent Sunlight Re-exposure in the "Granny Smith" Apple Exocarp Using High-Throughput Sequencing.
+	 - Malus domestica
+Title: DELLA Proteins Promote Anthocyanin Biosynthesis via Sequestering MYBL2 and JAZ Suppressors of the MYB/bHLH/WD40 Complex in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: The protective effect of blueberry anthocyanins against perfluorooctanoic acid-induced disturbance in planarian (Dugesia japonica).
+	 - Dugesia
+Title: Metabolic Profiling and Antioxidant Assay of Metabolites from Three Radish Cultivars (Raphanus sativus).
+	 - Raphanus sativus
+Title: Transcriptome-wide identification of Rauvolfia serpentina microRNAs and prediction of their potential targets.
+	 - Rauvolfia
+Title: Ameliorative and antioxidant effects of myrtle berry seed (Myrtus communis) extract during reflux-induced esophagitis in rats.
+	 - Myrtus
+Title: An Anthocyanin-Rich Extract of Acai (Euterpe precatoria Mart.) Increases Stress Resistance and Retards Aging-Related Markers in Caenorhabditis elegans.
+	 - Euterpe
+Title: Isolation and characterization of a chalcone isomerase gene promoter from potato cultivars.
+	 - Solanum tuberosum
+Title: Adzuki bean ameliorates hepatic lipogenesis and proinflammatory mediator expression in mice fed a high-cholesterol and high-fat diet to induce nonalcoholic fatty liver disease.
+	 - Mus sp.
+Title: Hairy Canola (Brasssica napus) re-visited: Down-regulating TTG1 in an AtGL3-enhanced hairy leaf background improves growth, leaf trichome coverage, and metabolite gene expression diversity.
+	 - Brassica napus var. napus
+Title: Anthocyanins Reversed D-Galactose-Induced Oxidative Stress and Neuroinflammation Mediated Cognitive Impairment in Adult Rats.
+	 - Rattus sp.
+Title: Identification of Differentially Expressed Genes Associated with Apple Fruit Ripening and Softening by Suppression Subtractive Hybridization.
+	 - Malus domestica
+Title: Anthocyanin Accumulation, Antioxidant Ability and Stability, and a Transcriptional Analysis of Anthocyanin Biosynthesis in Purple Heading Chinese Cabbage (Brassica rapa L. ssp. pekinensis).
+	 - Brassica oleracea var. capitata
+Title: Protective Effect of Fucoxanthin Isolated from Laminaria japonica against Visible Light-Induced Retinal Damage Both in Vitro and in Vivo.
+	 - Japonica
+Title: Effects of Heat Stress on Metabolite Accumulation and Composition, and Nutritional Properties of Durum Wheat Grain.
+	 - Triticum aestivum
+Title: The role of supplemental ultraviolet-B radiation in altering the metabolite profile, essential oil content and composition, and free radical scavenging activities of Coleus forskohlii, an indigenous medicinal plant.
+	 - Coleus
+Title: Anthocyans-rich Aronia melanocarpa extract possesses ability to protect endothelial progenitor cells against angiotensin II induced dysfunction.
+	 - Aronia
+Title: Modulation of the Phosphate-Deficient Responses by MicroRNA156 and its Targeted SQUAMOSA PROMOTER BINDING PROTEIN-LIKE 3 in Arabidopsis.
+	 - Squamosa
+Title: Proteomic Analysis of Silk Viability in Maize Inbred Lines and Their Corresponding Hybrids.
+	 - Zea mays subsp. mays
+Title: Aboveground Whitefly Infestation Modulates Transcriptional Levels of Anthocyanin Biosynthesis and Jasmonic Acid Signaling-Related Genes and Augments the Cope with Drought Stress of Maize.
+	 - Zea mays subsp. mays
+Title: Does methyl jasmonate modify the oxidative stress response in Phaseolus coccineus treated with Cu?
+	 - Phaseolus
+Title: Mulberry and cherry anthocyanin consumption prevents oxidative stress and inflammation in diet-induced obese mice.
+	 - Mus sp.
+Title: Protective effect of wild raspberry (Rubus hirsutus Thunb.) extract against acrylamide-induced oxidative damage is potentiated after simulated gastrointestinal digestion.
+	 - Rubus
+Title: Pulsed electric field improves the bioprotective capacity of purees for different coloured carrot cultivars against H2O2-induced oxidative damage.
+	 - Daucus carota
+Title: [CONTENT OF OXIDATIVE STRESS MARKERS IN BLOOD PLASMA UNDER THE ACTION OF EXTRACTS OF GRATIOLA OFFICINALIS L., HELICHRYSUM ARENARIUM (L.) MOENCH, AND ANTHOCYANIN FORMS OF ZEA MAYS L].
+	 - Gratiola
+Title: GWA Mapping of Anthocyanin Accumulation Reveals Balancing Selection of MYB90 in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: CONSUMPTION OF CHERRIES AS A STRATEGY TO ATTENUATE EXERCISE-INDUCED MUSCLE DAMAGE AND INFLAMMATION IN HUMANS.
+	 - Homo
+Title: Anthocyanin Extracted from Black Soybean Seed Coats Prevents Autoimmune Arthritis by Suppressing the Development of Th17 Cells and Synthesis of Proinflammatory Cytokines by Such Cells, via Inhibition of NF-kappaB.
+	 - Glycine max
+Title: Ectopic overexpression of WsSGTL1, a sterol glucosyltransferase gene in Withania somnifera, promotes growth, enhances glycowithanolide and provides tolerance to abiotic and biotic stresses.
+	 - Withania
+Title: Biological properties of Alsidium corallinum and its potential protective effects against damage caused by potassium bromate in the mouse liver.
+	 - Alsidium
+Title: Mitogen-activated protein kinase kinase kinase (MAPKKK) 4 from rapeseed (Brassica napus L.) is a novel member inducing ROS accumulation and cell death.
+	 - Brassica
+Title: Trichoderma volatiles effecting Arabidopsis: from inhibition to protection against phytopathogenic fungi.
+	 - Trichoderma
+Title: Purple potato (Solanum tuberosum L.) anthocyanins attenuate alcohol-induced hepatic injury by enhancing antioxidant defense.
+	 - Solanum tuberosum
+Title: Effect of Water Stress and Storage Time on Anthocyanins and Other Phenolics of Different Genotypes of Fresh Sweet Basil.
+	 - Ocimum basilicum
+Title: Chemopreventive Action of Anthocyanin-rich Black Soybean Fraction in APC (Min/+) Intestinal Polyposis Model.
+	 - Glycine max
+Title: Developmental and Metabolic Plasticity of White-Skinned Grape Berries in Response to Botrytis cinerea during Noble Rot.
+	 - Botrytis
+Title: Studies on phytochemical, antioxidant, anti-inflammatory and analgesic activities of Euphorbia dracunculoides.
+	 - Euphorbia
+Title: PROTECTIVE EFFECT OF SACCHARUM OFFICINARUM L. (SUGAR CANE) JUICE ON ISONIAZID INDUCED HEPATOTOXICITY IN MALE ALBINO MICE.
+	 - Mus sp.
+Title: Isolation and Functional Characterization of a Phenylalanine Ammonia-Lyase Gene (SsPAL1) from Coleus (Solenostemon scutellarioides (L.) Codd).
+	 - Coleus
+Title: The Arabidopsis Transcription Factor MYB112 Promotes Anthocyanin Formation during Salinity and under High Light Stress.
+	 - Arabidopsis
+Title: Differential expression of TLP, ERF1, and R2R3MYB in annual Medicago species under salinity conditions.
+	 - Medicago
+Title: Cranberry extract-enriched diets increase NAD(P)H:quinone oxidoreductase and catalase activities in obese but not in nonobese mice.
+	 - Mus sp.
+Title: Protocatechuic acid protects brain mitochondrial function in streptozotocin-induced diabetic rats.
+	 - Rattus sp.
+Title: Endoplasmic reticulum stress in diabetic mouse or glycated LDL-treated endothelial cells: protective effect of Saskatoon berry powder and cyanidin glycans.
+	 - Mus musculus
+Title: Phytochrome-interacting factors PIF4 and PIF5 negatively regulate anthocyanin biosynthesis under red light in Arabidopsis seedlings.
+	 - Arabidopsis
+Title: A Pilot Study of the Photoprotective Effects of Strawberry-Based Cosmetic Formulations on Human Dermal Fibroblasts.
+	 - Homo sapiens
+Title: Phenylalanine and tyrosine levels are rate-limiting factors in production of health promoting metabolites in Vitis vinifera cv. Gamay Red cell suspension.
+	 - Vitis
+Title: Black Soybean Seed Coat Extract Prevents Hydrogen Peroxide-Mediated Cell Death via Extracellular Signal-Related Kinase Signalling in HepG2 Cells.
+	 - Glycine max
+Title: Anthocyanin-Rich Diet in Chemically Induced Colitis in Mice.
+	 - Mus sp.
+Title: Antioxidant effects of gastrointestinal digested purple carrot extract on the human cells of colonic mucosa.
+	 - Daucus carota
+Title: Red cabbage anthocyanins as inhibitors of lipopolysaccharide-induced oxidative stress in blood platelets.
+	 - Brassica oleracea var. capitata
+Title: The chemoprotection of a blueberry anthocyanin extract against the acrylamide-induced oxidative stress in mitochondria: unequivocal evidence in mice liver.
+	 - Mus sp.
+Title: Abiotic stresses induce different localizations of anthocyanins in Arabidopsis.
+	 - Arabidopsis
+Title: Phytochemical uptake following human consumption of Montmorency tart cherry (L. Prunus cerasus) and influence of phenolic acids on vascular smooth muscle cells in vitro.
+	 - Prunus
+Title: Cranberry anthocyanin extract prolongs lifespan of fruit flies.
+	 - Diptera
+Title: Impact of biologically synthesized silver nanoparticles on the growth and physiological responses in Brassica rapa ssp. pekinensis.
+	 - Brassica
+Title: Cyanidin-3-O-glucoside attenuates acute lung injury in sepsis rats.
+	 - Sepsis
+Title: Consumption of acai (Euterpe oleracea Mart.) functional beverage reduces muscle stress and improves effort tolerance in elite athletes: a randomized controlled intervention study.
+	 - Euterpe
+Title: Pollutant tracking for 3 Western North Atlantic sea grasses by remote sensing: Preliminary diminishing white light responses of Thalassia testudinum, Halodule wrightii, and Zostera marina.
+	 - Marininema
+Title: Anthocyanin-rich Seoritae extract ameliorates renal lipotoxicity via activation of AMP-activated protein kinase in diabetic mice.
+	 - Mus sp.
+Title: Chokeberry Anthocyanin Extract as Pancreatic beta-Cell Protectors in Two Models of Induced Oxidative Stress.
+	 - Photinia
+Title: Global Gene-Expression Analysis to Identify Differentially Expressed Genes Critical for the Heat Stress Response in Brassica rapa.
+	 - Rapa
+Title: Exogenous adenosine 5'-phosphoramidate behaves as a signal molecule in plants; it augments metabolism of phenylpropanoids and salicylic acid in Arabidopsis thaliana seedlings.
+	 - Arabidopsis
+Title: Cyanidin-3-O-beta-glucoside Purified from Black Rice Protects Mice against Hepatic Fibrosis Induced by Carbon Tetrachloride via Inhibiting Hepatic Stellate Cell Activation.
+	 - Mus sp.
+Title: Exogenously applied selenium reduces oxidative stress and induces heat tolerance in spring wheat.
+	 - Triticum aestivum
+Title: Chemopreventive role of anthocyanins in atherosclerosis via activation of Nrf2-ARE as an indicator and modulator of redox.
+	 - Indicator
+Title: Low temperature conditioning of garlic (Allium sativum L.) "seed" cloves induces alterations in sprouts proteome.
+	 - Allium
+Title: Changes in fatty acid content and composition between wild type and CsHMA3 overexpressing Camelina sativa under heavy-metal stress.
+	 - Camelina
+Title: Identification and Quantification of Flavonoids from Two Southern Italian Cultivars of Allium cepa L., Tropea (Red Onion) and Montoro (Copper Onion), and Their Capacity to Protect Human Erythrocytes from Oxidative Stress.
+	 - Homo sapiens
+Title: Cytoprotective and antioxidant effects of Echium amoenum anthocyanin-rich extract in human endothelial cells (HUVECs).
+	 - Echium
+Title: Lactic acid fermentation as a tool to enhance the antioxidant properties of Myrtus communis berries.
+	 - Myrtus
+Title: The intake of maqui (Aristotelia chilensis) berry extract normalizes H2O2 and IL-6 concentrations in exhaled breath condensate from healthy smokers - an explorative study.
+	 - Aristotelia
+Title: Polyphenol-rich grape pomace extracts protect against dextran sulfate sodium-induced colitis in rats.
+	 - Rattus sp.
+Title: Antihyperglucolipidaemic and anticarbonyl stress properties in green, yellow and red sweet bell peppers (Capsicum annuum L.).
+	 - Capsicum
+Title: Examining the photoprotection hypothesis for adaxial foliar anthocyanin accumulation by revisiting comparisons of green- and red-leafed varieties of coleus (Solenostemon scutellarioides).
+	 - Coleus
+Title: Relating Water Deficiency to Berry Texture, Skin Cell Wall Composition, and Expression of Remodeling Genes in Two Vitis vinifera L. Varieties.
+	 - Vitis
+Title: Strawberry as a health promoter: an evidence based review.
+	 - Fragaria x ananassa
+Title: Anthocyanin-rich extract from Hibiscus sabdariffa calyx counteracts UVC-caused impairments in rats.
+	 - Calyx
+Title: Alternation of flavonoid accumulation under drought stress in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: Strawberry phytochemicals inhibit azoxymethane/dextran sodium sulfate-induced colorectal carcinogenesis in Crj: CD-1 mice.
+	 - Mus sp.
+Title: Ultraviolet-B protection of ascorbate and tocopherol in plants related with their function on the stability on carotenoid and phenylpropanoid compounds.
+	 - Embryophyta
+Title: Linking phosphorus availability with photo-oxidative stress in plants.
+	 - Embryophyta
+Title: Architectural and biochemical changes in embryonic tissues of maize under cadmium toxicity.
+	 - Zea mays subsp. mays
+Title: Anti-inflammatory activity and molecular mechanism of delphinidin 3-sambubioside, a Hibiscus anthocyanin.
+	 - Hibiscus
+Title: Physiological changes in fruit ripening caused by overexpression of tomato SlAN2, an R2R3-MYB factor.
+	 - Solanum lycopersicum
+Title: Physiological performance, secondary metabolite and expression profiling of genes associated with drought tolerance in Withania somnifera.
+	 - Withania
+Title: Transcription factors and anthocyanin genes related to low-temperature tolerance in rd29A:RdreB1BI transgenic strawberry.
+	 - Fragaria x ananassa
+Title: Cyanidin-3-O-glucoside enhanced the function of syngeneic mouse islets transplanted under the kidney capsule or into the portal vein.
+	 - Mus musculus
+Title: Effects of colored and noncolored phenolics of Echium plantagineum L. bee pollen in Caco-2 cells under oxidative stress induced by tert-butyl hydroperoxide.
+	 - Apoidea
+Title: A comparison of induced and developmental cell death morphologies in lace plant (Aponogeton madagascariensis) leaves.
+	 - Aponogeton
+Title: A possible role of an anthocyanin filter in low-intensity light stress-induced flowering in Perilla frutescens var. crispa.
+	 - Perilla
+Title: Purified anthocyanins from bilberry and black currant attenuate hepatic mitochondrial dysfunction and steatohepatitis in mice with methionine and choline deficiency.
+	 - Vaccinium myrtillus
+Title: Renal protective effects of Porphyra dentate aqueous extract in diabetic mice.
+	 - Mus sp.
+Title: Mirtoselect, an anthocyanin-rich bilberry extract, attenuates non-alcoholic steatohepatitis and associated fibrosis in ApoE( *)3Leiden mice.
+	 - Mus sp.
+Title: Anthocyanin biosynthesis for cold and freezing stress tolerance and desirable color in Brassica rapa.
+	 - Rapa
+Title: An investigation into the ameliorating effect of black soybean extract on learning and memory impairment with assessment of neuroprotective effects.
+	 - Glycine max
+Title: Arabidopsis ROOT HAIR DEFECTIVE3 is involved in nitrogen starvation-induced anthocyanin accumulation.
+	 - Arabidopsis
+Title: Autophagy controls carbon, nitrogen, and redox homeostasis in plants.
+	 - Embryophyta
+Title: Comparative analysis of phytochemicals and nutrient availability in two contrasting cultivars of sweet potato (Ipomoea batatas L.).
+	 - Ipomoea
+Title: Bioactive potential of Vitis labrusca L. grape juices from the Southern Region of Brazil: phenolic and elemental composition and effect on lipid peroxidation in healthy subjects.
+	 - Vitis
+Title: Anti-inflammatory and anti-periductal fibrosis effects of an anthocyanin complex in Opisthorchis viverrini-infected hamsters.
+	 - Cricetinae
+Title: The protective effect of the Cornus mas fruits (cornelian cherry) on hypertriglyceridemia and atherosclerosis through PPARalpha activation in hypercholesterolemic rabbits.
+	 - Oryctolagus cuniculus
+Title: An R2R3-MYB gene, LeAN2, positively regulated the thermo-tolerance in transgenic tomato.
+	 - Solanum lycopersicum
+Title: Shinzami Korean purple-fleshed sweet potato extract prevents ischaemia-reperfusion-induced liver damage in rats.
+	 - Rattus sp.
+Title: Effect of cytokinins on delaying petunia flower senescence: a transcriptome study approach.
+	 - Petunia
+Title: Functional characterization of a chalcone synthase from the liverwort Plagiochasma appendiculatum.
+	 - Plagiochasma
+Title: Support for a photoprotective function of winter leaf reddening in nitrogen-deficient individuals of Lonicera japonica.
+	 - Japonica
+Title: A and MdMYB1 allele-specific markers controlling apple (Malus x domestica Borkh.) skin color and suitability for marker-assisted selection.
+	 - Malus domestica
+Title: The miR156-SPL9-DFR pathway coordinates the relationship between development and abiotic stress tolerance in plants.
+	 - Embryophyta
+Title: Overexpression of a miR393-resistant form of transport inhibitor response protein 1 (mTIR1) enhances salt tolerance by increased osmoregulation and Na+ exclusion in Arabidopsis thaliana.
+	 - Arabidopsis
+Title: Effects of Sambucus nigra and Aronia melanocarpa extracts on immune system disorders within diabetes mellitus.
+	 - Aronia
+Title: Overexpression of the PAP1 transcription factor reveals a complex regulation of flavonoid and phenylpropanoid metabolism in Nicotiana tabacum plants attacked by Spodoptera litura.
+	 - Litura
+Title: Protection of Clitoria ternatea flower petal extract against free radical-induced hemolysis and oxidative damage in canine erythrocytes.
+	 - Clitoria
+Title: Secondary metabolites and phenylpropanoid pathway enzymes as influenced under supplemental ultraviolet-B radiation in Withania somnifera Dunal, an indigenous medicinal plant.
+	 - Withania
+Title: Overexpression of the IbMYB1 gene in an orange-fleshed sweet potato cultivar produces a dual-pigmented transgenic sweet potato with improved antioxidant activity.
+	 - Solanum tuberosum
+Title: Phytochemical profile, antioxidative and anti-inflammatory potentials of Gynura bicolor DC.
+	 - Gynura
+Title: Physiological, biochemical and proteomics analysis reveals the adaptation strategies of the alpine plant Potentilla saundersiana at altitude gradient of the Northwestern Tibetan Plateau.
+	 - Potentilla
