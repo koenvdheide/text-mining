@@ -1,4 +1,4 @@
-i# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 Created on Fri Apr 28 16:16:19 2017
 
@@ -17,17 +17,17 @@ def main():
     keyWords = getKeyWordsFromList("influenced decreased accumulation reduced under condition low high induced deficiency inhibited elevated stress circumstance during exposed directing".split())
     for art in articles:
         abstract = getArticleAbstract(art)
+        score_dict = {}
         for sent in sent_tokenize(abstract):
             if "anthocyanin" in sent:
-                score_dict = {}
                 score = getMatchScore(keyWords, sent)
                 if score > 3: #number of matching words
                     score_dict[score] = sent
-                if len(score_dict) > 0:
-                    print("<TITLE> " + getArticleTitle(art))
-                    maxScore = max(list(score_dict.keys()))
-                    print(str(maxScore)+ "> ")
-                    print(score_dict[maxScore] + "\n")
+        if len(score_dict) > 0:
+            print("<TITLE> " + getArticleTitle(art))
+            maxScore = max(list(score_dict.keys()))
+            print(str(maxScore)+ "> ")
+            print(score_dict[maxScore] + "\n")
 
 
 def getSynonyms(word):
