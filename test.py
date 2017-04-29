@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+i# -*- coding: utf-8 -*-
 """
 Created on Fri Apr 28 16:16:19 2017
 
@@ -14,7 +14,7 @@ def main():
     records=searchPubMed("anthocyanin","pubmed",7000)
     ids = getResultIDs(records)
     articles = fetchArticles(ids)
-    keyWords = getKeyWordsFromList("decreased accumulation reduced under condition low high induced deficiency inhibited elevated stress circumstance during exposed directing".split())
+    keyWords = getKeyWordsFromList("influenced decreased accumulation reduced under condition low high induced deficiency inhibited elevated stress circumstance during exposed directing".split())
     for art in articles:
         abstract = getArticleAbstract(art)
         for sent in sent_tokenize(abstract):
