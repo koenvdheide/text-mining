@@ -1,0 +1,599 @@
+tax_id	Org_name	GeneID	CurrentID	Status	Symbol	Aliases	description	other_designations	map_location	chromosome	genomic_nucleotide_accession.version	start_position_on_the_genomic_accession	end_position_on_the_genomic_accession	orientation	exon_count	OMIM	
+3702	Arabidopsis thaliana	842120	0	live	PAP1	AT1G56650, ATMYB75, F25P12.92, F25P12_92, MYB DOMAIN PROTEIN 75, MYB75, MYELOBLASTOSIS PROTEIN 75, SIAA1, SUC-INDUCED ANTHOCYANIN ACCUMULATION 1, phosphatidic acid phosphatase 1, production of anthocyanin pigment 1	production of anthocyanin pigment 1			1	NC_003070.9	21233555	21235292	minus	3		
+4577	Zea mays	100126972	0	live	R-S	ZEAMMB73_Zm00001d026147, ARLC, GRMZM5G822829, LC, S, S1, S2, SN, hopi, r, r1, r1-B73, r2k1, red-1	seed color component at R1	anthocyanin regulatory R-S protein|BHLH protein|anthocyanin regulator R-sc protein|anthocyanin regulatory Lc protein|helix-loop-helix type transcription factor R1|plant color component at R1|regulatory protein|transcription factor|v24 regulatory protein		10	NC_024468.2	139780815	139790282	plus	11		
+3702	Arabidopsis thaliana	836237	0	live	AACT1	AT5G61160, MAF19.17, MAF19_17, anthocyanin 5-aromatic acyltransferase 1	anthocyanin 5-aromatic acyltransferase 1			5	NC_003076.8	24608605	24610329	plus	1		
+29760	Vitis vinifera	100233134	0	live	FAOMT	VIT_00010469001, OMT3.1, VvAOMT	anthocyanin O-methyltransferase	flavonoid 3',5'-methyltransferase|Anthocyanin-O-methyltransferase|Flavonoid 3',5'-methyltransferase		1	NC_012007.3	20850133	20852279	plus	5		
+4577	Zea mays	103646088	0	live	b1	ZEAMMB73_Zm00001d000236, B-I, B-Peru, GRMZM2G172795	colored plant 1	colored plant 1|550-b|B transcriptional activator|B1 transcription factor|R-2|R2|SC1|anthocyanin regulatory B protein|anthocyanin regulatory R-S protein-like|booster|colored plant1|gsy1(b1)|npi248-b1|p550-b|pBF250|regulatory protein|umc1776		2							
+51953	Elaeis guineensis	105036198	0	live	LOC105036198		anthocyanin regulatory Lc protein-like	anthocyanin regulatory Lc protein-like		Un							
+4555	Setaria italica	101782361	0	live	LOC101782361	SETIT_010074mg	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		VII	NC_028456.1	31114201	31121870	minus	5		
+4081	Solanum lycopersicum	543897	0	live	ANT1		anthocyanin 1	anthocyanin 1|MYB transcription factor ANT1		10	NC_015447.2	65137653	65138664	minus	3		
+3880	Medicago truncatula	11438858	0	live	MTR_2g018630	MTR_2g018630	1-O-acylglucose:anthocyanin acyltransferase			2	NC_016408.2	5876674	5883757	plus	14		
+3880	Medicago truncatula	11419263	0	live	MTR_4g021520	MTR_4g021520	1-O-acylglucose:anthocyanin acyltransferase			4	NC_016410.2	7036411	7042836	plus	14		
+3880	Medicago truncatula	25491575	0	live	MTR_4g021535	MTR_4g021535	1-O-acylglucose:anthocyanin acyltransferase			4	NC_016410.2	7051067	7058697	plus	14		
+3880	Medicago truncatula	11421514	0	live	MTR_4g021500	MTR_4g021500	1-O-acylglucose:anthocyanin acyltransferase			4	NC_016410.2	7009840	7023079	plus	28		
+37682	Aegilops tauschii	109749032	0	live	LOC109749032		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		Un							
+79200	Daucus carota subsp. sativus	108208383	0	live	LOC108208383		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	anthocyanin 5-aromatic acyltransferase-like|malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		2	NC_030382.1	24016539	24018312	plus	1		
+3880	Medicago truncatula	11443795	0	live	MTR_3g028210	MTR_3g028210	anthocyanin 5-aromatic acyltransferase			3	NC_016409.2	8944365	8946148	minus	1		
+3880	Medicago truncatula	11440819	0	live	MTR_2g018590	MTR_2g018590	1-O-acylglucose:anthocyanin acyltransferase			2	NC_016408.2	5856917	5861023	plus	14		
+3880	Medicago truncatula	11437807	0	live	MTR_2g018600	MTR_2g018600	1-O-acylglucose:anthocyanin acyltransferase			2	NC_016408.2	5863708	5867966	plus	14		
+3880	Medicago truncatula	11424167	0	live	MTR_7g014200	MTR_7g014200	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4250354	4251772	plus	1		
+3880	Medicago truncatula	11414976	0	live	MTR_2g089650	MTR_2g089650	anthocyanin 5-aromatic acyltransferase			2	NC_016408.2	37895988	37897394	minus	1		
+3880	Medicago truncatula	11414860	0	live	MTR_7g014250	MTR_7g014250	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4265289	4267223	plus	1		
+3880	Medicago truncatula	11414542	0	live	MTR_4g015180	MTR_4g015180	anthocyanin 5-aromatic acyltransferase			4	NC_016410.2	4408980	4410894	plus	1		
+3694	Populus trichocarpa	7479311	0	live	POPTR_0001s09450g	POPTR_0001s09450g, POPTRDRAFT_1066896	regulator of anthocyanin biosynthesis pathway family protein			LGI	NC_008467.2	7214427	7217955	plus	8		
+3694	Populus trichocarpa	7465866	0	live	POPTR_0003s12810g	POPTR_0003s12810g, POPTRDRAFT_817360	regulator of anthocyanin biosynthesis pathway family protein			LGIII	NC_008469.2	13273502	13277041	plus	7		
+29760	Vitis vinifera	100233025	0	live	MYCA1	VIT_00026927001	myc anthocyanin regulatory protein	myc anthocyanin regulatory protein		15	NC_012021.3	19338804	19344157	minus	8		
+4577	Zea mays	541757	0	live	LOC541757	ZEAMMB73_Zm00001d044975, GRMZM2G005066, MYB1, Myb37, c1	anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like|Anthocyanin regulatory C1 protein|CI protein|MYB transcription factor|R2R3MYB-domain protein|colored aleurone1|myb-related protein c1-I-2K1|typical P-type R2R3 Myb protein		9	NC_024467.2	8983450	8984644	plus	3		
+3880	Medicago truncatula	25500297	0	live	MTR_8g012750	MTR_8g012750	anthocyanin 5-aromatic acyltransferase			8	NC_016414.2	3782680	3784562	plus	1		
+3880	Medicago truncatula	25497590	0	live	MTR_7g015860	MTR_7g015860	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4956291	4958011	minus	2		
+3880	Medicago truncatula	25497529	0	live	MTR_7g014205	MTR_7g014205	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4255354	4255749	minus	2		
+3880	Medicago truncatula	25497522	0	live	MTR_7g013850	MTR_7g013850	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4094681	4096416	plus	1		
+3880	Medicago truncatula	25487570	0	live	MTR_2g089765	MTR_2g089765	anthocyanin 5-aromatic acyltransferase			2	NC_016408.2	37959925	37961930	minus	1		
+3880	Medicago truncatula	25487568	0	live	MTR_2g089745	MTR_2g089745	anthocyanin 5-aromatic acyltransferase			2	NC_016408.2	37954354	37954605	minus	1		
+3880	Medicago truncatula	25487566	0	live	MTR_2g089665	MTR_2g089665	anthocyanin 5-aromatic acyltransferase			2	NC_016408.2	37906478	37907816	plus	4		
+3880	Medicago truncatula	11430713	0	live	MTR_7g014310	MTR_7g014310	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4284311	4285530	minus	4		
+3880	Medicago truncatula	11430311	0	live	MTR_7g014330	MTR_7g014330	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4288842	4290405	minus	1		
+3880	Medicago truncatula	11429194	0	live	MTR_7g014340	MTR_7g014340	anthocyanin acyltransferase, putative			7	NC_016413.2	4292205	4293703	minus	2		
+3880	Medicago truncatula	11427752	0	live	MTR_2g089670	MTR_2g089670	anthocyanin 5-aromatic acyltransferase			2	NC_016408.2	37914581	37916032	plus	1		
+3880	Medicago truncatula	11425100	0	live	MTR_7g014160	MTR_7g014160	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4233212	4234958	plus	1		
+3880	Medicago truncatula	11424168	0	live	MTR_7g014360	MTR_7g014360	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4297554	4299243	minus	3		
+3880	Medicago truncatula	11423210	0	live	MTR_3g100420	MTR_3g100420	1-O-acylglucose:anthocyanin acyltransferase			3	NC_016409.2	46175821	46185588	minus	13		
+3880	Medicago truncatula	11421565	0	live	MTR_7g014180	MTR_7g014180	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4241090	4241653	plus	1		
+3880	Medicago truncatula	11418791	0	live	MTR_7g014230	MTR_7g014230	anthocyanin 5-aromatic acyltransferase			7	NC_016413.2	4259747	4261830	plus	1		
+3880	Medicago truncatula	11418790	0	live	MTR_7g014210	MTR_7g014210	anthocyanin acyltransferase, putative			7	NC_016413.2	4257528	4258193	minus	2		
+3880	Medicago truncatula	11414606	0	live	MTR_4g021530	MTR_4g021530	1-O-acylglucose:anthocyanin acyltransferase			4	NC_016410.2	7043859	7049901	plus	14		
+3880	Medicago truncatula	11414299	0	live	MTR_4g021510	MTR_4g021510	1-O-acylglucose:anthocyanin acyltransferase			4	NC_016410.2	7024848	7029797	plus	15		
+39947	Oryza sativa Japonica Group	4340108	0	live	LOC4340108	OSNPB_060145600, P0036F10.9	anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase|OSJNBa0007O20.26|Os06g0145600|putative anthocyanin 5-aromatic acyltransferase		6	NC_029261.1	2394761	2397662	plus	2		
+39947	Oryza sativa Japonica Group	4336634	0	live	LOC4336634	OSNPB_040557200	anthocyanin regulatory R-S protein	anthocyanin regulatory R-S protein|Os04g0557200		4	NC_029259.1	27881108	27890773	minus	10		
+3694	Populus trichocarpa	7494226	0	live	POPTR_0019s14060g	POPTR_0019s14060g, POPTRDRAFT_574583	anthocyanin acyltransferase family protein			LGXIX	NC_008485.2	14820628	14822147	plus	1		
+981085	Morus notabilis	21409982	0	live	L484_027360	L484_027360	Anthocyanin regulatory C1 protein			Unknown							
+981085	Morus notabilis	21405030	0	live	L484_022208	L484_022208	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21405029	0	live	L484_022207	L484_022207	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21405028	0	live	L484_022206	L484_022206	Malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase			Unknown							
+981085	Morus notabilis	21405026	0	live	L484_022204	L484_022204	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21403908	0	live	L484_021041	L484_021041	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21403907	0	live	L484_021040	L484_021040	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21403906	0	live	L484_021039	L484_021039	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21403905	0	live	L484_021038	L484_021038	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21403900	0	live	L484_021033	L484_021033	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21401937	0	live	L484_018982	L484_018982	Malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase			Unknown							
+981085	Morus notabilis	21401936	0	live	L484_018981	L484_018981	Malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase			Unknown							
+981085	Morus notabilis	21401934	0	live	L484_018979	L484_018979	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21401931	0	live	L484_018976	L484_018976	Malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase			Unknown							
+981085	Morus notabilis	21401556	0	live	L484_018589	L484_018589	Anthocyanin regulatory C1 protein			Unknown							
+981085	Morus notabilis	21390052	0	live	L484_006627	L484_006627	Malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase			Unknown							
+981085	Morus notabilis	21390051	0	live	L484_006626	L484_006626	Malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase			Unknown							
+981085	Morus notabilis	21388109	0	live	L484_004611	L484_004611	Anthocyanin 5-aromatic acyltransferase			Unknown							
+981085	Morus notabilis	21384923	0	live	L484_001317	L484_001317	Anthocyanin regulatory C1 protein			Unknown							
+981085	Morus notabilis	21384441	0	live	L484_000819	L484_000819	Anthocyanin 5-aromatic acyltransferase			Unknown							
+39947	Oryza sativa Japonica Group	4344783	0	live	LOC4344783	OSNPB_080174300	anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase|OSJNBa0054L03.25|Os08g0174300|putative Anthocyanin 5-aromatic acyltransferase		8	NC_029263.1	4325845	4329882	plus	2		
+39947	Oryza sativa Japonica Group	4336636	0	live	LOC4336636	OSNPB_040557800, Ra	anthocyanin regulatory Lc protein	anthocyanin regulatory Lc protein|Os04g0557800|putative anthocyanin regulatory Lc protein		4	NC_029259.1	27949439	27955302	minus	10		
+4097	Nicotiana tabacum	107782063	0	live	LOC107782063	mat1	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like|malonyltransferase		Un							
+49451	Nicotiana attenuata	109237388	0	live	LOC109237388	A4A49_13429, 5MAT1_3	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like|malonyl-coenzyme:anthocyanin 5-o-glucoside-6'''-o-malonyltransferase		Un							
+4577	Zea mays	100281156	0	live	LOC100281156		anthocyanin regulatory C1 protein	anthocyanin regulatory C1 protein									
+37682	Aegilops tauschii	109763567	0	live	LOC109763567		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		Un							
+3821	Cajanus cajan	109809057	0	live	LOC109809057	KK1_000251	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like|Anthocyanin 5-aromatic acyltransferase		11	NC_033814.1	2335575	2336987	minus	1		
+3821	Cajanus cajan	109800539	0	live	LOC109800539	KK1_013470	anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like|Anthocyanin regulatory C1 protein		6	NC_033809.1	21192261	21193420	plus	3		
+49451	Nicotiana attenuata	109218149	0	live	LOC109218149	A4A49_34586, 5MAT1_4	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like|malonyl-coenzyme:anthocyanin 5-o-glucoside-6'''-o-malonyltransferase		Un							
+49451	Nicotiana attenuata	109211011	0	live	LOC109211011	A4A49_39356, 5MAT1_2	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like|malonyl-coenzyme:anthocyanin 5-o-glucoside-6'''-o-malonyltransferase		Un							
+4533	Oryza brachyantha	102717978	0	live	LOC102717978		anthocyanin regulatory Lc protein-like	anthocyanin regulatory Lc protein-like		4	NC_023166.1	15432335	15441834	minus	10		
+4533	Oryza brachyantha	102706748	0	live	LOC102706748		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		4	NC_023166.1	15414001	15421334	minus	9		
+4533	Oryza brachyantha	102706469	0	live	LOC102706469		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		4	NC_023166.1	15391780	15400102	minus	10		
+3641	Theobroma cacao	18614640	0	live	LOC18614640		anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase		1	NC_030850.1	37096951	37099678	minus	3		
+39947	Oryza sativa Japonica Group	4350228	0	live	LOC4350228	OSNPB_110258700	anthocyanin regulatory Lc protein	anthocyanin regulatory Lc protein|Os11g0258700|Os11g0258800		11	NC_029266.1	8583856	8594318	minus	8		
+29760	Vitis vinifera	100249426	0	live	LOC100249426	VIT_00000472001	anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase		12	NC_012018.3	8295339	8296832	plus	1		
+29760	Vitis vinifera	100268149	0	live	LOC100268149	VIT_00028879001	anthocyanin permease 1	anthocyanin permease 1		16	NC_012022.3	17837265	17840061	minus	6		
+39947	Oryza sativa Japonica Group	4326578	0	live	LOC4326578	OSNPB_010638000	anthocyanin 3'-O-beta-glucosyltransferase	anthocyanin 3'-O-beta-glucosyltransferase|Os01g0638000|P0004A09.11|P0696E01.32|glucosyltransferase IS5a-like		1	NC_029256.1	25598433	25600370	plus	1		
+4113	Solanum tuberosum	102577895	0	live	AN2		anthocyanin 2										
+15368	Brachypodium distachyon	100837291	0	live	LOC100837291	BRADI_4g15480	anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		4	NC_016134.2	16214651	16216176	minus	1		
+3847	Glycine max	100817166	0	live	LOC100817166	GLYMA_19G069500	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		19	NC_016106.2	22337531	22338967	plus	1		
+3847	Glycine max	100813271	0	live	LOC100813271	GLYMA_12G200000	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		12	NC_016099.2	36131493	36133252	minus	1		
+29760	Vitis vinifera	100256273	0	live	LOC100256273		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase		12	NC_012018.3	8260866	8262480	plus	1		
+39947	Oryza sativa Japonica Group	9268204	0	live	LOC9268204	OSNPB_010289900	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase|Os01g0289900|P0469E05.26|acyltransferase -like		1	NC_029256.1	10488745	10491218	minus	2		
+3988	Ricinus communis	8260777	0	live	LOC8260777	RCOM_1523650	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase		Un							
+39947	Oryza sativa Japonica Group	4340430	0	live	LOC4340430	OSNPB_060205100, C, C1	anthocyanin regulatory C1 protein	anthocyanin regulatory C1 protein|Myb protein|OSJNBb0015B15.17|Os06g0205100		6	NC_029261.1	5315178	5316851	plus	3		
+39947	Oryza sativa Japonica Group	4323850	0	live	LOC4323850	OSNPB_010577300, P0013G02.6	anthocyanin regulatory R-S protein	anthocyanin regulatory R-S protein|Os01g0577300|P0022F12.30|regulatory protein B-Peru-like		1	NC_029256.1	22301233	22333335	plus	10		
+39947	Oryza sativa Japonica Group	4323849	0	live	LOC4323849	OSNPB_010576100, P0022F12.4	anthocyanin regulatory R-S protein	anthocyanin regulatory R-S protein|B1112D09.28|Os01g0576100|regulatory protein B-Peru-like|transcription activator-like		1	NC_029256.1	22215593	22241305	plus	8		
+29760	Vitis vinifera	100261365	0	live	LOC100261365	VIT_00000469001	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase		12	NC_012018.3	8266607	8268173	plus	2		
+180498	Jatropha curcas	105628686	0	live	LOC105628686	JCGZ_16744	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase		Un							
+4641	Musa acuminata	103986943	0	live	LOC103986943		anthocyanin regulatory C1 protein	anthocyanin regulatory C1 protein		6	NC_025207.1	3004466	3005706	minus	3		
+4182	Sesamum indicum	105178617	0	live	LOC105178617		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		LG16	NC_026160.1	1694640	1696185	plus	1		
+4182	Sesamum indicum	105178540	0	live	LOC105178540		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase		LG16	NC_026160.1	1720488	1721858	plus	1		
+4081	Solanum lycopersicum	100191129	0	live	LOC100191129		anthocyanin acyltransferase	anthocyanin acyltransferase		12	NC_015449.2	63622288	63624328	plus	3		
+4182	Sesamum indicum	105171521	0	live	LOC105171521		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		LG1	NC_026145.1	17158802	17160462	plus	1		
+4182	Sesamum indicum	105162670	0	live	LOC105162670		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		LG5	NC_026149.1	16079958	16081467	minus	1		
+4182	Sesamum indicum	105162667	0	live	LOC105162667		anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase		LG5	NC_026149.1	15861763	15863130	plus	1		
+4577	Zea mays	103647250	0	live	LOC103647250	GRMZM2G341253, GRMZM2G436404	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	anthocyanin 5-aromatic acyltransferase		2							
+4577	Zea mays	100285289	0	live	LOC100285289	ZEAMMB73_Zm00001d008695, GRMZM2G143274	anthocyanin regulatory C1 protein	anthocyanin regulatory C1 protein|putative MYB DNA-binding domain superfamily protein		8	NC_024466.2	17318210	17319378	minus	2		
+4577	Zea mays	100281179	0	live	LOC100281179	ZEAMMB73_Zm00001d051892, GRMZM2G075513	anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase		4	NC_024462.2	173824183	173826045	plus	1		
+39947	Oryza sativa Japonica Group	4333088	0	live	LOC4333088		anthocyanin regulatory C1 protein	anthocyanin regulatory C1 protein		3	NC_029258.1	16879272	16883693	minus	3		
+37682	Aegilops tauschii	109784691	0	live	LOC109784691		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+37682	Aegilops tauschii	109776503	0	live	LOC109776503		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		Un							
+37682	Aegilops tauschii	109773811	0	live	LOC109773811		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+37682	Aegilops tauschii	109773135	0	live	LOC109773135		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+37682	Aegilops tauschii	109771082	0	live	LOC109771082		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+37682	Aegilops tauschii	109769828	0	live	LOC109769828		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		Un							
+37682	Aegilops tauschii	109763504	0	live	LOC109763504		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+37682	Aegilops tauschii	109756141	0	live	LOC109756141		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+37682	Aegilops tauschii	109746679	0	live	LOC109746679		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+37682	Aegilops tauschii	109746671	0	live	LOC109746671		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+37682	Aegilops tauschii	109742657	0	live	LOC109742657		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+37682	Aegilops tauschii	109741605	0	live	LOC109741605		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+37682	Aegilops tauschii	109737442	0	live	LOC109737442		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+130454	Arachis ipaensis	107637357	0	live	LOC107637357		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		B04	NC_029788.1	129084310	129085089	minus	1		
+130454	Arachis ipaensis	107614516	0	live	LOC107614516		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		B08	NC_029792.1	7663241	7664723	minus	1		
+142615	Dendrobium catenatum	110115775	0	live	LOC110115775		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+142615	Dendrobium catenatum	110111368	0	live	LOC110111368		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+142615	Dendrobium catenatum	110109270	0	live	LOC110109270		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+142615	Dendrobium catenatum	110104578	0	live	LOC110104578		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+142615	Dendrobium catenatum	110099691	0	live	LOC110099691		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+142615	Dendrobium catenatum	110098991	0	live	LOC110098991		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+142615	Dendrobium catenatum	110098892	0	live	LOC110098892		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+142615	Dendrobium catenatum	110098619	0	live	LOC110098619		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like|phenolic glucoside malonyltransferase 2-like		Un							
+142615	Dendrobium catenatum	110098588	0	live	LOC110098588		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+78828	Phalaenopsis equestris	110038512	0	live	LOC110038512		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+78828	Phalaenopsis equestris	110034570	0	live	LOC110034570		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+78828	Phalaenopsis equestris	110034233	0	live	LOC110034233		anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase		Un							
+78828	Phalaenopsis equestris	110032926	0	live	LOC110032926		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		Un							
+78828	Phalaenopsis equestris	110019644	0	live	LOC110019644		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	LOW QUALITY PROTEIN: malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+4686	Asparagus officinalis	109833894	0	live	LOC109833894		anthocyanin 5-aromatic acyltransferase-like	LOW QUALITY PROTEIN: anthocyanin 5-aromatic acyltransferase-like		3	NC_033796.1	40079743	40089482	plus	2		
+4686	Asparagus officinalis	109828112	0	live	LOC109828112	A4U43_UnF10310	anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+4686	Asparagus officinalis	109821456	0	live	LOC109821456	A4U43_C08F22120	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		8	NC_033801.1	83989205	83990948	plus	4		
+37682	Aegilops tauschii	109787503	0	live	LOC109787503		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+37682	Aegilops tauschii	109768411	0	live	LOC109768411		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+37682	Aegilops tauschii	109752648	0	live	LOC109752648		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		Un							
+37682	Aegilops tauschii	109741617	0	live	LOC109741617		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+37682	Aegilops tauschii	109740362	0	live	LOC109740362		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		Un							
+37682	Aegilops tauschii	109735788	0	live	LOC109735788		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4615	Ananas comosus	109727140	0	live	LOC109727140		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		22	NC_033642.1	9473940	9475723	plus	2		
+4615	Ananas comosus	109716042	0	live	LOC109716042		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		10	NC_033630.1	12163186	12165603	plus	2		
+4615	Ananas comosus	109715249	0	live	LOC109715249		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase		9	NC_033629.1	11812719	11813624	minus	1		
+4615	Ananas comosus	109714802	0	live	LOC109714802		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		9	NC_033629.1	11813578	11814323	minus	1		
+4615	Ananas comosus	109709616	0	live	LOC109709616		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		1	NC_033621.1	374236	376080	plus	1		
+51953	Elaeis guineensis	109504885	0	live	LOC109504885		anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		Un							
+49451	Nicotiana attenuata	109229160	0	live	LOC109229160	A4A49_12620, 3AT2	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like|coumaroyl-coa:anthocyanidin 3-o-glucoside-6''-o-coumaroyltransferase 2		7	NC_031995.1	58723183	58724921	minus	1		
+35883	Ipomoea nil	109179878	0	live	LOC109179878		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+35883	Ipomoea nil	109179877	0	live	LOC109179877		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+35883	Ipomoea nil	109179809	0	live	LOC109179809		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+35883	Ipomoea nil	109179724	0	live	LOC109179724		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+35883	Ipomoea nil	109156142	0	live	LOC109156142		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+35883	Ipomoea nil	109156135	0	live	LOC109156135		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+35883	Ipomoea nil	109156134	0	live	LOC109156134		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+35883	Ipomoea nil	109155902	0	live	LOC109155902		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+35883	Ipomoea nil	109155878	0	live	LOC109155878		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+35883	Ipomoea nil	109155877	0	live	LOC109155877		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+35883	Ipomoea nil	109155676	0	live	LOC109155676		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+51240	Juglans regia	109000242	0	live	LOC109000242		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+51240	Juglans regia	108987654	0	live	LOC108987654		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+51240	Juglans regia	108986440	0	live	LOC108986440		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+29729	Gossypium arboreum	108469542	0	live	LOC108469542		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		3	NC_030666.1	84707113	84708818	minus	1		
+3914	Vigna angularis	108333717	0	live	LOC108333717	LR48_Vigan05g153600	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		5	NC_030641.1	23209366	23210914	minus	1		
+79200	Daucus carota subsp. sativus	108226772	0	live	LOC108226772	DCAR_021219	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		6	NC_030386.1	24961601	24963477	minus	1		
+79200	Daucus carota subsp. sativus	108226738	0	live	LOC108226738	DCAR_021222	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		6	NC_030386.1	24948740	24950647	minus	1		
+79200	Daucus carota subsp. sativus	108226208	0	live	LOC108226208	DCAR_021218	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		6	NC_030386.1	24968644	24986250	minus	2		
+79200	Daucus carota subsp. sativus	108226207	0	live	LOC108226207	DCAR_021221	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		6	NC_030386.1	24953598	24955034	minus	1		
+79200	Daucus carota subsp. sativus	108226206	0	live	LOC108226206		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		6	NC_030386.1	24899862	24901348	plus	1		
+79200	Daucus carota subsp. sativus	108224949	0	live	LOC108224949	DCAR_021217	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		6	NC_030386.1	24995128	24997550	minus	2		
+79200	Daucus carota subsp. sativus	108224489	0	live	LOC108224489	DCAR_021223	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		6	NC_030386.1	24943863	24945648	minus	1		
+79200	Daucus carota subsp. sativus	108214187	0	live	LOC108214187	DCAR_009713	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		3	NC_030383.1	10321159	10323216	plus	1		
+79200	Daucus carota subsp. sativus	108208465	0	live	LOC108208465	DCAR_007728	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		2	NC_030382.1	36694218	36695704	plus	1		
+79200	Daucus carota subsp. sativus	108208310	0	live	LOC108208310		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		2	NC_030382.1	24009484	24011156	plus	1		
+79200	Daucus carota subsp. sativus	108208245	0	live	LOC108208245		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	LOW QUALITY PROTEIN: malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		2	NC_030382.1	24006223	24007136	plus	1		
+79200	Daucus carota subsp. sativus	108207548	0	live	LOC108207548		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		2	NC_030382.1	24016823	24017155	plus	1		
+79200	Daucus carota subsp. sativus	108207547	0	live	LOC108207547		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		2	NC_030382.1	24012371	24013986	plus	2		
+79200	Daucus carota subsp. sativus	108196041	0	live	LOC108196041		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		7	NC_030387.1	1318527	1320801	plus	2		
+3750	Malus domestica	108169452	0	live	LOC108169452		anthocyanin regulatory C1 protein-like	LOW QUALITY PROTEIN: anthocyanin regulatory C1 protein-like		15	NC_024253.1	15446910	15448020	minus	3		
+3635	Gossypium hirsutum	107930103	0	live	LOC107930103		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+3635	Gossypium hirsutum	107900735	0	live	LOC107900735		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		18	NC_030091.1	8109792	8111518	plus	1		
+4072	Capsicum annuum	107845935	0	live	LOC107845935		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		10	NC_029986.1	13304688	13306361	plus	1		
+4072	Capsicum annuum	107845780	0	live	LOC107845780		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		10	NC_029986.1	10223684	10225352	plus	1		
+4072	Capsicum annuum	107845761	0	live	LOC107845761		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		10	NC_029986.1	13600493	13602055	minus	1		
+4072	Capsicum annuum	107845634	0	live	LOC107845634		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		10	NC_029986.1	9649089	9650734	plus	1		
+4072	Capsicum annuum	107845530	0	live	LOC107845530		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		10	NC_029986.1	13271838	13273517	plus	1		
+4072	Capsicum annuum	107844937	0	live	LOC107844937		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		10	NC_029986.1	9431442	9433036	plus	1		
+4072	Capsicum annuum	107844839	0	live	LOC107844839		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		10	NC_029986.1	10268849	10270772	plus	2		
+4097	Nicotiana tabacum	107826321	0	live	LOC107826321		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4097	Nicotiana tabacum	107799848	0	live	LOC107799848		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4097	Nicotiana tabacum	107794581	0	live	LOC107794581		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4097	Nicotiana tabacum	107782061	0	live	LOC107782061		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4097	Nicotiana tabacum	107780514	0	live	LOC107780514		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4097	Nicotiana tabacum	107760222	0	live	LOC107760222		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+130454	Arachis ipaensis	107633114	0	live	LOC107633114		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		B03	NC_029787.1	47537467	47539826	minus	3		
+130454	Arachis ipaensis	107616177	0	live	LOC107616177		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		B09	NC_029793.1	133753269	133754334	plus	3		
+130453	Arachis duranensis	107486700	0	live	LOC107486700		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		A01	NC_029772.1	38752582	38754170	minus	3		
+130453	Arachis duranensis	107462103	0	live	LOC107462103		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		A08	NC_029779.1	28322394	28323919	minus	1		
+326968	Ziziphus jujuba	107421373	0	live	LOC107421373		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		6	NC_029684.1	18675540	18677085	minus	2		
+326968	Ziziphus jujuba	107416140	0	live	LOC107416140		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		4	NC_029682.1	10740237	10740701	plus	1		
+326968	Ziziphus jujuba	107416138	0	live	LOC107416138		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		4	NC_029682.1	10736454	10736918	plus	1		
+326968	Ziziphus jujuba	107415523	0	live	LOC107415523		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		4	NC_029682.1	4395666	4397504	plus	2		
+326968	Ziziphus jujuba	107403668	0	live	LOC107403668		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+39947	Oryza sativa Japonica Group	107276930	0	live	LOC107276930	OSNPB_060145400, P0036F10.6, P0036F10.7	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like|OSJNBa0007O20.23|OSJNBa0007O20.24|Os06g0145400		6	NC_029261.1	2387359	2390270	plus	2		
+28526	Solanum pennellii	107032570	0	live	LOC107032570		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		10	NC_028646.1	2871681	2873362	plus	1		
+28526	Solanum pennellii	107002690	0	live	LOC107002690		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		10	NC_028646.1	2876036	2877942	plus	1		
+28526	Solanum pennellii	107001978	0	live	LOC107001978		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		10	NC_028646.1	2883370	2884773	plus	1		
+28526	Solanum pennellii	107001923	0	live	LOC107001923		anthocyanin 5-aromatic acyltransferase	LOW QUALITY PROTEIN: anthocyanin 5-aromatic acyltransferase		10	NC_028646.1	3811828	3812574	minus	1		
+157791	Vigna radiata	106779288	0	live	LOC106779288		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4155	Erythranthe guttata	105972103	0	live	LOC105972103	MIMGU_mgv1a006246mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105972099	0	live	LOC105972099	MIMGU_mgv1a006146mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105972095	0	live	LOC105972095	MIMGU_mgv1a006230mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105972079	0	live	LOC105972079	MIMGU_mgv1a006330mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105972054	0	live	LOC105972054	MIMGU_mgv1a017714mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105972029	0	live	LOC105972029	MIMGU_mgv1a006931mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105971993	0	live	LOC105971993	MIMGU_mgv1a022453mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105971990	0	live	LOC105971990	MIMGU_mgv1a023480mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105971988	0	live	LOC105971988	MIMGU_mgv1a019718mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105970572	0	live	LOC105970572	MIMGU_mgv1a005739mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105970525	0	live	LOC105970525	MIMGU_mgv1a006012mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105969668	0	live	LOC105969668	MIMGU_mgv1a019239mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105963726	0	live	LOC105963726		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105963723	0	live	LOC105963723	MIMGU_mgv1a006060mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105959476	0	live	LOC105959476	MIMGU_mgv1a006328mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105958805	0	live	LOC105958805	MIMGU_mgv1a019731mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105957541	0	live	LOC105957541	MIMGU_mgv1a026287mg	anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+4155	Erythranthe guttata	105950423	0	live	LOC105950423	MIMGU_mgv1a023077mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4155	Erythranthe guttata	105950384	0	live	LOC105950384	MIMGU_mgv1a018592mg	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+29730	Gossypium raimondii	105791786	0	live	LOC105791786	B456_004G173600	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		4	NC_026932.1	47513720	47515804	minus	2		
+29730	Gossypium raimondii	105789768	0	live	LOC105789768	B456_003G021100	anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		3	NC_026931.1	1576251	1578265	minus	3		
+57918	Fragaria vesca	105352730	0	live	LOC105352730		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		LG6	NC_020496.1	30993504	30994254	plus	2		
+4182	Sesamum indicum	105178539	0	live	LOC105178539		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		LG16	NC_026160.1	1697795	1699571	minus	1		
+4182	Sesamum indicum	105178538	0	live	LOC105178538		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		LG16	NC_026160.1	1688327	1689872	plus	1		
+4182	Sesamum indicum	105173411	0	live	LOC105173411		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		LG11	NC_026155.1	6280418	6281945	plus	1		
+4182	Sesamum indicum	105173410	0	live	LOC105173410		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		LG11	NC_026155.1	6220930	6222388	plus	1		
+4182	Sesamum indicum	105173409	0	live	LOC105173409		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		LG11	NC_026155.1	6198334	6200062	plus	1		
+4182	Sesamum indicum	105171502	0	live	LOC105171502		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		LG1	NC_026145.1	17152443	17154030	plus	1		
+4182	Sesamum indicum	105162666	0	live	LOC105162666		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		LG5	NC_026149.1	15826941	15828640	plus	1		
+4182	Sesamum indicum	105155339	0	live	LOC105155339		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase		Un							
+75702	Populus euphratica	105142531	0	live	LOC105142531		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+75702	Populus euphratica	105126291	0	live	LOC105126291		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+51953	Elaeis guineensis	105059098	0	live	LOC105059098		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase		16	NC_026008.1	1856193	1858001	minus	1		
+51953	Elaeis guineensis	105056444	0	live	LOC105056444		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		13	NC_026005.1	19588637	19589864	plus	3		
+51953	Elaeis guineensis	105056443	0	live	LOC105056443		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		13	NC_026005.1	19526797	19528106	plus	3		
+51953	Elaeis guineensis	105043109	0	live	LOC105043109		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		4	NC_025996.1	30934437	30935616	minus	2		
+51953	Elaeis guineensis	105043108	0	live	LOC105043108		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	LOW QUALITY PROTEIN: malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		4	NC_025996.1	30986320	30989529	minus	3		
+51953	Elaeis guineensis	105043068	0	live	LOC105043068		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		4	NC_025996.1	30775900	30777622	minus	1		
+51953	Elaeis guineensis	105042362	0	live	LOC105042362		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		3	NC_025995.1	52467928	52469424	plus	1		
+51953	Elaeis guineensis	105041787	0	live	LOC105041787		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		3	NC_025995.1	27657450	27661681	plus	2		
+51953	Elaeis guineensis	105036807	0	live	LOC105036807		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+3555	Beta vulgaris subsp. vulgaris	104901833	0	live	LOC104901833	BVRB_8g192680	anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		8	NC_025819.2	31126975	31129765	minus	2		
+3555	Beta vulgaris subsp. vulgaris	104895749	0	live	LOC104895749	BVRB_6g136000	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase		6	NC_025817.2	10804845	10806788	plus	1		
+4432	Nelumbo nucifera	104611395	0	live	LOC104611395		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+4432	Nelumbo nucifera	104609655	0	live	LOC104609655		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4432	Nelumbo nucifera	104605599	0	live	LOC104605599		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4432	Nelumbo nucifera	104603436	0	live	LOC104603436		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4432	Nelumbo nucifera	104599948	0	live	LOC104599948		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+4432	Nelumbo nucifera	104597472	0	live	LOC104597472		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4432	Nelumbo nucifera	104590975	0	live	LOC104590975		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+4432	Nelumbo nucifera	104589608	0	live	LOC104589608		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+71139	Eucalyptus grandis	104452043	0	live	LOC104452043	EUGRSUZ_F03175	anthocyanin regulatory C1 protein	anthocyanin regulatory C1 protein|transcription factor MYB82		Un							
+71139	Eucalyptus grandis	104444240	0	live	LOC104444240		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+71139	Eucalyptus grandis	104436343	0	live	LOC104436343	EUGRSUZ_C00722	anthocyanin regulatory C1 protein	anthocyanin regulatory C1 protein		Un							
+71139	Eucalyptus grandis	104424128	0	live	LOC104424128	EUGRSUZ_J02819	anthocyanin regulatory C1 protein	anthocyanin regulatory C1 protein		Un							
+4096	Nicotiana sylvestris	104229956	0	live	LOC104229956		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4096	Nicotiana sylvestris	104220301	0	live	LOC104220301		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4098	Nicotiana tomentosiformis	104119866	0	live	LOC104119866		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4098	Nicotiana tomentosiformis	104112524	0	live	LOC104112524		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4098	Nicotiana tomentosiformis	104112522	0	live	LOC104112522		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4098	Nicotiana tomentosiformis	104090125	0	live	LOC104090125		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like		Un							
+4098	Nicotiana tomentosiformis	104085798	0	live	LOC104085798		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4641	Musa acuminata	103999192	0	live	LOC103999192		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		9	NC_025210.1	31594693	31595847	minus	3		
+4641	Musa acuminata	103993256	0	live	LOC103993256		anthocyanin regulatory Lc protein-like	anthocyanin regulatory Lc protein-like		8	NC_025209.1	8229862	8234625	minus	9		
+4641	Musa acuminata	103992836	0	live	LOC103992836		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		7	NC_025208.1	27247836	27249765	minus	1		
+4641	Musa acuminata	103992255	0	live	LOC103992255		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like|myb-related protein 308-like		7	NC_025208.1	21326741	21327997	minus	4		
+4641	Musa acuminata	103989815	0	live	LOC103989815		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		6	NC_025207.1	27853779	27855310	plus	1		
+4641	Musa acuminata	103989223	0	live	LOC103989223		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		6	NC_025207.1	27847645	27849281	plus	1		
+4641	Musa acuminata	103985055	0	live	LOC103985055		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	LOW QUALITY PROTEIN: malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		5	NC_025206.1	9507199	9508794	plus	1		
+4641	Musa acuminata	103984840	0	live	LOC103984840		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		5	NC_025206.1	9477607	9479156	plus	1		
+4641	Musa acuminata	103983400	0	live	LOC103983400		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		4	NC_025205.1	25886995	25887636	plus	1		
+4641	Musa acuminata	103977818	0	live	LOC103977818		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		1	NC_025202.1	2590776	2614218	minus	2		
+4641	Musa acuminata	103974770	0	live	LOC103974770		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+225117	Pyrus x bretschneideri	103958466	0	live	LOC103958466		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+225117	Pyrus x bretschneideri	103945860	0	live	LOC103945860		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+42345	Phoenix dactylifera	103722733	0	live	LOC103722733		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		Un							
+42345	Phoenix dactylifera	103712978	0	live	LOC103712978		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	LOW QUALITY PROTEIN: malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+42345	Phoenix dactylifera	103712648	0	live	LOC103712648		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like|transcription factor TT2-like		Un							
+42345	Phoenix dactylifera	103707702	0	live	LOC103707702		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		Un							
+42345	Phoenix dactylifera	103699484	0	live	LOC103699484		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+42345	Phoenix dactylifera	103699150	0	live	LOC103699150		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Un							
+3750	Malus domestica	103437179	0	live	LOC103437179		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		6	NC_024244.1	10250200	10252069	plus	1		
+3750	Malus domestica	103431271	0	live	LOC103431271		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		15							
+3750	Malus domestica	103421651	0	live	LOC103421651		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		9							
+3750	Malus domestica	103409915	0	live	LOC103409915		anthocyanin 5-aromatic acyltransferase-like	LOW QUALITY PROTEIN: anthocyanin 5-aromatic acyltransferase-like		7							
+102107	Prunus mume	103340566	0	live	LOC103340566		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		LG8	NC_024133.1	13172920	13174478	plus	3		
+102107	Prunus mume	103330543	0	live	LOC103330543		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		LG5	NC_024130.1	620874	622329	plus	1		
+4533	Oryza brachyantha	102712245	0	live	LOC102712245		anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like		3	NC_023165.1	24848171	24849201	minus	1		
+4533	Oryza brachyantha	102711354	0	live	LOC102711354		anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		6	NC_023168.1	3906747	3908221	plus	2		
+4533	Oryza brachyantha	102710936	0	live	LOC102710936		anthocyanin regulatory Lc protein-like	anthocyanin regulatory Lc protein-like		1	NC_023163.1	16467595	16484042	plus	11		
+4533	Oryza brachyantha	102704338	0	live	LOC102704338		anthocyanin regulatory C1 protein	LOW QUALITY PROTEIN: anthocyanin regulatory C1 protein		5	NC_023167.1	1490112	1491496	minus	3		
+4113	Solanum tuberosum	102605147	0	live	LOC102605147		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4113	Solanum tuberosum	102603382	0	live	LOC102603382		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4113	Solanum tuberosum	102592400	0	live	LOC102592400		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		Un							
+4555	Setaria italica	101785926	0	live	LOC101785926	SETIT_035536mg	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		IX	NC_028458.1	176754	178386	plus	1		
+4555	Setaria italica	101781015	0	live	LOC101781015	SETIT_012401mg	anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		VII	NC_028456.1	26889422	26899952	minus	8		
+4555	Setaria italica	101780678	0	live	LOC101780678	SETIT_006334mg	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		IV	NC_028453.1	34856434	34858173	minus	2		
+4555	Setaria italica	101778983	0	live	LOC101778983	SETIT_017118mg	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		I	NC_028450.1	40334300	40336054	minus	1		
+4555	Setaria italica	101771720	0	live	LOC101771720	SETIT_022171mg	anthocyanin regulatory Lc protein-like	anthocyanin regulatory Lc protein-like|transcription factor MYC3-like		III	NC_028452.1	50139664	50143278	plus	4		
+4555	Setaria italica	101764053	0	live	LOC101764053	SETIT_008529mg	anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		IV	NC_028453.1	2189413	2191698	plus	2		
+4555	Setaria italica	101757325	0	live	LOC101757325	SETIT_000845mg	anthocyanin regulatory R-S protein-like	anthocyanin regulatory R-S protein-like		V	NC_028454.1	43545228	43551515	plus	9		
+4555	Setaria italica	101756616	0	live	LOC101756616	SETIT_008089mg	anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		IV	NC_028453.1	7025503	7031785	minus	4		
+4555	Setaria italica	101756534	0	live	LOC101756534	SETIT_017170mg	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		I	NC_028450.1	41560679	41563370	minus	2		
+3827	Cicer arietinum	101513090	0	live	LOC101513090		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		Ca6	NC_021165.1	57156839	57158539	minus	1		
+3827	Cicer arietinum	101491422	0	live	LOC101491422	UGT95B1	anthocyanin 3'-O-beta-glucosyltransferase-like	anthocyanin 3'-O-beta-glucosyltransferase-like|UDP-glycosyltransferase		Ca8	NC_021167.1	7868292	7870003	minus	1		
+4081	Solanum lycopersicum	101256527	0	live	LOC101256527		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase		10	NC_015447.2	2746039	2754091	plus	3		
+15368	Brachypodium distachyon	100831444	0	live	LOC100831444	BRADI_3g32170	anthocyanin regulatory C1 protein-like	anthocyanin regulatory C1 protein-like		3	NC_016133.2	34486982	34487977	plus	2		
+29760	Vitis vinifera	100263140	0	live	LOC100263140		anthocyanin 5-aromatic acyltransferase-like	anthocyanin 5-aromatic acyltransferase-like		12	NC_012018.3	8234821	8236385	plus	2		
+29760	Vitis vinifera	100259716	0	live	LOC100259716		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		12	NC_012018.3	8209316	8210870	plus	1		
+29760	Vitis vinifera	100254603	0	live	LOC100254603	VIT_00000461001	anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase		12	NC_012018.3	8202839	8204215	plus	1		
+29760	Vitis vinifera	100245977	0	live	LOC100245977		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like	malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like		12	NC_012018.3	8240342	8243513	plus	4		
+3760	Prunus persica	18786056	0	live	LOC18786056		anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase		G2	NC_034010.1	970340	972042	plus	1		
+3641	Theobroma cacao	18614639	0	live	LOC18614639		anthocyanin 5-aromatic acyltransferase	anthocyanin 5-aromatic acyltransferase		1	NC_030850.1	37094375	37096269	minus	1		
+13333	Amborella trichopoda	18440852	0	live	LOC18440852	AMTR_s00025p00234540	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase		Un							
+13333	Amborella trichopoda	18439413	0	live	LOC18439413	AMTR_s00024p00224180	anthocyanin regulatory C1 protein	anthocyanin regulatory C1 protein|transcription factor TT2		Un							
+3988	Ricinus communis	8258573	0	live	LOC8258573		anthocyanin regulatory C1 protein	LOW QUALITY PROTEIN: anthocyanin regulatory C1 protein		Un							
+4081	Solanum lycopersicum	101247276	0	live	AN2		MYB transcriptional factor AN2	MYB transcriptional factor AN2|MYB transcription factor AN2|anthocyanin 2|transcription factor MYB113-like		10	NC_015447.2	65133353	65134967	minus	3		
+4577	Zea mays	732799	0	live	pl	ZEAMMB73_Zm00001d037118, GRMZM2G701063, Myb23, pl1	PL transcription factor	PL transcription factor|Anthocyanin biosynthesis regulatory protein Pl1_B73|P-type R2R3 Myb protein|PL1 transcription factor|Pl-Bh (Blotched1)|anthocyanin regulatory C1 protein|non-functional purple plant 1 transcription factor|purple plant 1|purple plant1|transcriptional activator|truncated PL protein|truncated Pl1 transcription factor		6	NC_024464.2	112978167	112979735	plus	3		
+3711	Brassica rapa	103831102	0	live	PAP1	MYB2	transcription factor MYB114	transcription factor MYB114|anthocyanin R2R3-MYB transcription factor|production of anthocyanin pigment 1		A7	NC_024801.1	17155946	17161393	plus	6		
+4081	Solanum lycopersicum	101255734	0	live	AnthOMT		flavonoid 3',5'-methyltransferase	flavonoid 3',5'-methyltransferase|anthocyanin O-methyltransferase		9	NC_015446.2	68373487	68377032	plus	6		
+3847	Glycine max	100792717	0	live	OMT5		probable caffeoyl-CoA O-methyltransferase At4g26220-like	probable caffeoyl-CoA O-methyltransferase At4g26220-like|anthocyanin 3'-O-methyltransferase		5	NC_016092.2	40273419	40274828	plus	5		
+29760	Vitis vinifera	100256121	0	live	LOC100256121	VIT_00028885001	protein TRANSPARENT TESTA 12-like	protein TRANSPARENT TESTA 12-like|putative anthocyanin permease		16	NC_012022.3	17819178	17822079	minus	7		
+4577	Zea mays	103627556	0	live	LOC103627556	ZEAMMB73_Zm00001d017616, GRMZM2G058292, WD40.1, pac1	protein TRANSPARENT TESTA GLABRA 1	protein TRANSPARENT TESTA GLABRA 1|WD40 transcription factor|anthocyanin biosynthetic gene regulator PAC1|pale aleurone color1		5	NC_024463.2	201798674	201803114	minus	2		
+39947	Oryza sativa Japonica Group	4346184	0	live	LOC4346184	OSNPB_080540000	solute carrier family 35 member F1	solute carrier family 35 member F1|Os08g0540000|P0666G10.130|putative anthocyanin-related membrane protein 1 (Anm1)		8	NC_029263.1	27027730	27032159	minus	11		
+39947	Oryza sativa Japonica Group	4343015	0	live	LOC4343015	OSNPB_070414000	malonyl-CoA:anthocyanidin 5-O-glucoside-6''-O-malonyltransferase	malonyl-CoA:anthocyanidin 5-O-glucoside-6''-O-malonyltransferase|OSJNBa0077F02.119|Os07g0414000|anthocyanin 5-aromatic acyltransferase-like protein		7	NC_029262.1	13053675	13055392	plus	1		
+39947	Oryza sativa Japonica Group	4341423	0	live	LOC4341423	OSNPB_060593800, P0652A05.5	crocetin glucosyltransferase, chloroplastic	crocetin glucosyltransferase, chloroplastic|Os06g0593800|P0502H06.40|putative anthocyanin 5-O-glucosyltransferase		6	NC_029261.1	23333367	23335151	minus	1		
+39947	Oryza sativa Japonica Group	4340106	0	live	LOC4340106	OSNPB_060145200, P0036F10.4, P0036F10.5	uncharacterized LOC4340106	uncharacterized protein LOC4340106|OSJNBa0007O20.21|OSJNBa0007O20.22|Os06g0145200|Os06g0145300|putative anthocyanin 5-aromatic acyltransferase		6	NC_029261.1	2380426	2386442	plus	5		
+39947	Oryza sativa Japonica Group	4331169	0	live	LOC4331169	OSNPB_020820400, OJ1202_E07.32	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 2	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 2|Os02g0820400|P0474F11.13|putative anthocyanin acyltransferase		2	NC_029257.1	35222027	35224172	minus	1		
+39947	Oryza sativa Japonica Group	4330331	0	live	LOC4330331	OSNPB_020682500, OJ1123_G04.15	protein TRANSPARENT TESTA GLABRA 1	protein TRANSPARENT TESTA GLABRA 1|Os02g0682500|putative anthocyanin biosynthetic gene regulator PAC1		2	NC_029257.1	27906511	27909502	minus	2		
+4097	Nicotiana tabacum	107791353	0	live	LOC107791353	An2	transcription factor MYB114-like	transcription factor MYB114-like|anthocyanin 2		Un							
+3711	Brassica rapa	103860004	0	live	MYB1		transcription factor MYB114	transcription factor MYB114|anthocyanin R2R3-MYB transcription factor		A3	NC_024797.1	19341254	19342916	minus	3		
+3711	Brassica rapa	103852326	0	live	MYB3		transcription factor MYB114-like	transcription factor MYB114-like|anthocyanin R2R3-MYB transcription factor		A2	NC_024796.1	9857380	9859160	plus	3		
+4113	Solanum tuberosum	102599242	0	live	AOMT3		flavonoid 3',5'-methyltransferase-like	flavonoid 3',5'-methyltransferase-like|anthocyanin O-methyl transferase		Un							
+4113	Solanum tuberosum	102577602	0	live	AN1		transcription factor R2R3-MYB	transcription factor R2R3-MYB|anthocyanin 1		Un							
+39947	Oryza sativa Japonica Group	4347556	0	live	LOC4347556	OSNPB_090513200, P0450E05.7	solute carrier family 35 member F1	solute carrier family 35 member F1|Os09g0513200|anthocyanin-related membrane protein 1 (Anm1)-like		9	NC_029264.1	19971111	19975257	minus	11		
+39947	Oryza sativa Japonica Group	4344782	0	live	LOC4344782	OSNPB_080174100	phenolic glucoside malonyltransferase 2	phenolic glucoside malonyltransferase 2|OSJNBa0054L03.23|Os08g0174100|anthocyanin 5-aromatic acyltransferase-like protein		8	NC_029263.1	4315994	4318673	minus	2		
+39947	Oryza sativa Japonica Group	4336635	0	live	LOC4336635		anthocyanin regulatory R-S protein			4	NC_029259.1	27915978	27939319	minus	0		
+39947	Oryza sativa Japonica Group	4328664	0	live	LOC4328664	OSNPB_020203300, OJ1135_F06.22, P0544H11.4	cyanidin 3-O-rutinoside 5-O-glucosyltransferase	cyanidin 3-O-rutinoside 5-O-glucosyltransferase|Os02g0203300|putative anthocyanin 5-O-glucosyltransferase		2	NC_029257.1	5775864	5777585	plus	1		
+4097	Nicotiana tabacum	107791671	0	live	LOC107791671	An1b	basic helix-loop-helix protein A-like	basic helix-loop-helix protein A-like|anthocyanin 1b		Un							
+4097	Nicotiana tabacum	107771685	0	live	LOC107771685	An1a	basic helix-loop-helix protein A-like	basic helix-loop-helix protein A-like|anthocyanin 1a		Un							
+4096	Nicotiana sylvestris	104249116	0	live	LOC104249116	An1	basic helix-loop-helix protein A	basic helix-loop-helix protein A|anthocyanin 1-like protein		Un							
+4098	Nicotiana tomentosiformis	104097487	0	live	LOC104097487	sAn1	basic helix-loop-helix protein A	basic helix-loop-helix protein A|anthocyanin 1-like protein		Un							
+4577	Zea mays	100193708	0	live	LOC100193708	ZEAMMB73_Zm00001d052701, GRMZM2G173684	uncharacterized LOC100193708	uncharacterized LOC100193708|Anthocyanin-related membrane protein 1 (Anm1)-like		4	NC_024462.2	198079538	198083069	minus	11		
+4577	Zea mays	103647578	0	live	LOC103647578	ZEAMMB73_Zm00001d006115, GRMZM2G000665	solute carrier family 35 member F1-like	solute carrier family 35 member F1-like|Anthocyanin-related membrane protein 1 (Anm1)-like|solute carrier family 35, member F1		2	NC_024460.2	198986470	198998001	minus	11		
+4577	Zea mays	100272672	0	live	LOC100272672	ZEAMMB73_Zm00001d005312, GRMZM2G341253, GRMZM2G436404	uncharacterized LOC100272672	uncharacterized LOC100272672|Phenolic glucoside malonyltransferase 1|anthocyanin 5-aromatic acyltransferase		2	NC_024460.2	169181726	169183432	minus	1		
+49451	Nicotiana attenuata	109211270	0	live	LOC109211270	A4A49_28774, C1	myb-related protein Myb4-like	myb-related protein 330-like|myb-related protein Myb4-like|anthocyanin regulatory c1 protein		Un							
+3821	Cajanus cajan	109816220	0	live	LOC109816220	KK1_033010	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109816155	0	live	LOC109816155	KK1_032862	scopoletin glucosyltransferase-like	scopoletin glucosyltransferase-like|Anthocyanin 3'-O-beta-glucosyltransferase		Un							
+3821	Cajanus cajan	109814831	0	live	LOC109814831	KK1_030869	phenolic glucoside malonyltransferase 1-like	phenolic glucoside malonyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109814826	0	live	LOC109814826	KK1_030870	phenolic glucoside malonyltransferase 1-like	phenolic glucoside malonyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109809529	0	live	LOC109809529	KK1_003250	crocetin glucosyltransferase, chloroplastic-like	crocetin glucosyltransferase, chloroplastic-like|Anthocyanin 5-O-glucosyltransferase		11	NC_033814.1	34989138	34990929	plus	1		
+3821	Cajanus cajan	109802394	0	live	LOC109802394	KK1_018270	transcription factor MYB6-like	transcription factor MYB6-like|Anthocyanin regulatory C1 protein		7	NC_033810.1	4424958	4426827	plus	3		
+3821	Cajanus cajan	109792979	0	live	LOC109792979	KK1_046257	transcription factor MYB114-like	transcription factor MYB114-like|Anthocyanin regulatory C1 protein		Un							
+3821	Cajanus cajan	109791578	0	live	LOC109791578	KK1_043779	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+78828	Phalaenopsis equestris	110019740	0	live	LOC110019740	ANS3	leucoanthocyanidin dioxygenase-like	leucoanthocyanidin dioxygenase-like|anthocyanin synthase		Un							
+3760	Prunus persica	109947100	0	live	LOC109947100		anthocyanin 5-aromatic acyltransferase-like			G2	NC_034010.1	1002446	1004688	plus	0		
+3821	Cajanus cajan	109817643	0	live	LOC109817643	KK1_035096	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 2-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 2-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109817642	0	live	LOC109817642	KK1_035095	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109817641	0	live	LOC109817641	KK1_035094	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 2-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 2-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109817635	0	live	LOC109817635	KK1_035093	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109817633	0	live	LOC109817633	KK1_035102	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109817632	0	live	LOC109817632	KK1_035098	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 2-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 2-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109816156	0	live	LOC109816156	KK1_032864	scopoletin glucosyltransferase-like	scopoletin glucosyltransferase-like|Anthocyanin 3'-O-beta-glucosyltransferase		Un							
+3821	Cajanus cajan	109816147	0	live	LOC109816147	KK1_032867	scopoletin glucosyltransferase-like	scopoletin glucosyltransferase-like|Anthocyanin 3'-O-beta-glucosyltransferase		Un							
+3821	Cajanus cajan	109816145	0	live	LOC109816145	KK1_032863	scopoletin glucosyltransferase-like	scopoletin glucosyltransferase-like|Anthocyanin 3'-O-beta-glucosyltransferase		Un							
+3821	Cajanus cajan	109815427	0	live	LOC109815427	KK1_031733	phenolic glucoside malonyltransferase 2-like	phenolic glucoside malonyltransferase 2-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109814889	0	live	LOC109814889	KK1_030953	soyasapogenol B glucuronide galactosyltransferase-like	soyasapogenol B glucuronide galactosyltransferase-like|Anthocyanin 3'-O-beta-glucosyltransferase		Un							
+3821	Cajanus cajan	109814882	0	live	LOC109814882	KK1_030955	soyasapogenol B glucuronide galactosyltransferase-like	soyasapogenol B glucuronide galactosyltransferase-like|Anthocyanin 3'-O-beta-glucosyltransferase		Un							
+3821	Cajanus cajan	109814825	0	live	LOC109814825	KK1_030868	phenolic glucoside malonyltransferase 1-like	phenolic glucoside malonyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109814824	0	live	LOC109814824	KK1_030867	phenolic glucoside malonyltransferase 1-like	phenolic glucoside malonyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109814396	0	live	LOC109814396	KK1_030247	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109813259	0	live	LOC109813259	KK1_028690	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109811744	0	live	LOC109811744	KK1_026505	soyasapogenol B glucuronide galactosyltransferase-like	soyasapogenol B glucuronide galactosyltransferase-like|Anthocyanin 3'-O-beta-glucosyltransferase		Un							
+3821	Cajanus cajan	109811155	0	live	LOC109811155	KK1_025757	soyasapogenol B glucuronide galactosyltransferase-like	soyasapogenol B glucuronide galactosyltransferase-like|Anthocyanin 3'-O-beta-glucosyltransferase		Un							
+3821	Cajanus cajan	109811028	0	live	LOC109811028	KK1_025499	BAHD acyltransferase At3g29680-like	BAHD acyltransferase At3g29680-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109809138	0	live	LOC109809138	KK1_004455	UDP-glucose flavonoid 3-O-glucosyltransferase 7-like	UDP-glucose flavonoid 3-O-glucosyltransferase 7-like|Anthocyanin 3'-O-beta-glucosyltransferase		11	NC_033814.1	47308966	47310689	plus	1		
+3821	Cajanus cajan	109808790	0	live	LOC109808790	KK1_004458	scopoletin glucosyltransferase-like	scopoletin glucosyltransferase-like|Anthocyanin 3'-O-beta-glucosyltransferase		11	NC_033814.1	47335696	47337480	plus	1		
+3821	Cajanus cajan	109808710	0	live	LOC109808710	KK1_001625	transcription factor MYB114-like	transcription factor MYB114-like|Anthocyanin regulatory C1 protein		11	NC_033814.1	17366075	17368409	minus	3		
+3821	Cajanus cajan	109805957	0	live	LOC109805957	KK1_013871	UDP-glycosyltransferase 92A1	UDP-glycosyltransferase 92A1|Anthocyanin 3'-O-beta-glucosyltransferase		10	NC_033813.1	1352538	1354183	minus	1		
+3821	Cajanus cajan	109802674	0	live	LOC109802674	KK1_021383	UDP-glucose flavonoid 3-O-glucosyltransferase 7-like	UDP-glucose flavonoid 3-O-glucosyltransferase 7-like|Anthocyanin 3'-O-beta-glucosyltransferase		1	NC_033804.1	16715893	16717335	plus	1		
+3821	Cajanus cajan	109791580	0	live	LOC109791580	KK1_043791	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109791579	0	live	LOC109791579	KK1_043788	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109791577	0	live	LOC109791577	KK1_043776	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+3821	Cajanus cajan	109791573	0	live	LOC109791573	KK1_043784	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like	coumaroyl-CoA:anthocyanidin 3-O-glucoside-6''-O-coumaroyltransferase 1-like|Anthocyanin 5-aromatic acyltransferase		Un							
+37682	Aegilops tauschii	109786320	0	live	LOC109786320		anthocyanin 3'-O-beta-glucosyltransferase-like			Un							
+37682	Aegilops tauschii	109776534	0	live	LOC109776534		anthocyanin 5-aromatic acyltransferase-like			Un							
+37682	Aegilops tauschii	109775832	0	live	LOC109775832		anthocyanin 5-aromatic acyltransferase-like			Un							
+37682	Aegilops tauschii	109762939	0	live	LOC109762939		anthocyanin regulatory R-S protein-like			Un							
+37682	Aegilops tauschii	109753608	0	live	LOC109753608		anthocyanin 3'-O-beta-glucosyltransferase-like			Un							
+37682	Aegilops tauschii	109746668	0	live	LOC109746668		anthocyanin 3'-O-beta-glucosyltransferase-like			Un							
+37682	Aegilops tauschii	109734907	0	live	LOC109734907		anthocyanin regulatory R-S protein-like			Un							
+37682	Aegilops tauschii	109734118	0	live	LOC109734118		anthocyanin 3'-O-beta-glucosyltransferase-like			Un							
+4615	Ananas comosus	109710734	0	live	LOC109710734		anthocyanin 3'-O-beta-glucosyltransferase-like			5	NC_033625.1	14537644	14539793	minus	0		
+4615	Ananas comosus	109705491	0	live	LOC109705491		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			2	NC_033622.1	13761113	13764212	minus	0		
+49451	Nicotiana attenuata	109237387	0	live	LOC109237387		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+49451	Nicotiana attenuata	109224305	0	live	LOC109224305		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			3	NC_031991.1	42225764	42236141	minus	0		
+49451	Nicotiana attenuata	109218166	0	live	LOC109218166		anthocyanin 5-aromatic acyltransferase-like			Un							
+49451	Nicotiana attenuata	109213703	0	live	LOC109213703		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+49451	Nicotiana attenuata	109210319	0	live	LOC109210319		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+35883	Ipomoea nil	109160187	0	live	LOC109160187		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like			Un							
+35883	Ipomoea nil	109155879	0	live	LOC109155879		anthocyanin 5-aromatic acyltransferase-like			Un							
+29760	Vitis vinifera	109123470	0	live	LOC109123470		anthocyanin 5-aromatic acyltransferase-like			12	NC_012018.3	8271235	8273345	plus	0		
+3726	Raphanus sativus	108816293	0	live	LOC108816293	MYB1	transcription factor MYB114-like	transcription factor MYB114-like|anthocyanin regulator		Un							
+29729	Gossypium arboreum	108468720	0	live	LOC108468720		anthocyanin 5-aromatic acyltransferase-like			3	NC_030666.1	84774421	84775556	minus	0		
+79200	Daucus carota subsp. sativus	108198580	0	live	LOC108198580		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			8	NC_030388.1	30509829	30510914	plus	0		
+3635	Gossypium hirsutum	107930088	0	live	LOC107930088		anthocyanin 5-aromatic acyltransferase-like			Un							
+102107	Prunus mume	107881083	0	live	LOC107881083		anthocyanin 5-aromatic acyltransferase-like			LG5	NC_024130.1	641901	642748	plus	0		
+4072	Capsicum annuum	107852945	0	live	LOC107852945		anthocyanin 3'-O-beta-glucosyltransferase-like			Un							
+4072	Capsicum annuum	107845246	0	live	LOC107845246		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			10	NC_029986.1	9560293	9561659	minus	0		
+4072	Capsicum annuum	107845226	0	live	LOC107845226		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			10	NC_029986.1	13320661	13322015	plus	0		
+4072	Capsicum annuum	107845067	0	live	LOC107845067		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			10	NC_029986.1	14610227	14611674	minus	0		
+4072	Capsicum annuum	107844143	0	live	LOC107844143		anthocyanin 5-aromatic acyltransferase-like			10	NC_029986.1	10273510	10276755	plus	0		
+4072	Capsicum annuum	107844137	0	live	LOC107844137		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			10	NC_029986.1	9304515	9305851	plus	0		
+4097	Nicotiana tabacum	107832062	0	live	LOC107832062		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4097	Nicotiana tabacum	107807192	0	live	LOC107807192		anthocyanin 5-aromatic acyltransferase-like			Un							
+4097	Nicotiana tabacum	107798476	0	live	LOC107798476		anthocyanin 5-aromatic acyltransferase-like			Un							
+4097	Nicotiana tabacum	107793037	0	live	LOC107793037		anthocyanin 5-aromatic acyltransferase-like			Un							
+4097	Nicotiana tabacum	107782064	0	live	LOC107782064		anthocyanin 5-aromatic acyltransferase-like			Un							
+4097	Nicotiana tabacum	107765644	0	live	LOC107765644		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4097	Nicotiana tabacum	107759926	0	live	LOC107759926		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+130453	Arachis duranensis	107481664	0	live	LOC107481664		anthocyanin 5-aromatic acyltransferase-like			A01	NC_029772.1	19385996	19387228	minus	0		
+39947	Oryza sativa Japonica Group	107276789	0	live	LOC107276789	OSNPB_060590800	UDP-glycosyltransferase 73B5-like	UDP-glycosyltransferase 73B5-like|Os06g0590800|P0633E08.29|putative anthocyanin 3'-glucosyltransferase		6	NC_029261.1	23204151	23206103	minus	1		
+3847	Glycine max	106795650	0	live	LOC106795650		anthocyanin 5-aromatic acyltransferase-like			13	NC_016100.2	39934666	39936260	plus	0		
+4155	Erythranthe guttata	105963725	0	live	LOC105963725		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4155	Erythranthe guttata	105952528	0	live	LOC105952528		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4182	Sesamum indicum	105171511	0	live	LOC105171511		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			LG1	NC_026145.1	17155826	17157553	plus	0		
+29760	Vitis vinifera	104878920	0	live	LOC104878920	ANAT	acetyl-CoA-benzylalcohol acetyltransferase-like	acetyl-CoA-benzylalcohol acetyltransferase-like|anthocyanin acyltransferase		3	NC_012009.3	16023798	16025462	plus	1		
+4096	Nicotiana sylvestris	104249921	0	live	LOC104249921		anthocyanin 5-aromatic acyltransferase-like			Un							
+4096	Nicotiana sylvestris	104249642	0	live	LOC104249642		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4096	Nicotiana sylvestris	104232329	0	live	LOC104232329		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4096	Nicotiana sylvestris	104232324	0	live	LOC104232324		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4096	Nicotiana sylvestris	104229573	0	live	LOC104229573		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4098	Nicotiana tomentosiformis	104120341	0	live	LOC104120341		anthocyanin 5-aromatic acyltransferase-like			Un							
+4098	Nicotiana tomentosiformis	104112526	0	live	LOC104112526		anthocyanin 5-aromatic acyltransferase-like			Un							
+4098	Nicotiana tomentosiformis	104112521	0	live	LOC104112521		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4098	Nicotiana tomentosiformis	104111003	0	live	LOC104111003		anthocyanin 5-aromatic acyltransferase-like			Un							
+4098	Nicotiana tomentosiformis	104099949	0	live	LOC104099949	An2	transcription factor MYB114-like	transcription factor MYB114-like|anthocyanin 2		Un							
+4641	Musa acuminata	103993027	0	live	LOC103993027		anthocyanin 3'-O-beta-glucosyltransferase-like			7	NC_025208.1	27232773	27235738	minus	0		
+225117	Pyrus x bretschneideri	103955476	0	live	LOC103955476		anthocyanin regulatory C1 protein-like			Un							
+42345	Phoenix dactylifera	103721729	0	live	LOC103721729		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like			Un							
+2711	Citrus sinensis	102610708	0	live	LOC102610708		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			7	NC_023052.1	578942	584977	minus	0		
+4113	Solanum tuberosum	102602987	0	live	LOC102602987		malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase-like			Un							
+4113	Solanum tuberosum	102598323	0	live	LOC102598323	ANS	leucoanthocyanidin dioxygenase	leucoanthocyanidin dioxygenase|anthocyanidin synthase|anthocyanin synthase|putative leucoanthocyanidin dioxygenase		Un							
+4113	Solanum tuberosum	102597691	0	live	LOC102597691		anthocyanin 5-aromatic acyltransferase-like			Un							
+4113	Solanum tuberosum	102592740	0	live	LOC102592740		anthocyanin 5-aromatic acyltransferase-like			Un							
+4113	Solanum tuberosum	102585603	0	live	LOC102585603	an1	transcription factor MYB90-like	transcription factor MYB90-like|anthocyanin 1		Un							
+4555	Setaria italica	101777829	0	live	LOC101777829		anthocyanin 3'-O-beta-glucosyltransferase-like			III	NC_028452.1	14373496	14375323	minus	0		
+4555	Setaria italica	101765420	0	live	LOC101765420		anthocyanin 5-aromatic acyltransferase-like			IV	NC_028453.1	34852520	34854651	plus	0		
+4555	Setaria italica	101763653	0	live	LOC101763653		anthocyanin 5-aromatic acyltransferase-like			IV	NC_028453.1	2193598	2195349	plus	0		
+4555	Setaria italica	101758051	0	live	LOC101758051		anthocyanin 5-aromatic acyltransferase-like			VII	NC_028456.1	31137724	31142061	plus	0		
+4555	Setaria italica	101755470	0	live	LOC101755470		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like			VI	NC_028455.1	26257587	26258984	minus	0		
+57918	Fragaria vesca	101311521	0	live	LOC101311521		anthocyanin 5-aromatic acyltransferase-like			LG7	NC_020497.1	1522551	1524487	plus	0		
+4081	Solanum lycopersicum	101256718	0	live	LOC101256718		anthocyanin 5-aromatic acyltransferase-like			10	NC_015447.2	2759699	2761227	plus	0		
+3659	Cucumis sativus	101218527	0	live	LOC101218527	Csa_6G010000	uncharacterized acetyltransferase At3g50280	uncharacterized acetyltransferase At3g50280|Anthocyanin 5-aromatic acyltransferase		6	NC_026660.1	1107747	1109559	plus	1		
+15368	Brachypodium distachyon	100824139	0	live	LOC100824139		anthocyanin 5-aromatic acyltransferase-like			5	NC_016135.2	25465027	25466801	plus	0		
+29760	Vitis vinifera	100242614	0	live	LOC100242614		malonyl-coenzyme A:anthocyanin 3-O-glucoside-6''-O-malonyltransferase-like			12	NC_012018.3	8220468	8222063	plus	0		
+3760	Prunus persica	18784022	0	live	LOC18784022		anthocyanin 5-aromatic acyltransferase			G3	NC_034011.1	24240943	24241976	plus	0		
+13333	Amborella trichopoda	18438293	0	live	LOC18438293	AMTR_s00169p00021520	malonyl-coenzyme:anthocyanin 5-O-glucoside-6'''-O-malonyltransferase			Un							
+3702	Arabidopsis thaliana	830996	0	live	HY5	AT5G11260, BZIP TRANSCRIPTION FACTOR HY5, ELONGATED HYPOCOTYL 5, F2I11.150, F2I11_150, REVERSAL OF THE DET PHENOTYPE 5, TED 5	Basic-leucine zipper (bZIP) transcription factor family protein			5	NC_003076.8	3593335	3595073	minus	4		
+3702	Arabidopsis thaliana	817857	0	live	COP1	AT2G32950, ARABIDOPSIS THALIANA CONSTITUTIVE PHOTOMORPHOGENIC 1, ATCOP1, CONSTITUTIVE PHOTOMORPHOGENIC 1, DEETIOLATED MUTANT 340, DET340, EMB168, EMBRYO DEFECTIVE 168, FUS1, FUSCA 1, T21L14.11, T21L14_11	Transducin/WD40 repeat-like superfamily protein			2	NC_003071.7	13977881	13983609	plus	13		
+3702	Arabidopsis thaliana	826470	0	live	CRY1	AT4G08920, ATCRY1, BLU1, BLUE LIGHT UNINHIBITED 1, CRYPTOCHROME 1 APOPROTEIN (BLUE LIGHT PHOTORECEPTOR, ELONGATED HYPOCOTYL 4, HY4, OOP2, OUT OF PHASE 2, T3H13.14, T3H13_14, cryptochrome 1	cryptochrome 1			4	NC_003075.7	5723651	5727268	plus	4		
+3702	Arabidopsis thaliana	837479	0	live	PIF3	AT1G09530, F14J9.19, F14J9_19, PAP3, PHOTOCURRENT 1, PHYTOCHROME INTERACTING FACTOR 3, PHYTOCHROME-ASSOCIATED PROTEIN 3, POC1, phytochrome interacting factor 3, purple acid phosphatase 3	phytochrome interacting factor 3			1	NC_003070.9	3075768	3079654	plus	8		
+3702	Arabidopsis thaliana	837483	0	live	PHYA	AT1G09570, ELONGATED HYPOCOTYL 8, F14J9.23, F14J9_23, FAR RED ELONGATED 1, FAR RED ELONGATED HYPOCOTYL 2, FHY2, FRE1, HY8, phytochrome A	phytochrome A			1	NC_003070.9	3095160	3100819	minus	6		
+3702	Arabidopsis thaliana	834133	0	live	GL3	AT5G41315, GLABRA 3, GLABROUS 3, MYC6.2	basic helix-loop-helix (bHLH) DNA-binding superfamily protein			5	NC_003076.8	16529090	16533287	plus	7		
+3702	Arabidopsis thaliana	818581	0	live	COI1	AT2G39940, CORONATINE INSENSITIVE 1, T28M21.10, T28M21_10	RNI-like superfamily protein			2	NC_003071.7	16672493	16675864	minus	3		
+3702	Arabidopsis thaliana	818903	0	live	PIF4	AT2G43010, AtPIF4, MFL8.13, MFL8_13, SRL2, phytochrome interacting factor 4	phytochrome interacting factor 4			2	NC_003071.7	17886101	17889087	plus	6		
+3702	Arabidopsis thaliana	822519	0	live	ABCB19	AT3G28860, ATABCB19, ATMDR1, ATMDR11, ATP BINDING CASSETTE SUBFAMILY B19, ATP binding cassette subfamily B19, ATP-binding cassette B19, ATPGP19, Arabidopsis thaliana ATP-binding cassette B19, MDR1, MDR11, MULTIDRUG RESISTANCE PROTEIN 11, P-GLYCOPROTEIN 19, PGP19	ATP binding cassette subfamily B19			3	NC_003074.8	10870005	10877578	minus	10		
+3702	Arabidopsis thaliana	820940	0	live	RR1	AT3G16857, ARR1, response regulator 1	response regulator 1			3	NC_003074.8	5755714	5759443	plus	6		
+3702	Arabidopsis thaliana	817170	0	live	GP ALPHA 1	AT2G26300, ARABIDOPSIS THALIANA G PROTEIN ALPHA SUBUNIT 1, ATGPA1, G PROTEIN ALPHA SUBUNIT, G PROTEIN ALPHA SUBUNIT 1, G protein alpha subunit 1, GPA1, T1D16.6, T1D16_6	G protein alpha subunit 1			2	NC_003071.7	11196996	11201102	plus	14		
+3702	Arabidopsis thaliana	843305	0	live	TCP15	AT1G69690, AtTCP15, T6C23.11, T6C23_11, TEOSINTE BRANCHED1/CYCLOIDEA/PCF 15	TCP family transcription factor			1	NC_003070.9	26216009	26218071	plus	1		
+3702	Arabidopsis thaliana	818265	0	live	ABCB1	AT2G36910, ARABIDOPSIS THALIANA P GLYCOPROTEIN1, ATP binding cassette subfamily B1, ATP-binding cassette B1, ATPGP1, P-GLYCOPROTEIN 1, PGP1, T1J8.9, T1J8_9	ATP binding cassette subfamily B1			2	NC_003071.7	15501726	15507501	plus	10		
+3702	Arabidopsis thaliana	831241	0	live	TT4	AT5G13930, ATCHS, CHALCONE SYNTHASE, CHALCONE/STILBENE SYNTHASE, CHS, MAC12.28, MAC12_28, NARINGENIN-CHALCONE SYNTHASE, TRANSPARENT TESTA 4	Chalcone and stilbene synthase family protein			5	NC_003076.8	4488476	4490264	plus	2		
+3702	Arabidopsis thaliana	826571	0	live	TT8	AT4G09820, AtTT8, BHLH42, F17A8.170, F17A8_170, TRANSPARENT TESTA 8	basic helix-loop-helix (bHLH) DNA-binding superfamily protein			4	NC_003075.7	6181881	6186523	plus	7		
+3702	Arabidopsis thaliana	819249	0	live	CPC	AT2G46410, CAPRICE, F11C10.10, MYB FAMILY TRANSCRIPTION FACTOR CPC	Homeodomain-like superfamily protein			2	NC_003071.7	19049021	19050369	minus	3		
+3702	Arabidopsis thaliana	828213	0	live	GLB1	AT4G01900, GLNB1 homolog, PII, PII PROTEIN, T7B11.16, T7B11_16	nitrogen regulatory P-II-like protein			4	NC_003075.7	821546	823569	plus	8		
+3702	Arabidopsis thaliana	828022	0	live	ANL2	AT4G00730, AHDP, ANTHOCYANINLESS 2, ARABIDOPSIS THALIANA HOMEODOMAIN PROTEIN, F6N23.10, F6N23_10, HOMEODOMAIN PROTEIN AHDP	Homeobox-leucine zipper family protein / lipid-binding START domain-containing protein			4	NC_003075.7	299261	304612	minus	9		
+3702	Arabidopsis thaliana	825075	0	live	PIL6	AT3G59060, PHYTOCHROME-INTERACTING FACTOR 5, PIF5, phytochrome interacting factor 3-like 6	phytochrome interacting factor 3-like 6			3	NC_003074.8	21827905	21830837	minus	6		
+3702	Arabidopsis thaliana	817056	0	live	RR12	AT2G25180, ARR12, AtARR12, F13D4.140, F13D4_140, response regulator 12	response regulator 12			2	NC_003071.7	10724301	10727272	minus	6		
+3702	Arabidopsis thaliana	829322	0	live	RR10	AT4G31920, ARR10, F11C18.3, response regulator 10	response regulator 10			4	NC_003075.7	15444053	15447042	minus	6		
+3702	Arabidopsis thaliana	834291	0	live	DFR	AT5G42800, DIHYDROFLAVONOL 4-REDUCTASE, DIHYDROKAEMPFEROL 4-REDUCTASE, M318, MJB21.18, MJB21_18, TT3, dihydroflavonol 4-reductase	dihydroflavonol 4-reductase			5	NC_003076.8	17164093	17166032	minus	6		
+3702	Arabidopsis thaliana	835489	0	live	UF3GT	AT5G54060, MJP23.2, MJP23_2, UDP-glucose:flavonoid 3-o-glucosyltransferase, UDP-glucosyl transferase 79B1, UGT79B1	UDP-glucose:flavonoid 3-o-glucosyltransferase			5	NC_003076.8	21936746	21938396	minus	1		
+3702	Arabidopsis thaliana	831586	0	live	GSTF12	AT5G17220, ARABIDOPSIS THALIANA GLUTATHIONE S-TRANSFERASE PHI 12, ATGSTF12, GLUTATHIONE S-TRANSFERASE 26, GST26, MKP11.22, MKP11_22, TRANSPARENT TESTA 19, TT19, glutathione S-transferase phi 12	glutathione S-transferase phi 12			5	NC_003076.8	5658416	5659661	plus	3		
+3702	Arabidopsis thaliana	821710	0	live	UGT84A2	AT3G21560, BRT1, Bright Trichomes 1, MIL23.13, UDP-glucosyl transferase 84A2	UDP-Glycosyltransferase superfamily protein			3	NC_003074.8	7595680	7597607	plus	1		
+3702	Arabidopsis thaliana	828896	0	live	BGLU10	AT4G27830, AtBGLU10, T27E11.70, T27E11_70, beta glucosidase 10	beta glucosidase 10			4	NC_003075.7	13861649	13864659	minus	13		
+3702	Arabidopsis thaliana	828387	0	live	LDOX	AT4G22880, ANS, ANTHOCYANIDIN SYNTHASE, F7H19.60, F7H19_60, LEUCOANTHOCYANIDIN DIOXYGENASE, TANNIN DEFICIENT SEED 4, TDS4, TT18, leucoanthocyanidin dioxygenase	leucoanthocyanidin dioxygenase			4	NC_003075.7	12004726	12006209	minus	3		
+3702	Arabidopsis thaliana	842957	0	live	MYB90	AT1G66390, ATMYB90, PAP2, PRODUCTION OF ANTHOCYANIN PIGMENT 2, T27F4.14, T27F4_14, myb domain protein 90	myb domain protein 90			1	NC_003070.9	24763941	24765541	plus	3		
+3702	Arabidopsis thaliana	814828	0	live	RNS1	AT2G02990, ATRNS1, RIBONUCLEASE 1, T17M13.16, T17M13_16, ribonuclease 1	ribonuclease 1			2	NC_003071.7	873506	874886	plus	4		
+3702	Arabidopsis thaliana	825286	0	live	FUS6	AT3G61140, ARABIDOPSIS THALIANA FUSCA 6, ATFUS6, ATSK31, AtCSN1, CONSTITUTIVE PHOTOMORPHOGENIC 11, COP11, COP9 SIGNALOSOME SUBUNIT 1, CSN1, EMB78, EMBRYO DEFECTIVE 78, FUSCA 6, SHAGGY-LIKE KINASE 31, SK31	COP9 signalosome complex subunit 1			3	NC_003074.8	22626167	22630141	plus	7		
+3702	Arabidopsis thaliana	834719	0	live	MYC3	AT5G46760, MZA15.18, MZA15_18	Basic helix-loop-helix (bHLH) DNA-binding family protein			5	NC_003076.8	18974022	18976590	plus	1		
+3702	Arabidopsis thaliana	820600	0	live	RHD3	AT3G13870, GOLGI MUTANT 8, GOM8, ROOT HAIR DEFECTIVE 3	Root hair defective 3 GTP-binding protein (RHD3)			3	NC_003074.8	4565370	4571355	minus	23		
+3702	Arabidopsis thaliana	837365	0	live	CRT3	AT1G08450, A. thaliana calreticulin 3, AtCRT3, CALRETICULIN 3, EBS2, EMS-MUTAGENIZED BRI1 SUPPRESSOR 2, PRIORITY IN SWEET LIFE 1, PSL1, T27G7.13, T27G7_13, calreticulin 3	calreticulin 3			1	NC_003070.9	2667798	2671957	minus	14		
+3702	Arabidopsis thaliana	842955	0	live	MYB113	AT1G66370, AtMYB113, T27F4.12, T27F4_12, myb domain protein 113	myb domain protein 113			1	NC_003070.9	24753589	24754761	plus	3		
+3702	Arabidopsis thaliana	827046	0	live	AT4G14090	AT4G14090, DL3090C, FCAALL.84	UDP-Glycosyltransferase superfamily protein			4	NC_003075.7	8122188	8123835	minus	1		
+3702	Arabidopsis thaliana	827511	0	live	MYC4	AT4G17880, T6K21.60, T6K21_60	Basic helix-loop-helix (bHLH) DNA-binding family protein			4	NC_003075.7	9933326	9935685	minus	1		
+3702	Arabidopsis thaliana	832379	0	live	HUA2	AT5G23150, ENHANCER OF AG-4 2, MYJ24.14, MYJ24_14	Tudor/PWWP/MBT domain-containing protein			5	NC_003076.8	7785743	7792991	plus	11		
+3702	Arabidopsis thaliana	843443	0	live	MYBL2	AT1G71030, ARABIDOPSIS MYB-LIKE 2, ATMYBL2, F23N20.2, F23N20_2, MYB-like 2	MYB-like 2			1	NC_003070.9	26795052	26796532	minus	3		
+3702	Arabidopsis thaliana	843462	0	live	EBS1	AT1G71220, EMS-mutagenized bri1 suppressor 1, F3I17.13, F3I17_13, PRIORITY IN SWEET LIFE 2, PSL2, UDP-GLUCOSE:GLYCOPROTEIN GLUCOSYLTRANSFERASE, UGGT	EMS-MUTAGENIZED BRI1 SUPPRESSOR 1			1	NC_003070.9	26841550	26851959	plus	37		
+3702	Arabidopsis thaliana	842760	0	live	RPN12a	AT1G64520, F1N19.9, F1N19_9, regulatory particle non-ATPase 12A	regulatory particle non-ATPase 12A			1	NC_003070.9	23956269	23958461	plus	6		
+3702	Arabidopsis thaliana	829779	0	live	FAH1	AT4G36220, CYP84A1, CYTOCHROME P450 84A1, F23E13.110, F23E13_110, FERULATE-5-HYDROXYLASE, ferulic acid 5-hydroxylase 1	ferulic acid 5-hydroxylase 1			4	NC_003075.7	17137313	17139777	minus	3		
+3702	Arabidopsis thaliana	821027	0	live	HYH	AT3G17609, HY5-homolog	HY5-homolog			3	NC_003074.8	6023844	6024710	plus	3		
+3702	Arabidopsis thaliana	842956	0	live	MYB114	AT1G66380, AtMYB114, T27F4.13, T27F4_13, myb domain protein 114	myb domain protein 114			1	NC_003070.9	24757298	24758953	plus	3		
+3702	Arabidopsis thaliana	816623	0	live	PSB29	AT2G20890, F5H14.14, F5H14_14, THF1, THYLAKOID FORMATION1, photosystem II reaction center PSB29 protein	photosystem II reaction center PSB29 protein			2	NC_003071.7	8987584	8989416	plus	5		
+3702	Arabidopsis thaliana	831213	0	live	ABO1	AT5G13680, ABA-OVERLY SENSITIVE 1, AtELP1, ELO2, ELONGATA 2, MSH12.15, MSH12_15	IKI3 family protein			5	NC_003076.8	4410314	4415622	minus	5		
+3702	Arabidopsis thaliana	819359	0	live	MYB12	AT2G47460, ATMYB12, MYB DOMAIN PROTEIN 12, PFG1, PRODUCTION OF FLAVONOL GLYCOSIDES 1, T30B22.24, myb domain protein 12	myb domain protein 12			2	NC_003071.7	19476326	19479597	plus	3		
+3702	Arabidopsis thaliana	843842	0	live	PR5	AT1G75040, PATHOGENESIS-RELATED PROTEIN 5, PR-5, pathogenesis-related gene 5	pathogenesis-related protein 5			1	NC_003070.9	28177670	28179022	plus	2		
+3702	Arabidopsis thaliana	817698	0	live	GUN1	AT2G31400, T28P16.11, T28P16_11, genomes uncoupled 1	s uncoupled 1			2	NC_003071.7	13386954	13390854	minus	4		
+3702	Arabidopsis thaliana	843519	0	live	SUC1	AT1G71880, ARABIDOPSIS THALIANA SUCROSE-PROTON SYMPORTER 1, ATSUC1, F17M19.3, F17M19_3, SUCROSE-H+ SYMPORTER, sucrose-proton symporter 1	sucrose-proton symporter 1			1	NC_003070.9	27054030	27056464	plus	3		
+3702	Arabidopsis thaliana	817208	0	live	TED4	AT2G26670, ARABIDOPSIS THALIANA HEME OXYGENASE 1, ATHO1, F18A8.4, F18A8_4, GENOMES UNCOUPLED 2, GUN2, HEME OXYGENASE, HEME OXYGENASE 1, HEME OXYGENASE 6, HO1, HY1, HY6, PLASTID HEME OXYGENASE, REVERSAL OF THE DET PHENOTYPE 4	Plant heme oxygenase (decyclizing) family protein			2	NC_003071.7	11341548	11343693	plus	3		
+3702	Arabidopsis thaliana	832968	0	live	AN3	AT5G28640, ANGUSTIFOLIA 3, ARABIDOPSIS GRF1-INTERACTING FACTOR 1, ATGIF1, F4I4.20, F4I4_20, GIF, GIF1, GRF1-INTERACTING FACTOR, GRF1-INTERACTING FACTOR 1	SSXT family protein			5	NC_003076.8	10647467	10650066	minus	4		
+3702	Arabidopsis thaliana	837849	0	live	ATAN11	AT1G12910, ANTHOCYANIN11, F13K23.16, F13K23_16, LIGHT-REGULATED WD 1, LWD1	Transducin/WD40 repeat-like superfamily protein			1	NC_003070.9	4394897	4396291	minus	1		
+3702	Arabidopsis thaliana	842669	0	live	EGL3	AT1G63650, ATMYC-2, AtEGL3, EGL1, ENHANCER OF GLABRA 3, F24D7.16, F24D7_16	basic helix-loop-helix (bHLH) DNA-binding superfamily protein			1	NC_003070.9	23599413	23603164	plus	8		
+3702	Arabidopsis thaliana	830471	0	live	UGT76C2	AT5G05860, MJJ3.28, MJJ3_28, UDP-glucosyl transferase 76C2	UDP-glucosyl transferase 76C2			5	NC_003076.8	1765390	1767510	plus	2		
+3702	Arabidopsis thaliana	820292	0	live	ELO1	AT3G11220, ELONGATA 1	Paxneb protein-like protein			3	NC_003074.8	3513350	3516447	minus	9		
+3702	Arabidopsis thaliana	828851	0	live	CIP7	AT4G27430, COP1-interacting protein 7, F27G19.30, F27G19_30	COP1-interacting protein 7			4	NC_003075.7	13718007	13723461	plus	9		
+3702	Arabidopsis thaliana	844196	0	live	LZF1	AT1G78600, B-box domain protein 22, BBX22, DBB3, DOUBLE B-BOX 3, SALT TOLERANCE HOMOLOG 3, STH3, T30F21.7, T30F21_7, light-regulated zinc finger protein 1	light-regulated zinc finger protein 1			1	NC_003070.9	29566863	29568931	plus	4		
+3702	Arabidopsis thaliana	817382	0	live	ARF10	AT2G28350, T1B3.13, T1B3_13, auxin response factor 10	auxin response factor 10			2	NC_003071.7	12113889	12116957	plus	4		
+3702	Arabidopsis thaliana	837610	0	live	ACLA-1	AT1G10670, ATP-citrate lyase A-1, F20B24.11, F20B24_11	ATP-citrate lyase A-1			1	NC_003070.9	3535288	3538439	plus	14		
+3702	Arabidopsis thaliana	822473	0	live	AT3G28430	AT3G28430, GFS9, TRANSPARENT TESTA 9, TT9, green fluorescent seed 9	CLEC16A-like protein			3	NC_003074.8	10656979	10662772	minus	21		
+3702	Arabidopsis thaliana	839559	0	live	NLA	AT1G02860, BAH1, BENZOIC ACID HYPERSENSITIVE 1, F22D16.14, F22D16_14, nitrogen limitation adaptation	SPX (SYG1/Pho81/XPR1) domain-containing protein			1	NC_003070.9	635144	637262	plus	6		
+3702	Arabidopsis thaliana	826600	0	live	ELP6	AT4G10090, F28M11.10, F28M11_10, elongator protein 6	elongator protein 6			4	NC_003075.7	6305320	6307552	plus	5		
+3702	Arabidopsis thaliana	818902	0	live	NAC042	AT2G43000, ANAC042, F23E6.1, F23E6_1, JUB1, JUNGBRUNNEN 1, NAC domain containing protein 42, anac042	NAC domain containing protein 42			2	NC_003071.7	17880457	17882636	minus	3		
+3702	Arabidopsis thaliana	825072	0	live	TT12	AT3G59030, A. THALIANA TRANSPARENT TESTA, ATTT12, TRANSPARENT TESTA 12	MATE efflux family protein			3	NC_003074.8	21819040	21821440	plus	8		
+3702	Arabidopsis thaliana	822159	0	live	BHLH32	AT3G25710, ATAIG1, TARGET OF MONOPTEROS 5, TMO5, basic helix-loop-helix 32	basic helix-loop-helix 32			3	NC_003074.8	9369499	9371487	plus	2		
+3702	Arabidopsis thaliana	820117	0	live	RVE8	AT3G09600, AT3G09610, LCL5, LHY-CCA1-LIKE5, REVEILLE 8	Homeodomain-like superfamily protein			3	NC_003074.8	2946239	2949017	plus	8		
+3702	Arabidopsis thaliana	837403	0	live	MYB60	AT1G08810, AtMYB60, F22O13.30, F22O13_30, myb domain protein 60	myb domain protein 60			1	NC_003070.9	2819065	2820478	minus	3		
+3702	Arabidopsis thaliana	830765	0	live	FLS1	AT5G08640, ATFLS1, FLAVONOL SYNTHASE, FLS, T2K12.5, flavonol synthase 1	flavonol synthase 1			5	NC_003076.8	2803833	2805606	plus	4		
+3702	Arabidopsis thaliana	831147	0	live	WRKY75	AT5G13080, ARABIDOPSIS THALIANA WRKY DNA-BINDING PROTEIN 75, ATWRKY75, T19L5.40, T19L5_40, WRKY DNA-binding protein 75	WRKY DNA-binding protein 75			5	NC_003076.8	4149738	4151201	minus	2		
+3702	Arabidopsis thaliana	822623	0	live	AT5MAT	AT3G29590	HXXXD-type acyl-transferase family protein			3	NC_003074.8	11398592	11400332	minus	1		
+3702	Arabidopsis thaliana	3768181	0	live	MIR160a	AT2G39175, FOC, MICRORNA 160, MIR160, MIR160A, floral organs in carpels, microRNA160A, p_MI0000190	ncRNA			2	NC_003071.7	16340279	16340363	plus	1		
+3702	Arabidopsis thaliana	816830	0	live	SNG1	AT2G22990, MALATE SINAPOYLTRANSFERASE, SCPL8, SERINE CARBOXYPEPTIDASE-LIKE 8, T20K9.18, sinapoylglucose 1	sinapoylglucose 1			2	NC_003071.7	9786087	9790335	plus	14		
+3702	Arabidopsis thaliana	818820	0	live	SPL9	AT2G42200, AtSPL9, T24P15.11, T24P15_11, squamosa promoter binding protein-like 9	squamosa promoter binding protein-like 9			2	NC_003071.7	17587169	17589671	plus	3		
+29760	Vitis vinifera	100233099	0	live	UFGT	VIT_00024419001, AlUFGT1, AlUFGT2, FlUFGT1, FlUFGT2, ITUFGT1, ITUFGT2, RUUFGT1, RUUFGT2, VVGT1	anthocyanidin 3-O-glucosyltransferase 2	anthocyanidin 3-O-glucosyltransferase 2|3-O-glucsyltransferase|UDP glucose:flavonoid 3-o-glucosyltransferase|UDP-glucose flavonoid 3-O-glucosyltransferase|UDP-glucose:flavonoid 3-O-glucosyltransferas|UDP-glucose:flavonoid 3-O-gluocsyltransferase|UDP-glucose:flavonoid 3-O-gucoslyltransferase|VITISV_008354|flavonol 3-O-glucosyltransferase		16	NC_012022.3	2333144	2334712	minus	2		
+3702	Arabidopsis thaliana	817695	0	live	AT2G31370	AT2G31370, PosF21, T28P16.14, T28P16_14	Basic-leucine zipper (bZIP) transcription factor family protein			2	NC_003071.7	13378929	13381761	plus	6		
+3702	Arabidopsis thaliana	843337	0	live	AT1G70000	AT1G70000, F20P5.26, F20P5_26	myb-like transcription factor family protein			1	NC_003070.9	26362979	26364878	minus	4		
+3702	Arabidopsis thaliana	831568	0	live	UGT78D2	AT5G17050, F2K13.200, F2K13_200, UDP-glucosyl transferase 78D2	UDP-glucosyl transferase 78D2			5	NC_003076.8	5607788	5609589	minus	2		
+3702	Arabidopsis thaliana	836244	0	live	ANK6	AT5G61230, MAF19.22, MAF19_22, PIA2, ankyrin repeat protein 6, phytochrome interacting ankyrin-repeat protein 2	Ankyrin repeat family protein			5	NC_003076.8	24627187	24628968	plus	2		
+3702	Arabidopsis thaliana	828669	0	live	DTX35	AT4G25640, ATDTX35, FFT, FLOWER FLAVONOID TRANSPORTER, L73G19.20, L73G19_20, detoxifying efflux carrier 35	detoxifying efflux carrier 35			4	NC_003075.7	13076444	13079256	minus	8		
+4577	Zea mays	100101514	0	live	C1	C1-B73, C1-I, c1-I-2K1	myb-related protein c1-I-2K1	anthocyanin regulatory C1 protein									
+3702	Arabidopsis thaliana	836538	0	live	AT5G64170	AT5G64170, LNK1, MHJ24.1, MHJ24_1, night light-inducible and clock-regulated 1	dentin sialophosphoprotein-like protein			5	NC_003076.8	25672466	25676823	minus	8		
+3702	Arabidopsis thaliana	820179	0	live	DFC	AT3G10160, A. THALIANA DHFS-FPGS HOMOLOG C, ATDFC, DHFS-FPGS homolog C, FPGS2, folylpolyglutamate synthetase 2	DHFS-FPGS homolog C			3	NC_003074.8	3139383	3144615	minus	17		
+3702	Arabidopsis thaliana	3771452	0	live	MIR160c	AT5G46845, MICRORNA 160, MIR160, MIR160C, microRNA160C, p_MI0000192	ncRNA			5	NC_003076.8	19009094	19009182	minus	1		
+3702	Arabidopsis thaliana	3770127	0	live	MIR160b	AT4G17788, MICRORNA 160, MIR160, MIR160B, microRNA160B, p_MI0000191	ncRNA			4	NC_003075.7	9888982	9889070	plus	1		
+3702	Arabidopsis thaliana	841218	0	live	MYB112	AT1G48000, AtMYB112, T2J15.9, T2J15_9, TRANSCRIPTION FACTOR MYB112, myb domain protein 112	myb domain protein 112			1	NC_003070.9	17704132	17706460	minus	3		
+3702	Arabidopsis thaliana	816831	0	live	scpl10	AT2G23000, F21P24.6, F21P24_6, serine carboxypeptidase-like 10	serine carboxypeptidase-like 10			2	NC_003071.7	9792166	9796408	plus	15		
+3750	Malus domestica	103444678	0	live	MYB1		transcription factor MYB86-like	transcription factor MYB86-like|MYB domain class transcription factor|Myb transcription factor|transcription factor MYB1		1	NC_024239.1	28936914	28939687	plus	2		
+4577	Zea mays	542540	0	live	lpa1	ZEAMMB73_Zm00001d028180, GRMZM2G155242, INO1	low phytic acid 1	inositol-3-phosphate synthase|IPS|MI-1-P synthase|MIP synthase|biosynthetic enzyme|low phytic acid1|myo-inositol 1-phosphate synthase|myo-inositol phosphate synthase		1	NC_024459.2	25632868	25636485	plus	10		
+3760	Prunus persica	18875493	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (Amygdalus persica; Persica vulgaris; Prunus persica var densa; peach).										
+4577	Zea mays	542352	0	live	prp4	ZEAMMB73_Zm00001d018738, GRMZM2G465226, PR-1	pathogenesis related protein 4	pathogenesis related protein 4|PR1|pathogeneis protein 1|pathogenesis related protein-1|pathogenesis-related protein class I		7	NC_024465.2	3653592	3654276	plus	1		
+3702	Arabidopsis thaliana	838256	0	live	AT1G16850	AT1G16850, F17F16.17	transmembrane protein			1	NC_003070.9	5764807	5765798	minus	2		
+3702	Arabidopsis thaliana	822646	0	live	AT3G29680	AT3G29680	HXXXD-type acyl-transferase family protein			3	NC_003074.8	11531353	11533028	minus	1		
+4577	Zea mays	541743	0	live	LOC541743	ZEAMMB73_Zm00001d043611, GRMZM2G167829	myb-related protein Zm38-like	anthocyanin regulatory C1 protein-like|myb-related protein Zm38-like|R2R3MYB-domain protein		3	NC_024461.2	205136838	205138713	minus	3		
+28532	Tarenaya hassleriana	104800992	0	live	LOC104800992		transcription factor GAMYB-like	anthocyanin regulatory C1 protein-like|transcription factor GAMYB-like		Un							
+3555	Beta vulgaris subsp. vulgaris	22579896	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (Beta vulgaris Sugar Beet Group; Beta vulgaris subsp. vulgaris var. altissima; Beta vulgaris var. altissima; Beta vulgaris var. saccharifera; Swiss chard; field beet; garden beet; spinach chard; sugar beet; table beet).										
+29760	Vitis vinifera	7318371	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (Vitis vinifera subsp. vinifera; wine grape).										
+4530	Oryza sativa	3974662	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (red rice; rice).										
+29760	Vitis vinifera	100233087	0	live	LOC100233087	VIT_00031715001, CCOAMT, CCOAOMT	caffeoyl-CoA O-methyltransferase	caffeoyl-CoA O-methyltransferase|Trans-caffeoyl-CoA 3-O-methyltransferase		3	NC_012009.3	3733899	3735219	minus	5		
+3880	Medicago truncatula	11438181	0	live	MTR_4g115970	MTR_4g115970	vacuolar H+-translocating inorganic pyrophosphatase			4	NC_016410.2	47932606	47937854	plus	9		
+29760	Vitis vinifera	100232976	0	live	GST4	VIT_00035256001	glutathione S-transferase	glutathione S-transferase		4	NC_012010.3	11505149	11507244	minus	3		
+29760	Vitis vinifera	100233098	0	live	LOC100233098	VIT_00022659001, MybA3, VVMYBA1, VvmybA3, mybA, mybA1	transcription factor MYB90	transcription factor MYB90|R2R3 MYB transcription factor|myb-related transcription factor VvMYBA1|myb-related transcription factor VvMYBA3|transcription factor MYBA1|transcription factor MYBA3|transcription factor MybA	2	2	NC_012008.3	14239789	14240887	minus	3		
+4081	Solanum lycopersicum	101254527	0	live	LOC101254527	AH, SlAN1	bHLH transcription factor AH	basic helix-loop-helix protein A|truncated basic helix-loop-helix protein A		9	NC_015446.2	62949153	62957153	plus	10		
+4565	Triticum aestivum	100873144	0	live	LOC100873144		R2R3-MYB protein										
+4558	Sorghum bicolor	8081981	0	live	SORBIDRAFT_04g035790	SORBIDRAFT_04g035790, Sb04g035790	hypothetical protein			4	NC_012873.1	65666480	65667886	minus	1		
+4558	Sorghum bicolor	8080894	0	live	SORBIDRAFT_07g004730	SORBIDRAFT_07g004730, Sb07g004730	hypothetical protein			7	NC_012876.1	6270751	6274903	plus	2		
+4558	Sorghum bicolor	8079337	0	live	SORBIDRAFT_10g023070	SORBIDRAFT_10g023070, Sb10g023070	hypothetical protein			10	NC_012879.1	51433898	51435376	minus	1		
+4558	Sorghum bicolor	8076027	0	live	SORBIDRAFT_04g031730	SORBIDRAFT_04g031730, Sb04g031730	hypothetical protein			4	NC_012873.1	61667040	61668067	plus	1		
+4558	Sorghum bicolor	8065052	0	live	SORBIDRAFT_10g023120	SORBIDRAFT_10g023120, Sb10g023120	hypothetical protein			10	NC_012879.1	51494209	51495750	minus	1		
+4558	Sorghum bicolor	8060574	0	live	SORBIDRAFT_07g025600	SORBIDRAFT_07g025600, Sb07g025600	hypothetical protein			7	NC_012876.1	60695634	60699440	plus	11		
+4558	Sorghum bicolor	8058996	0	live	SORBIDRAFT_02g029720	SORBIDRAFT_02g029720, Sb02g029720	hypothetical protein			2	NC_012871.1	64805142	64808928	minus	11		
+29760	Vitis vinifera	100853472	0	live	LOC100853472	MybA1, MybA3, VvmybA3, mybA	transcription factor MYB113-like	transcription factor MYB113-like|MYB-like protein|myb-related transcription factor VvMYBA3|transcription factor MYBA3|transcription factor MybA		2	NC_012008.3	14308523	14309283	minus	3		
+3711	Brassica rapa	103865111	0	live	LOC103865111		myb-related protein Myb4	myb-related protein Myb4		A4	NC_024798.1	14022388	14023972	minus	3		
+3750	Malus domestica	103436897	0	live	LOC103436897	BHLH2	transcription factor MYC2	transcription factor MYC2|BHLH domain class transcription factor		6	NC_024244.1	4122647	4125286	minus	1		
+3760	Prunus persica	18793268	0	live	LOC18793268	Peace	transcription repressor MYB6	transcription repressor MYB6|R2R3 Myb transcription factor		G1	NC_034009.1	35635448	35636845	minus	3		
+3760	Prunus persica	18785045	0	live	LOC18785045	UFGT	anthocyanidin 3-O-glucosyltransferase 2	anthocyanidin 3-O-glucosyltransferase 2		G2	NC_034010.1	30032857	30034639	plus	2		
+81972	Arabidopsis lyrata subsp. lyrata	9323095	0	live	ARALYDRAFT_475739	ARALYDRAFT_475739	hypothetical protein			Unknown							
+4081	Solanum lycopersicum	101255305	0	live	LOC101255305		transcription factor MYB48-like	transcription factor MYB48-like		6	NC_015443.2	47019110	47020683	minus	3		
+4558	Sorghum bicolor	8077322	0	live	SORBIDRAFT_10g006700	SORBIDRAFT_10g006700, Sb10g006700	hypothetical protein			10	NC_012879.1	6330484	6331579	plus	3		
+4558	Sorghum bicolor	8070731	0	live	SORBIDRAFT_10g003150	SORBIDRAFT_10g003150, Sb10g003150	hypothetical protein			10	NC_012879.1	2776984	2778544	minus	3		
+4558	Sorghum bicolor	8058539	0	live	SORBIDRAFT_05g003120	SORBIDRAFT_05g003120, Sb05g003120	hypothetical protein			5	NC_012874.1	3466723	3471180	minus	2		
+3750	Malus domestica	19590976	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (Malus communis; Malus pumila auct.; Malus pumila var. domestica; Malus sylvestris var. domestica; Malus x domestica; Pyrus malus; apple; apple tree; cultivated apple).										
+57918	Fragaria vesca	15042138	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (European strawberry; alpine strawberry; wild strawberry; wood strawberry).										
+4558	Sorghum bicolor	8094954	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (Andropogon sorghum; Sorghum bicolor milo; Sorghum bicolor subsp. bicolor; Sorghum nervosum; Sorghum saccharatum; Sorghum vulgare; Sorghum_bicolor; broomcorn; milo; sorghum).										
+3880	Medicago truncatula	6457018	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (Medicago_truncatula; barrel medic).										
+4081	Solanum lycopersicum	3760026	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (Lycopersicon esculentum; Lycopersicon esculentum var. esculentum; Lycopersicon lycopersicum; Lycopersicum esculentum; Solanum esculentum; Solanum lycopersicon; tomato).										
+39947	Oryza sativa Japonica Group	2829419	0	live	NEWENTRY		Record to support submission of GeneRIFs for a gene not in Gene (Japanese rice; Japonica rice; Oryza sativa (japonica culticar-group); Oryza sativa (japonica cultivar-group); Oryza sativa japonica; Oryza sativa ssp. japonica; Oryza sativa subsp. japonica).										
