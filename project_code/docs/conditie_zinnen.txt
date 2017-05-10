@@ -1,0 +1,46 @@
+The ectopic expression of AtDFR results in increased accumulation of anthocyanins leading to enhanced salinity and drought stress tolerance in B. napus plants.
+Moreover, the transcription level of MdSIZ1 gene was remarkably induced by low temperature and phosphorus deficiency.
+IZ1 overexpression exerted a large positive influence on anthocyanin accumulation and red fruit coloration.
+Taken together, our results suggest that MKK9 plays a role in plant adaptation to low N stress by modulating both anthocyanin accumulation and N status.
+The accumulation of anthocyanin in horticultural crops not only improves their stress tolerances but also their nutritional values.
+Overall, the expression of the anthocyanin biosynthetic genes analysed (PAL1, PAL3, F3H1, DFR1, LDOX2) increased in response to ethephon treatment, as did the expression of the MYB1 transcription factor, which is associated with activation of the phenylpropanoid pathway under stress conditions.
+Oryzanol a trans-ester of ferulic acid functions as antioxidant and it increased along with total phenolic and anthocyanin content in both the varieties under drought stress.
+This gene renders cassava increasingly tolerant to cold and drought stresses but is associated with retarded plant growth, leaf curling, reduced storage root yield, and reduced anthocyanin accumulation in a transcript abundance-dependent manner.
+When these plants were exposed to cold stress, drb2 and drb3 over-accumulated anthocyanin but DRB2ox and DRB3ox did not.
+Along with these inhibitions, a corresponding increase in contents of flavonoid, anthocyanin and proline occurred that provoked oxidative stress tolerance.
+Production of anthocyanins is one of the adaptive responses employed by plants during stress conditions.
+We therefore investigated the role of specific anthocyanins (ACs) and other phenylpropanoids that accumulate in carrot cells cultivated in vitro, focusing on their supposed ability to protect cells from heat stress.
+Ectopic expression of UGT79B2/B3 significantly increased the anthocyanin accumulation, and enhanced the antioxidant activity in coping with abiotic stresses, whereas the ugt79b2/b3 double mutants showed reduced anthocyanin levels.
+pap1 - D/fls1ko double mutant plants that produce substantial amounts of anthocyanin show tolerance to abiotic stress.
+However, pigments which act as antioxidants such as carotenoids, anthocyanins and xanthophylls were increased with IMI stress.
+This work lays the foundation for dissecting the sucrose signaling pathway of PAP1 and contributes to understanding the interplay between sucrose signaling, anthocyanin biosynthesis, and stress responses.
+The expression of AH and anthocyanin accumulation in seedlings was shown to be developmentally regulated and induced by low-temperature stress.
+Drought stress affects anthocyanin accumulation and modification in vegetative and reproductive plant tissues.
+Overexpression of VviPrx31 decreased anthocyanin contents in Petunia hybrida petals under heat stress condition.
+TaPL1 expression was significantly up-regulated by environmental stresses including cold, salt, and light, which are known to induce anthocyanin accumulation.
+Induction of anthocyanin accumulation by osmotic stress was assessed in 360 accessions of Arabidopsis thaliana.
+This study describes the effect of water stress and storage time on the content of anthocyanins and other phenolics in different genotypes of fresh sweet basil (Ocimum basilicum L.).
+We further show that MYB112 expression is up-regulated by salinity and high light stress, environmental parameters that both require the MYB112 TF for anthocyanin accumulation under these stresses.
+In order to identify the specific expression patterns of the five anthocyanin biosynthesis genes and the changes of polyphenols, anthocyanins and flavonoids under low temperature stress.
+Numerous roles have been proposed for anthocyanins induced during abiotic stresses including functioning as ROS scavengers, photoprotectants, and stress signals.
+Anthocyanins are used under cold stress in species with limited freezing tolerance.
+Recently, we reported that flavonoids, a class of specialized metabolites, including flavonols and anthocyanins with strong radical scavenging activity contributed to the mitigation of oxidative and drought stress in Arabidopsis thaliana (Arabidopsis).
+Dioxygenase/anthocyanin synthase have shown upregulation in response to drought stress condition in leaf tissues.
+L-2-aminooxy-3-phenylpropionic acid (AOPP), which is widely used as a PAL inhibitor, inhibited low-intensity light stress-induced flowering and increased PAL activity and anthocyanin content.
+Plants growing in high-light environments during winter often exhibit leaf reddening due to synthesis of anthocyanin pigments, which are thought to alleviate photooxidative stress associated with low-temperature photoinhibition through light attenuation and/or antioxidant activity.
+These plants accumulated more proline and anthocyanin, and displayed enhanced osmotic stress tolerance.
+The accumulation of anthocyanins seems to reduce the damaging effect of the herbicide stress.
+Secondary metabolites like total phenol, flavonoids and anthocyanin pigments also increased in plants under O3 stress.
+Recently, we reported that flavonoids, a class of specialized metabolites, including flavonols and anthocyanins with strong radical scavenging activity contributed to the mitigation of oxidative and drought stress in Arabidopsis thaliana (Arabidopsis).
+We hypothesised that foliar anthocyanins protect basil leaf mesophyll from photo-oxidative stress when chloroplast function is compromised by B toxicity.
+Different abiotic stress conditions induce distinct sets of anthocyanins, indicating that anthocyanins have different biological functions, or that decoration patterns of each anthocyanin are used for unique purposes during stress.
+Plants grown in vertisol produced more flavanols, chlorophyll, anthocyanin, sugar, and protein than those in alfisol under Cd stress.
+A significant accumulation of anthocyanin and flavonoids may be an indicator of stress adaptation of senescing leaves.
+Precise distinction of ripening stages led to stage-specific detection of malic acid and anthocyanin-related transcripts modulated by heat stress.
+However, concentrations of flavonoids, anthocyanin, lignin and wax were higher in T-397, suggesting its relative resistance against applied stress.
+Although catalase activity, anthocyanin, and proline contents increased with the impact of stress.
+Coumaroyl anthocyanins in RR leaf epidermis significantly mitigated the effects of high light stress.
+Its ectopic expression in Arabidopsis (Arabidopsis thaliana) and tomato impaired development and influenced leaf and flower shape, while causing a general stress visible by anthocyanin and malonyldialdehyde accumulation.
+Abiotic stress and light induce anthocyanin accumulation in Arabidopsis.
+Mutants defective in chloroplast development or photosynthesis are liable to accumulate higher levels of anthocyanin in photo-oxidative stress.
+20-fold higher mature miR398b and almost negligible target transcript levels as well as increased anthocyanin content and expression of Cu-stress responsive genes, when subjected to Cu deficiency.
