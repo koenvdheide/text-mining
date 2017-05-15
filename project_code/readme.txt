@@ -3,7 +3,7 @@ Voor deze geweldige code heb je 3 libraries nodig:
 #########LIBRARIES########
 -  pip install retinasdk 
 -  pip install nltk
--  pip install biojava
+-  pip install biopython
 
 
 ###########NOTE#########
