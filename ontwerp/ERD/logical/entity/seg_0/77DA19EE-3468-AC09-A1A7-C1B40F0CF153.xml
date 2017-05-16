@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77DA19EE-3468-AC09-A1A7-C1B40F0CF153" name="Textmatch">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-16 09:57:38 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sentence" id="35D7E718-8FB3-E3FE-EA9F-8A1677E5B7D0">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-16 09:59:40 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="score" id="72B7DD3F-1605-08B4-2BF1-08983DA6F238">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-16 09:59:29 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pubmedid" id="7588B3D8-C7F0-F967-CA76-C3D9217A234F">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-16 10:00:16 UTC</createdTime>
+<generatorID>C2971347-8F0C-56FC-7265-EFB70B37DA74</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>CCB0C706-A12F-35C5-25B5-4DFEC0FC3BB4</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
