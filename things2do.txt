@@ -1,0 +1,6 @@
+Als gematchte zin geen gen bevat wordt er voor nu niks mee gedaan, zou wel moeten
+Bij inzoomen op de sunburst moeten er meer details getoond worden.
+Mooiere html pagina.
+Database maken en invullen.
+Regex beter.
+
