@@ -3,4 +3,7 @@ Bij inzoomen op de sunburst moeten er meer details getoond worden.
 Mooiere html pagina.
 Database maken en invullen.
 Regex beter.
+Orthologen van de genen vinden.
+Meer model zinnen.
+Machine learning gedeelte verbeteren.
 
