@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A7375CD5-63D3-2F07-2433-554D46A4ED10" name="Condition">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E7C78C3-2D46-2C07-3B42-4135C951B51E" name="Organism_genus">
 <createdBy>Koen</createdBy>
-<createdTime>2017-05-16 07:33:32 UTC</createdTime>
+<createdTime>2017-05-18 12:45:44 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
 <item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="type" id="3B30B642-2979-EB5E-87FB-3F523FE387CB">
+<Attribute name="name" id="DBC6DBA4-221F-B065-10F3-BA48C6407029">
 <createdBy>Koen</createdBy>
-<createdTime>2017-05-16 07:33:37 UTC</createdTime>
+<createdTime>2017-05-18 12:45:52 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
 <item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>

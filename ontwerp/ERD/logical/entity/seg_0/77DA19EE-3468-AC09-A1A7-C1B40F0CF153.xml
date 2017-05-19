@@ -23,8 +23,11 @@
 <item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="score" id="72B7DD3F-1605-08B4-2BF1-08983DA6F238">
 <createdBy>Koen</createdBy>
@@ -34,8 +37,12 @@
 <item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,5,4</ownDataTypeParameters>
 </Attribute>
 <Attribute name="pubmedid" id="7588B3D8-C7F0-F967-CA76-C3D9217A234F">
 <createdBy>Koen</createdBy>
@@ -47,7 +54,8 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>CCB0C706-A12F-35C5-25B5-4DFEC0FC3BB4</referedAttribute>
-<use>0</use>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

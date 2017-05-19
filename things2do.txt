@@ -6,4 +6,4 @@ Regex beter.
 Orthologen van de genen vinden.
 Meer model zinnen.
 Machine learning gedeelte verbeteren.
-
+Negatieven toevoegen voor de machine learning (zinnen om te vermijden)
