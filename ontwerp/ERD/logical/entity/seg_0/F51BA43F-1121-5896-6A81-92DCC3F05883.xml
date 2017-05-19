@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pubmedid" id="CCB0C706-A12F-35C5-25B5-4DFEC0FC3BB4">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-15 19:50:50 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="title" id="75BF3A1B-1F03-8074-018C-D5498E3FCEB7">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-15 19:50:48 UTC</createdTime>
@@ -42,18 +54,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>300</dataTypeSize>
 <ownDataTypeParameters>300,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="pubmedid" id="CCB0C706-A12F-35C5-25B5-4DFEC0FC3BB4">
-<createdBy>Koen</createdBy>
-<createdTime>2017-05-15 19:50:50 UTC</createdTime>
-<ownerDesignName>ERD</ownerDesignName>
-<engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

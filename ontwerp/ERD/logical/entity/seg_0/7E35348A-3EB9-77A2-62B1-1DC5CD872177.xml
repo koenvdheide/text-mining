@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="orthologid" id="014FE95B-1843-884B-1AC9-B43C8111114F">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-19 12:42:53 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="name" id="3396823D-A011-5F9D-67FB-5E32828BC2CA">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-16 10:13:36 UTC</createdTime>
@@ -72,4 +84,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ABCBFFB6-1233-8ACA-1E55-7FB0A11C3732" name="Orthologs PK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-19 12:43:42 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>014FE95B-1843-884B-1AC9-B43C8111114F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
