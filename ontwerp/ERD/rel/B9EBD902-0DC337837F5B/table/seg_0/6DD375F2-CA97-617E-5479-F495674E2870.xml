@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6DD375F2-CA97-617E-5479-F495674E2870" name="Textmatch">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>77DA19EE-3468-AC09-A1A7-C1B40F0CF153</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="758853BB-51FA-C3C7-C8C4-898824E35B89">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>8BA18E43-069C-34D1-ADFE-379484BA194F</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sentence" id="C8ED9ABA-2F55-12A9-8897-AC4B88D847AD">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>35D7E718-8FB3-E3FE-EA9F-8A1677E5B7D0</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="score" id="4DD8B88A-5AD7-6C15-A84C-0D8E52911FDF">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>72B7DD3F-1605-08B4-2BF1-08983DA6F238</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,5,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Article_pubmed_id" id="C6A5238F-E1EE-22C4-A8C7-7563D21DF0E7">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>7588B3D8-C7F0-F967-CA76-C3D9217A234F</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="192455FC-9BB1-D40C-32AB-2BD69B0BD438" referredColumn="DC46EC43-DC67-97D8-D576-5839A2466469"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70146996-4ECF-CCD0-C0FA-2235E6BE9960" name="Textmatch_PK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>64DD7EE1-2827-F7C5-3489-4A9FEE0FB75C</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="758853BB-51FA-C3C7-C8C4-898824E35B89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C33524C9-AA80-4348-BAC2-2F8FFDF3B954" name="Textmatch_Article_FK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>C2971347-8F0C-56FC-7265-EFB70B37DA74</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6A5238F-E1EE-22C4-A8C7-7563D21DF0E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

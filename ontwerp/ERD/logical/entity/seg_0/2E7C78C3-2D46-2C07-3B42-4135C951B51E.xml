@@ -4,7 +4,7 @@
 <createdTime>2017-05-18 12:45:44 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,12 +15,24 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="0B300C06-9CE1-45CE-3A0A-90D952646176">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-25 11:40:58 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="name" id="DBC6DBA4-221F-B065-10F3-BA48C6407029">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-18 12:45:52 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -30,4 +42,18 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2EDDF0E9-8EC1-73A1-BD64-297D71DF99F3" name="Organism_genus PK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-25 11:41:06 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0B300C06-9CE1-45CE-3A0A-90D952646176</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

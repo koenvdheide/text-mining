@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="orthologid" id="014FE95B-1843-884B-1AC9-B43C8111114F">
+<Attribute name="ortholog_id" id="014FE95B-1843-884B-1AC9-B43C8111114F">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-19 12:42:53 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
@@ -69,7 +69,7 @@
 <dataTypeSize>400</dataTypeSize>
 <ownDataTypeParameters>400,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="geneid" id="60B8AEA5-0E70-5D10-80EE-E88AEDAAB033">
+<Attribute name="gene_id" id="60B8AEA5-0E70-5D10-80EE-E88AEDAAB033">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-18 13:37:46 UTC</createdTime>
 <generatorID>0A66247A-C4DC-8054-5246-F88886C2F361</generatorID>
@@ -79,6 +79,7 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>33EB89F0-9F07-96EB-0CD7-A785670C8E63</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>

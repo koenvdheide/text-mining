@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4C4DEC5B-16A5-5DD2-9067-652A42930863" containerWithKeyObject="D7BB7834-F589-3B74-A574-96FF5C8616C2" localFKIndex="98F37A59-E509-110F-4A00-680B9BC178CF" name="Orthologs_Gene_FK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>0A66247A-C4DC-8054-5246-F88886C2F361</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5DEEDDB0-E528-EE8F-FCDF-03EC9FB27493</referredTableID>
+<keyObject>909D0C8C-900B-BCF3-4E4D-F4BDBE4AA708</keyObject>
+<referredKeyID>909D0C8C-900B-BCF3-4E4D-F4BDBE4AA708</referredKeyID>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

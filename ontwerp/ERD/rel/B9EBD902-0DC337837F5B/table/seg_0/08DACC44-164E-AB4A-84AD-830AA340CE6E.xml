@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08DACC44-164E-AB4A-84AD-830AA340CE6E" name="OrganismStress">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<ordsAlias>relation_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Organism_taxonomy_id" id="990197AD-7B91-2E47-ABEA-B0401C3C58BE">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F8A5537-CBDE-5331-7BD3-E3876353E72A" referredColumn="463413A1-7C50-7A49-A1A9-BA174A394091"/>
+</associations>
+</Column>
+<Column name="Stress_id" id="97FEB3BB-5758-0FE6-F6CB-7E60AE47EB51">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84F077CA-3387-0147-CAB9-39873155C673" referredColumn="39448776-469A-1761-C35A-47B63C56F805"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B3EA94B-5805-E550-9280-93E790C1A562" name="Relation_11_PK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="990197AD-7B91-2E47-ABEA-B0401C3C58BE"/>
+<colUsage columnID="97FEB3BB-5758-0FE6-F6CB-7E60AE47EB51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1862B2FE-8EA0-4988-E2B2-5ED3DDF3CEC2" name="FK_ASS_2">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>4909A6C7-F9DF-05C7-6699-9F8E61559A00</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="990197AD-7B91-2E47-ABEA-B0401C3C58BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE5B0E38-AF3A-B8A0-39E4-D1E94A25B48E" name="FK_ASS_3">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>4909A6C7-F9DF-05C7-6699-9F8E61559A00</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97FEB3BB-5758-0FE6-F6CB-7E60AE47EB51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

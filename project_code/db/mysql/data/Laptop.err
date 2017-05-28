@@ -1,0 +1,44 @@
+2017-05-25 11:39:40 7020 [Note] Plugin 'FEDERATED' is disabled.
+2017-05-25 11:39:40 7020 [Note] InnoDB: The InnoDB memory heap is disabled
+2017-05-25 11:39:40 7020 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2017-05-25 11:39:40 7020 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2017-05-25 11:39:40 7020 [Note] InnoDB: Not using CPU crc32 instructions
+2017-05-25 11:39:40 7020 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2017-05-25 11:39:40 7020 [Note] InnoDB: Completed initialization of buffer pool
+2017-05-25 11:39:40 7020 [Note] InnoDB: Setting log file C:\Users\Koen\Documents\Bio Informatica jaar 2\Blok 8\WebApp\mysql\data\ib_logfile101 size to 5 MB
+2017-05-25 11:39:41 7020 [Note] InnoDB: Setting log file C:\Users\Koen\Documents\Bio Informatica jaar 2\Blok 8\WebApp\mysql\data\ib_logfile1 size to 5 MB
+2017-05-25 11:39:44 7020 [Note] InnoDB: Renaming log file C:\Users\Koen\Documents\Bio Informatica jaar 2\Blok 8\WebApp\mysql\data\ib_logfile101 to C:\Users\Koen\Documents\Bio Informatica jaar 2\Blok 8\WebApp\mysql\data\ib_logfile0
+2017-05-25 11:39:44 7020 [Warning] InnoDB: New log files created, LSN=1626134
+2017-05-25 11:39:44 7020 [Note] InnoDB: Highest supported file format is Barracuda.
+2017-05-25 11:39:46 7020 [Note] InnoDB: 128 rollback segment(s) are active.
+2017-05-25 11:39:46 7020 [Note] InnoDB: Waiting for purge to start
+2017-05-25 11:39:46 7020 [Note] InnoDB: 5.6.13 started; log sequence number 1626636
+2017-05-25 11:39:46 7020 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 16eeb4ff-412e-11e7-8138-008cfa8a4c04.
+2017-05-25 11:39:47 7020 [Note] Server hostname (bind-address): '*'; port: 3307
+2017-05-25 11:39:47 7020 [Note] IPv6 is available.
+2017-05-25 11:39:47 7020 [Note]   - '::' resolves to '::';
+2017-05-25 11:39:47 7020 [Note] Server socket created on IP: '::'.
+2017-05-25 11:39:49 7020 [Note] Event Scheduler: Loaded 0 events
+2017-05-25 11:39:49 7020 [Note] C:\Users\Koen\Documents\Bio Informatica jaar 2\Blok 8\WebApp/mysql/bin/mysqld_usbwv8.exe: ready for connections.
+Version: '5.6.13'  socket: ''  port: 3307  MySQL Community Server (GPL)
+2017-05-27 10:26:56 5960 [Note] Plugin 'FEDERATED' is disabled.
+2017-05-27 10:27:00 5960 [Note] InnoDB: The InnoDB memory heap is disabled
+2017-05-27 10:27:00 5960 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2017-05-27 10:27:00 5960 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2017-05-27 10:27:00 5960 [Note] InnoDB: Not using CPU crc32 instructions
+2017-05-27 10:27:00 5960 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2017-05-27 10:27:00 5960 [Note] InnoDB: Completed initialization of buffer pool
+2017-05-27 10:27:01 5960 [Note] InnoDB: Highest supported file format is Barracuda.
+2017-05-27 10:27:01 5960 [Note] InnoDB: The log sequence numbers 1626134 and 1626134 in ibdata files do not match the log sequence number 1626646 in the ib_logfiles!
+2017-05-27 10:27:01 5960 [Note] InnoDB: Database was not shutdown normally!
+2017-05-27 10:27:01 5960 [Note] InnoDB: Starting crash recovery.
+2017-05-27 10:27:01 5960 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2017-05-27 10:27:02 5960 [Note] InnoDB: Restoring possible half-written data pages 
+2017-05-27 10:27:02 5960 [Note] InnoDB: from the doublewrite buffer...
+2017-05-27 10:27:03 5960 [Note] InnoDB: 128 rollback segment(s) are active.
+2017-05-27 10:27:03 5960 [Note] InnoDB: Waiting for purge to start
+2017-05-27 10:27:03 5960 [Note] InnoDB: 5.6.13 started; log sequence number 1626646
+2017-05-27 10:27:04 5960 [Note] Server hostname (bind-address): '*'; port: 3307
+2017-05-27 10:27:04 5960 [Note] IPv6 is available.
+2017-05-27 10:27:04 5960 [Note]   - '::' resolves to '::';
+2017-05-27 10:27:04 5960 [Note] Server socket created on IP: '::'.

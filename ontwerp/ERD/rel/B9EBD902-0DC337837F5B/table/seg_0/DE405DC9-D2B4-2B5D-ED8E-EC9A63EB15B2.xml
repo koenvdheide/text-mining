@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE405DC9-D2B4-2B5D-ED8E-EC9A63EB15B2" name="GeneStress">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<ordsAlias>relation_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Stress_id" id="B9DC85ED-664C-7D78-48A6-D082470B7B5B">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A33EC3C-5BEC-8BA8-430E-46D37F4A1327" referredColumn="39448776-469A-1761-C35A-47B63C56F805"/>
+</associations>
+</Column>
+<Column name="Gene_gene_id" id="9ADB8F1D-A828-6D6E-565B-8838AEE8B644">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="109F4613-A52B-B5CD-15AE-C552506C3789" referredColumn="E3F78442-608D-4E76-ACE2-3DE850FCF18B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FB770B7-91F1-6CCA-92A5-F70979C17BE1" name="Relation_12_PK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9DC85ED-664C-7D78-48A6-D082470B7B5B"/>
+<colUsage columnID="9ADB8F1D-A828-6D6E-565B-8838AEE8B644"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68353B4A-1153-35DE-DFBA-D26B04FE7A79" name="FK_ASS_6">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>9070EB0C-0341-5D18-BED9-79CADFC44B5A</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9DC85ED-664C-7D78-48A6-D082470B7B5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8BDB548-26BF-CDB4-F27D-553E0ADA1790" name="FK_ASS_7">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-27 08:41:03 UTC</createdTime>
+<generatorID>9070EB0C-0341-5D18-BED9-79CADFC44B5A</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9ADB8F1D-A828-6D6E-565B-8838AEE8B644"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

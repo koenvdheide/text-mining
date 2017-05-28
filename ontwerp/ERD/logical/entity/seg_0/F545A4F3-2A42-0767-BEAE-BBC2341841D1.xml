@@ -4,7 +4,7 @@
 <createdTime>2017-05-18 12:02:25 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,19 +15,45 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="type" id="87666736-C9DA-D0BA-3A17-AA4CB18F9516">
+<Attribute name="id" id="92CD773C-4080-EED1-4E40-D7764CA236E4">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-25 11:41:10 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="87666736-C9DA-D0BA-3A17-AA4CB18F9516">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-18 12:02:52 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FBF05B30-60E9-69BC-EED2-EC90D2BD0885" name="Gene_category PK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-25 11:41:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>92CD773C-4080-EED1-4E40-D7764CA236E4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

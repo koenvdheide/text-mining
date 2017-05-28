@@ -4,7 +4,7 @@
 <createdTime>2017-05-16 09:57:38 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,12 +15,24 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="8BA18E43-069C-34D1-ADFE-379484BA194F">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-25 11:41:32 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="sentence" id="35D7E718-8FB3-E3FE-EA9F-8A1677E5B7D0">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-16 09:59:40 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -34,7 +46,7 @@
 <createdTime>2017-05-16 09:59:29 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,19 +56,34 @@
 <dataTypeScale>4</dataTypeScale>
 <ownDataTypeParameters>,5,4</ownDataTypeParameters>
 </Attribute>
-<Attribute name="pubmedid" id="7588B3D8-C7F0-F967-CA76-C3D9217A234F">
+<Attribute name="pubmed_id" id="7588B3D8-C7F0-F967-CA76-C3D9217A234F">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-16 10:00:16 UTC</createdTime>
 <generatorID>C2971347-8F0C-56FC-7265-EFB70B37DA74</generatorID>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>CCB0C706-A12F-35C5-25B5-4DFEC0FC3BB4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="64DD7EE1-2827-F7C5-3489-4A9FEE0FB75C" name="Textmatch PK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-25 11:42:15 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8BA18E43-069C-34D1-ADFE-379484BA194F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

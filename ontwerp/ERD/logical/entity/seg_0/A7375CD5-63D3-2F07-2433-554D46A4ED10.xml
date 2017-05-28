@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A7375CD5-63D3-2F07-2433-554D46A4ED10" name="Condition">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A7375CD5-63D3-2F07-2433-554D46A4ED10" name="Stress">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-16 07:33:32 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,12 +15,24 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="type" id="3B30B642-2979-EB5E-87FB-3F523FE387CB">
+<Attribute name="id" id="B953ADDF-A28A-85FC-7638-D98FC5AEBF11">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-25 11:42:35 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="3B30B642-2979-EB5E-87FB-3F523FE387CB">
 <createdBy>Koen</createdBy>
 <createdTime>2017-05-16 07:33:37 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
 <engineerTo>
-<item key="DC86CE0A-9814-619B-6123-455C45EDFD25" value="true"/>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -30,4 +42,18 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E8E53871-EEAD-FF9D-7D65-47857087EBB0" name="Condition PK">
+<createdBy>Koen</createdBy>
+<createdTime>2017-05-25 11:42:55 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="B9EBD902-9A55-8A1B-46A1-0DC337837F5B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B953ADDF-A28A-85FC-7638-D98FC5AEBF11</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
