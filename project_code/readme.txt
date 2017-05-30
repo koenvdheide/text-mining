@@ -1,9 +1,10 @@
-Voor deze geweldige code heb je 3 libraries nodig:
+Voor deze geweldige code heb je 4 libraries nodig:
 
 #########LIBRARIES########
 -  pip install retinasdk 
 -  pip install nltk
 -  pip install biopython
+-  pip install sqlalchemy
 
 
 ###########NOTE#########
