@@ -1,5 +1,15 @@
 # CoTextThen
 
+### What we need to do:
+* inserting the data in the database
+* PYTHON: script to retrieve conditions + organisms + genes and convert this to a JSON (INCLUDING size = x)
+* JAVASCRIPT: script that will execute the above script and uses the JSON to build the sunburst and tree.
+* PYTHON: script that retrieves gene info, organism info or condition info based on the gene name, organism name and condtion name, respectively. 
+* JAVASCRIPT that executes the above code when the user clicks on a certain item in the sunburst/tree to show more information.
+
+
+
+
 ### How it works
 Our application consist of five main parts:
 * PubMed querying ([BioPython](https://github.com/biopython/biopython))
