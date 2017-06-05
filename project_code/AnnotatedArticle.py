@@ -107,3 +107,40 @@ class AnnotatedArticle:
         """
         return self.authors
 
+    def get_conditions(self):
+        """
+        :return: organisms: The conditions found in the article (as Condition objects).
+        """
+        return self.conditions
+
+    def __str__(self):
+        """
+        Override this function to print the content of the object instead of it's reference.
+        Note: Every value is converted to string to be able to print None type values
+        :return: A string containing the content of the object.
+        """
+        new_line = "\n"
+        content = ""
+        content += "id: " + str(self.id) + new_line
+        content += "title: " + str(self.title) + new_line
+        content += "authors: " + str(self.authors) + new_line
+        content += "abstract: " + str(self.abstract) + new_line
+        if self.conditions:
+            content += "conditions: " + \
+                       ", ".join([condition.get_condition() for condition in self.conditions if condition.get_condition is not None]) \
+                       + new_line
+        else:
+            content += "conditions: " + str(None) + new_line
+        if self.genes:
+            content += "genes: " + \
+                       ", ".join([gene.get_gene_name() for gene in self.genes if gene.get_gene_name is not None]) \
+                       + new_line
+        else:
+            content += "genes: " + str(None) + new_line
+        if self.organisms:
+            content += "organisms: " + \
+                       ", ".join([organism.get_scientific_name() for organism in self.organisms if organism.get_scientific_name() is not None]) \
+                       + new_line
+        else:
+            content += "organisms: " + str(None) + new_line
+        return content

@@ -5,6 +5,7 @@ from Organism import Organism
 from ConditionSearcher import ConditionSearcher
 from TextManipulator import TextManipulator
 from AnnotatedArticle import AnnotatedArticle
+output_json = open("output.txt","w")
 
 
 def gather_info(terms, type, search_keyword=""):
@@ -39,8 +40,7 @@ def get_entities(id):
 
 
 def save_in_database(annotated_articles):
-    for article in annotated_articles:
-        print("title: " + article.get_title())
+    """"""
 
 
 def main():
@@ -60,8 +60,13 @@ def main():
             genes, organisms = get_entities(pmid)
             annotated_article = AnnotatedArticle()
             annotated_article.set_all(pmid,title,authors,abstract,conditions,genes,organisms)
-            print(annotated_article)
             annotated_articles.append(annotated_article)
+            if annotated_article.get_organisms():
+                print(annotated_article)
+                #Choose if we want to save them sequentially or afterwards
+
+
+
     save_in_database(annotated_articles)
 
 
