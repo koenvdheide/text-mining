@@ -48,7 +48,6 @@ class NCBISearcher:
         if id_list:
             for ID in id_list:
                 count += 1
-                print(count)
                 handle = Entrez.efetch(db="pubmed", id=ID, rettype="medline", retmode="text")
                 try:
                     article = Medline.parse(handle)
