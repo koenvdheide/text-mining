@@ -52,7 +52,7 @@ class NCBISearcher:
                 try:
                     article = Medline.parse(handle)
                     articles.append(list(article)[0])
-                    if count ==501: #being nice to NCBI
+                    if count == 500: #being nice to NCBI
                         print("pause for 30 seconds")
                         time.sleep(30)
                 except:
@@ -67,21 +67,68 @@ class NCBISearcher:
         """
         This function retrieves NCBI gene entries based on the provided id's.
         :param id_list: A list of NCBI gene id's.
-        :return: A list of dictionaries, in which each dictionary represents one entry. 
+        :return: A list of dictionaries, in which each dictionary represents one gene entry. 
         """
         if id_list:
-            if len(id_list) > 1:
-                handle = Entrez.esummary(db="gene", id=",".join(id_list), retmode="xml")
-            else:
-                handle = Entrez.esummary(db="gene", id=id_list, retmode="xml")
-            record = Entrez.read(handle)
-            handle.close()
+            record = NCBISearcher.get_records_from_id(db = "gene", id_list= id_list)
             genes = [NCBISearcher.add_id(dict(entry),id)
                      for entry in record["DocumentSummarySet"]['DocumentSummary']
                      for id in id_list]
             if len(genes) == 1:
                 return genes[0]
             return genes
+        else:
+            return None
+
+    @staticmethod
+    def fetch_organisms(id_list):
+        """
+        This function retrieves NCBI taxonomy entries based on the provided id's
+        :param id_list: A list of NCBI taxonomy id's.
+        :return: A list of dictionaries, in which each dictionary represents one organism entry. 
+        """
+        if id_list:
+            record = NCBISearcher.get_records_from_id(db = "taxonomy", id_list= id_list)
+            organisms = [dict(entry) for entry in record]
+            if len(organisms) == 1:
+                return organisms[0]
+            return organisms
+        else:
+            return None
+
+
+    @staticmethod
+    def fetch_homologs(id_list):
+        """
+        This function retrieves NCBI homolog entries based on the provided id's.
+        :param id_list: A  list of NCBI homolog id's
+        :return: A list of dictionaries, in which each dictionary represents one homolog entry.
+        """
+        if id_list:
+            record = NCBISearcher.get_records_from_id(db="homologene", id_list=id_list)
+            homologs = [dict(entry) for entry in record[0]['HomoloGeneDataList']]
+            if len(homologs) == 1:
+                return homologs[0]
+            return homologs
+        else:
+            return None
+
+    @staticmethod
+    def get_records_from_id(db, id_list):
+        """
+        This function opens a handle, extracts the records and closes the handle.
+        :param db: The database from which a summary entry has to be retrieved.
+        :param id_list: A list of id's corresponding the provided database.
+        :return: The records. 
+        """
+        if id_list:
+            if len(id_list) > 1:
+                handle = Entrez.esummary(db=db, id=",".join(id_list), retmode="xml")
+            else:
+                handle = Entrez.esummary(db=db, id=id_list, retmode="xml")
+            records = Entrez.read(handle)
+            handle.close()
+            return records
         else:
             return None
 
@@ -97,27 +144,3 @@ class NCBISearcher:
         """
         dict['Id'] = id
         return dict
-
-
-    @staticmethod
-    def fetch_organisms(id_list):
-        """
-        This function retrieves NCBI taxonomy entries based on the provided id's
-        :param id_list: A list of NCBI taxonomy id's.
-        :return: A list of dictionaries, in which each dictionary represents one entry. 
-        """
-        if id_list:
-            if len(id_list) > 1:
-                handle = Entrez.esummary(db="taxonomy", id=",".join(id_list), retmode="xml")
-            else:
-                handle = Entrez.esummary(db="taxonomy", id=id_list, retmode="xml")
-            record = Entrez.read(handle)
-            handle.close()
-            organisms = [dict(entry) for entry in record]
-            if len(organisms) == 1:
-                return organisms[0]
-            return organisms
-        else:
-            return None
-
-

@@ -13,7 +13,6 @@ class TaggedArticle:
         self.id = pmid
         self.annotation = {}
 
-
     def get_id(self):
         """
         :return: The article id.

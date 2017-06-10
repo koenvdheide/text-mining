@@ -62,7 +62,6 @@ class Organism:
         else:
             return None
 
-
     def to_dict(self):
         """
         :return: Dictionary of this Gene object.

@@ -18,6 +18,7 @@ class Gene:
         self.aliases = None
         self.accession = None
         self.id = None
+        self.homologs = None
 
     def load_entry(self, entry):
         """
@@ -30,6 +31,7 @@ class Gene:
         self.aliases = entry.get('OtherAliases',None)
         self.description = entry.get('Description', None)
         self.id = entry.get("Id",None)
+        self.homologs = entry.get("homologs",None)
 
     def get_id(self):
         """
@@ -61,11 +63,16 @@ class Gene:
         """
         return self.aliases
 
+    def get_homologs(self):
+        return self.homologs
+
     def to_dict(self):
         """
         :return: Dictionary of this Gene object.
         """
-        return ({"gene_id": self.get_id(),"name":self.get_gene_name(), "aliasses":self.get_aliases(),"description":self.get_description(),"location":self.get_location()})
+        return ({"gene_id": self.get_id(),"name":self.get_gene_name(), "aliasses":self.get_aliases(),"description":self.get_description(),"location":self.get_location(),
+                 "Orthologs": self.get_homologs()})
+
 
     def __eq__(self,other):
         if not isinstance(other, Gene):

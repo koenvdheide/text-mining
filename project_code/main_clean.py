@@ -5,6 +5,8 @@ from Tagger import Tagger
 from TextManipulator import TextManipulator
 from Gene import Gene
 from Organism import Organism
+from Bio import Entrez
+Entrez.email = "r.beeloo@outlook.com"
 
 
 def extract_entities(pmid):
@@ -27,23 +29,22 @@ def extract_entities(pmid):
     return genes, organisms
 
 
-def convert_to_object(data,type):
+def convert_to_object(data, type):
     """
     This function creates either a Gene or Organism object and adds extra information from NCBI (if possible). 
     :param data: A gene or species name.
     :param type: The type of the data, this could be Gene or Organism. 
     :return: An Organism of Gene object (depending on the input type). 
     """
-    if type == "Gene":
-        gen = Gene(data)
-        if data is not None:
+    if data is not None:
+        if type == "Gene":
+            gen = Gene(data)
             gen = gather_extra_data(gen,data,"gene")
-        return gen
-    if type == "Species":
-        organism = Organism(data)
-        if data is not None:
+            return gen
+        if type == "Species":
+            organism = Organism(data)
             organism = gather_extra_data(organism,data,"taxonomy")
-        return organism
+            return organism
     return None
 
 
@@ -61,6 +62,10 @@ def gather_extra_data(entity_object, term, database):
         id = ids[0] #we only searched for one
         if database == "gene":
             entry = NCBISearcher.fetch_genes([id])
+            homologs_ids = NCBISearcher.search(term, "homologene",1)
+            if homologs_ids:
+                homologs = NCBISearcher.fetch_homologs(homologs_ids)
+                entry['homologs'] = homologs #add homolog data to NCBI gene entry
         if database == "taxonomy":
             entry = NCBISearcher.fetch_organisms([id])
         if entry:
@@ -73,7 +78,7 @@ def main():
     condition_model = TextManipulator.build_filter_from_file("docs/conditie_zinnen.txt")
     condition_searcher = ConditionSearcher(condition_model, keyword="anthocyanin")
 
-    ids = NCBISearcher.search("anthocyanin","pubmed",100)
+    ids = NCBISearcher.search("anthocyanin","pubmed",1000)
     for id in ids:
         article = NCBISearcher.fetch_articles([id])[0]
         abstract = article.get("AB","?")
