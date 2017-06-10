@@ -89,10 +89,10 @@ def main():
             authors = article.get("AU",None)
             print("condition found: " + str(id))
             genes,organisms = extract_entities(id)
-            anno_article = AnnotatedArticle()
-            anno_article.set_all(id,title,authors,abstract,conditions,genes,organisms)
+            anno_article = AnnotatedArticle(id,title,authors,abstract,conditions,genes,organisms)
             ###ATTENTION KING COHEN II
-            print(anno_article.to_dict())
+
+
 
 
 main()

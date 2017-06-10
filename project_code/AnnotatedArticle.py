@@ -5,21 +5,8 @@ class AnnotatedArticle:
     can be manipulated and retrieved using getters/setters.
     """
 
-    def __init__(self):
-        """
-        This functions initializes all the information entities with None 
-        """
-        self.organisms = None
-        self.genes = None
-        self.id = None
-        self.authors = None
-        self.conditions = None
-        self.abstract = None
-        self.title = None
-
-    def set_all(self,id,title,authors,abstract,conditions,genes,organisms):
-        """
-        This method can be used to "set" all the data entities at once
+    def __init__(self,id, title, authors,abstract, conditions, genes, organisms ):
+        """ 
         :param id: The PubMed identifier (id) for the article. 
         :param title: The title of the abstract.
         :param authors: The authors of the article.
