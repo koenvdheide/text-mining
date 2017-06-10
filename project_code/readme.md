@@ -12,7 +12,7 @@
 * [BioPython](https://github.com/biopython/biopython)
 *  [nltk](https://github.com/nltk/nltk) 
 * [RetinaSDK](https://github.com/cortical-io/retina-sdk.py) 
-* [BioC](https://github.com/2mh/PyBioC) 
+* [BioC](https://github.com/2mh/PyBioC) (download this one from github ```pip install https://github.com/2mh/PyBioC.git)```
 
 For nltk to work properly the following code should be executed to download the "english" data:
 ```python
