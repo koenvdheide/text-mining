@@ -8,6 +8,18 @@
 * JAVASCRIPT that executes the above code when the user clicks on a certain item in the sunburst/tree to show more information.
 
 
+### What you need:
+* [BioPython](https://github.com/biopython/biopython)
+*  [nltk](https://github.com/nltk/nltk) 
+* [RetinaSDK](https://github.com/cortical-io/retina-sdk.py) 
+* [BioC](https://github.com/2mh/PyBioC) 
+
+For nltk to work properly the following code should be executed to download the "enlgish"data:
+```python
+import nltk
+nltk.download()
+```
+
 
 
 ### How it works
