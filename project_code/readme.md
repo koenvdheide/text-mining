@@ -14,7 +14,7 @@
 * [RetinaSDK](https://github.com/cortical-io/retina-sdk.py) 
 * [BioC](https://github.com/2mh/PyBioC) 
 
-For nltk to work properly the following code should be executed to download the "enlgish"data:
+For nltk to work properly the following code should be executed to download the "english" data:
 ```python
 import nltk
 nltk.download()
