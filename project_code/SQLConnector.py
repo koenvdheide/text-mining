@@ -36,11 +36,10 @@ class SQLConnector:
         :param database: 
         """
         engine_argument = sqldialect + "+" + driver + "://" + username + ":" + password + "@" + host + ":" + port + "/" + database
-        self.engine = create_engine(engine_argument, echo=False)  # mogelijk text encoding nog toevoegen
+        self.engine = create_engine(engine_argument, echo=True)  # mogelijk text encoding nog toevoegen
 
         self.Base = automap_base()
         self.Base.prepare(self.engine, reflect=True)
-
 
     def get_tables_as_classes(self):
         """
@@ -65,9 +64,34 @@ class SQLConnector:
         table_class = self.get_table_class(table_name)
         return table_class(**values)
 
+    def check_data(self, session, table_name, value):
+        table = self.get_table_class(table_name)
+        print(value)
+        if value is None:  # empty insert
+            return None
+        else:
+            instance = session.query(table).filter_by(value)
+            if instance:  # insert already exists
+                return instance
+            else:  # insert is new data
+                return False
+
+    # https://stackoverflow.com/questions/2546207/does-sqlalchemy-have-an-equivalent-of-djangos-get-or-create
+    def get_or_create(self, session, table_name, **values):
+        instance = session.query(table_name).filter_by(**values).first()
+        if instance:
+            return instance
+        else:
+            instance = table_name(**values)
+            session.add(instance)
+            session.commit()
+            return instance
 
 # k = SQLConnector()
-# insertoo = k.insertion(table_name='stress',values={'id':6,'name':"PHUCK"})
+# insertoo = k.insertion(table_name='organism', values={'taxonomy_id': 2,
+#                                                       'name': 'hoi',
+#                                                       'common_name': 'hallo'
+#                                                       ,'organism_genus':k.insertion(table_name='organism_genus',values={'id':2,'name':'HELP'})})
 # sessiono = k.get_session()
 # sessiono.add(insertoo)
 # sessiono.commit()
@@ -91,7 +115,7 @@ class SQLConnector:
 #                               'gene_category': k.insertion(table_name='gene_category',
 #                                                            values={'id': 9, 'name': 'ricardo'})})
 #
-#sessiono = k.get_session()
+# sessiono = k.get_session()
 # sessiono.add(inserto)
 # sessiono.commit()
 #

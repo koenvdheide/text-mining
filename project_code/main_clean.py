@@ -75,24 +75,81 @@ def gather_extra_data(entity_object, term, database):
     return entity_object
 
 
-def insert_article(article_data):
-    genus_id = 0
-    textmatch_id = 0
-    stress_id = 0
-    gene_category_id = 0
+# AL DEZE SHIT NOG IN EIGEN CLASS INCLUSIEF GLOBALE VARIABELEN
+GENUS_ID = 1
 
+
+def insert_article(annotation_data):
     sqlconnection = SQLConnector(database="test")  # LET OP DATABASE NAAM
     session = sqlconnection.get_session()
-    for organism_dict in article_data['Organism']:
-        genus_name = organism_dict.pop('genus')
-        sqlconnection.insertion(table_name='organism', values=organism_dict)
 
+    organisms_data = annotation_data['Organism']
+    gene_data = annotation_data['Gene']
+    article_data = annotation_data['Article']
+    textmatch_data = annotation_data['Condition']
 
+    global GENUS_ID
 
-        # insert = sqlconnection.insertion()
+    for organism in organisms_data:  # organisms without genes
+        genus_present = sqlconnection.check_data(session, 'organism_genus', str(organism['genus']))
+        organism_present = sqlconnection.check_data(session, 'organism', int(organism['taxonomy_id']))
 
-        # session.add(insert)
-        # session.commit()
+        if genus_present == False:
+            genus_insert = sqlconnection.insertion(table_name='organism_genus',
+                                                   values={'id': GENUS_ID, 'name': str(organism['genus'])})
+            if organism_present == False:
+                organism_insert = sqlconnection.insertion(table_name='organism',
+                                                          values={'taxonomy_id': int(organism['taxonomy_id']),
+                                                                  'name': str(organism['name']),
+                                                                  'common_name': str(organism['common_name']),
+                                                                  'organism_genus': genus_insert})
+            elif organism_present:
+                print("HELP")
+
+            elif organism_present == None:
+                print("Empty organism data found")
+
+        elif genus_present:
+            if organism_present == False:
+                organism_insert = sqlconnection.insertion(table_name='organism',
+                                                          values={'taxonomy_id': int(organism['taxonomy_id']),
+                                                                  'name': str(organism['name']),
+                                                                  'common_name': str(organism['common_name']),
+                                                                  'organism_genus': genus_present})
+            elif organism_present:
+                print("HELP")
+
+            elif organism_present == None:
+                print("Empty organism data found")
+
+        elif genus_present == None:
+            print("Empty genus data found")
+
+        session.add(organism_insert)
+        GENUS_ID = genus_insert.id + 1
+
+    # for gene in gene_data:
+    #     gene_insert = sqlconnection.insertion(table_name='gene',
+    #                                           values={'gene_id': int(gene['gene_id']), 'name': str(gene['name']),
+    #                                                   'location': str(gene['location']),
+    #                                                   'aliases': str(gene['aliasses']),
+    #                                                   'description': str(gene['description'])})
+    #     session.add(gene_insert)
+    #
+    # article_insert = sqlconnection.insertion(table_name='article', values={'pubmed_id': int(article_data['pubmed_id']),
+    #                                                                        'authors': str(article_data['authors']),
+    #                                                                        'title': str(article_data['title'])})
+    #
+    # session.add(article_insert)
+
+    # stress_insert = sqlconnection.insertion(table_name='stress',values={'name':textmatch_data['name']})
+    # session.add(stress_insert)
+    #
+    # textmatch_insert = sqlconnection.insertion(table_name='textmatch',values={})
+    # session.add(textmatch_insert)
+
+    session.commit()
+
 
 
 def main():
@@ -111,8 +168,8 @@ def main():
             print("condition found: " + str(id))
             genes, organisms = extract_entities(id)
             anno_article = AnnotatedArticle(id, title, authors, abstract, conditions, genes, organisms)
+            # print(anno_article.to_dict())
             insert_article(anno_article.to_dict())
 
 
 main()
-
