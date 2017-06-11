@@ -75,8 +75,7 @@ def gather_extra_data(entity_object, term, database):
 
 def insert_article(article_data):
     sqlconnection = SQLConnector(database="test") #LET OP DATABASE NAAM
-    for organism in article_data['Organism']:
-        print(organism)
+    print(article_data)
 
     # insert = sqlconnection.insertion()
     # session = sqlconnection.get_session()
@@ -99,8 +98,7 @@ def main():
             authors = article.get("AU",None)
             #print("condition found: " + str(id))
             genes,organisms = extract_entities(id)
-            anno_article = AnnotatedArticle()
-            anno_article.set_all(id,title,authors,abstract,conditions,genes,organisms)
+            anno_article = AnnotatedArticle(id, title, authors, abstract, conditions, genes, organisms)
             insert_article(anno_article.to_dict())
 
 
