@@ -7,6 +7,7 @@ from Gene import Gene
 from Organism import Organism
 from SQLConnector import SQLConnector
 from Bio import Entrez
+
 Entrez.email = "r.beeloo@outlook.com"
 
 
@@ -23,10 +24,10 @@ def extract_entities(pmid):
     if tag_object:
         tag_object = tag_object[0]
         annotation = tag_object.get_annotation()
-        genes = annotation.get("Gene",{None})
+        genes = annotation.get("Gene", {None})
         organisms = annotation.get("Species", {None})
-        genes = [convert_to_object(gene,"Gene")for gene in genes]
-        organisms = [convert_to_object(organism,"Species") for organism in organisms]
+        genes = [convert_to_object(gene, "Gene") for gene in genes]
+        organisms = [convert_to_object(organism, "Species") for organism in organisms]
     return genes, organisms
 
 
@@ -40,11 +41,11 @@ def convert_to_object(data, type):
     if data is not None:
         if type == "Gene":
             gen = Gene(data)
-            gen = gather_extra_data(gen,data,"gene")
+            gen = gather_extra_data(gen, data, "gene")
             return gen
         if type == "Species":
             organism = Organism(data)
-            organism = gather_extra_data(organism,data,"taxonomy")
+            organism = gather_extra_data(organism, data, "taxonomy")
             return organism
     return None
 
@@ -58,49 +59,59 @@ def gather_extra_data(entity_object, term, database):
     :param database: The database that needs to be searched.
     :return: A entity object containing additional information from NCBI (if available)
     """
-    ids = NCBISearcher.search(term,database,1)
+    ids = NCBISearcher.search(term, database, 1)
     if ids:
-        id = ids[0] #we only searched for one
+        id = ids[0]  # we only searched for one
         if database == "gene":
             entry = NCBISearcher.fetch_genes([id])
-            homologs_ids = NCBISearcher.search(term, "homologene",1)
+            homologs_ids = NCBISearcher.search(term, "homologene", 1)
             if homologs_ids:
                 homologs = NCBISearcher.fetch_homologs(homologs_ids)
-                entry['homologs'] = homologs #add homolog data to NCBI gene entry
+                entry['homologs'] = homologs  # add homolog data to NCBI gene entry
         if database == "taxonomy":
             entry = NCBISearcher.fetch_organisms([id])
         if entry:
             entity_object.load_entry(entry)
     return entity_object
 
-def insert_article(article_data):
-    sqlconnection = SQLConnector(database="test") #LET OP DATABASE NAAM
-    print(article_data)
 
-    # insert = sqlconnection.insertion()
-    # session = sqlconnection.get_session()
-    # session.add(insert)
-    # session.commit()
+def insert_article(article_data):
+    genus_id = 0
+    textmatch_id = 0
+    stress_id = 0
+    gene_category_id = 0
+
+    sqlconnection = SQLConnector(database="test")  # LET OP DATABASE NAAM
+    session = sqlconnection.get_session()
+    for organism_dict in article_data['Organism']:
+        genus_name = organism_dict.pop('genus')
+        sqlconnection.insertion(table_name='organism', values=organism_dict)
+
+
+
+        # insert = sqlconnection.insertion()
+
+        # session.add(insert)
+        # session.commit()
 
 
 def main():
     condition_model = TextManipulator.build_filter_from_file("docs/conditie_zinnen.txt")
     condition_searcher = ConditionSearcher(condition_model, keyword="anthocyanin")
 
-    ids = NCBISearcher.search("anthocyanin","pubmed",1000)
+    ids = NCBISearcher.search("anthocyanin", "pubmed", 1000)
     for id in ids:
         article = NCBISearcher.fetch_articles([id])[0]
-        abstract = article.get("AB","?")
+        abstract = article.get("AB", "?")
         conditions = condition_searcher.search(abstract)
         if conditions:
-            id = article.get("PMID",None)
-            title = article.get("TI",None)
-            authors = article.get("AU",None)
+            id = article.get("PMID", None)
+            title = article.get("TI", None)
+            authors = article.get("AU", None)
             print("condition found: " + str(id))
-            genes,organisms = extract_entities(id)
-            anno_article = AnnotatedArticle(id,title,authors,abstract,conditions,genes,organisms)
+            genes, organisms = extract_entities(id)
+            anno_article = AnnotatedArticle(id, title, authors, abstract, conditions, genes, organisms)
             insert_article(anno_article.to_dict())
 
 
 main()
-
