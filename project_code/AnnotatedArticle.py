@@ -111,6 +111,8 @@ class AnnotatedArticle:
             "authors":self.get_authors(),
         },
             "Gene": [gene.to_dict() for gene in self.get_genes() if gene],
-            "Organism": [organism.to_dict() for organism in self.get_organisms() if organism]
+            "Organism": [organism.to_dict() for organism in self.get_organisms() if organism],
+            "Condition": [condition.to_dict() for condition in self.get_conditions()]
         }
+
 

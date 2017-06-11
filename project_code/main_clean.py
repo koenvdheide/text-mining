@@ -5,7 +5,6 @@ from Tagger import Tagger
 from TextManipulator import TextManipulator
 from Gene import Gene
 from Organism import Organism
-from SQLConnector import SQLConnector
 from Bio import Entrez
 Entrez.email = "r.beeloo@outlook.com"
 
@@ -73,14 +72,6 @@ def gather_extra_data(entity_object, term, database):
             entity_object.load_entry(entry)
     return entity_object
 
-def insert_article(article_data):
-    sqlconnection = SQLConnector(database="test") #LET OP DATABASE NAAM
-    print(article_data)
-
-    # insert = sqlconnection.insertion()
-    # session = sqlconnection.get_session()
-    # session.add(insert)
-    # session.commit()
 
 
 def main():
@@ -99,7 +90,10 @@ def main():
             print("condition found: " + str(id))
             genes,organisms = extract_entities(id)
             anno_article = AnnotatedArticle(id,title,authors,abstract,conditions,genes,organisms)
-            insert_article(anno_article.to_dict())
+            print(anno_article.to_dict())
+            ###ATTENTION KING COHEN II
+
+
 
 
 main()

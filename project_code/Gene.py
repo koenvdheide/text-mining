@@ -1,3 +1,5 @@
+from Organism import Organism
+
 class Gene:
     """
     This class is a wrapper for all the information regarding genes.
@@ -19,6 +21,7 @@ class Gene:
         self.accession = None
         self.id = None
         self.homologs = None
+        self.organism = None
 
     def load_entry(self, entry):
         """
@@ -30,8 +33,10 @@ class Gene:
             self.location = genomic_info[0].get('ChrLoc',None)
         self.aliases = entry.get('OtherAliases',None)
         self.description = entry.get('Description', None)
-        self.id = entry.get("Id",None)
-        self.homologs = entry.get("homologs",None)
+        self.id = entry.get('Id',None)
+        self.homologs = entry.get('homologs',None)
+        self.organism = entry.get('Organism',None)
+
 
     def get_id(self):
         """
@@ -63,6 +68,15 @@ class Gene:
         """
         return self.aliases
 
+    def get_organism(self):
+        """
+        :return: The organism information as Organism object. 
+        """
+        if self.organism:
+            organism = Organism(self.organism['ScientificName'])
+            organism.load_entry(self.organism)
+        return organism
+
     def get_homologs(self):
         return self.homologs
 
@@ -70,9 +84,9 @@ class Gene:
         """
         :return: Dictionary of this Gene object.
         """
-        return ({"gene_id": self.get_id(),"name":self.get_gene_name(), "aliasses":self.get_aliases(),"description":self.get_description(),"location":self.get_location(),
-                 "Orthologs": self.get_homologs()})
-
+        if self.get_id():
+            return ({"gene_id": self.get_id(),"name":self.get_gene_name(), "aliasses":self.get_aliases(),"description":self.get_description(),"location":self.get_location(),
+                     "Orthologs": self.get_homologs(), "Organism":self.get_organism().to_dict() if self.organism else self.get_organism()})
 
     def __eq__(self,other):
         if not isinstance(other, Gene):
