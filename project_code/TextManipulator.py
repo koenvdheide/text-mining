@@ -11,8 +11,8 @@ API_KEY = "407a69c0-3192-11e7-b22d-93a4ae922ff1"
 CLIENT = retinasdk.little_client = retinasdk.LiteClient(API_KEY)
 
 
-class TextManipulator:
 
+class TextManipulator:
 
     @staticmethod
     def build_filter(sentences):

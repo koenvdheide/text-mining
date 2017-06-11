@@ -96,9 +96,9 @@ def main():
             id = article.get("PMID",None)
             title = article.get("TI",None)
             authors = article.get("AU",None)
-            #print("condition found: " + str(id))
+            print("condition found: " + str(id))
             genes,organisms = extract_entities(id)
-            anno_article = AnnotatedArticle(id, title, authors, abstract, conditions, genes, organisms)
+            anno_article = AnnotatedArticle(id,title,authors,abstract,conditions,genes,organisms)
             insert_article(anno_article.to_dict())
 
 
