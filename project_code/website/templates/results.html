@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <link rel="stylesheet" type="text/css" href="static/css/result_style.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <title>Anthocyanins</title>
+   </head>
+   <body>
+      <div id="wrapper">
+         <div id="content">
+            <iframe  id="diagram" frameBorder="0"></iframe>
+         </div>
+         <div id="sidebar">
+		    <p>
+				<h3> Visualisation options:</h3>
+				<i><b>preferred visualization:</b></i><br>
+				<select class="input" onchange="getVisMethod()" id="visual">
+				   <option >None</option>
+				   <option >Sunburst</option>
+				   <option >Tree</option>
+				</select><br>
+			</p>
+			<hr>
+			<h3> Selection:</h3>
+             <div id="content_div">
+                <div id="table_result">
+                   <p>
+                   <table id = "result_table">
+                      <tr>
+                         <th>Name</th>
+                      </tr>
+                      <tr><td id="name"></td></tr>
+                      <tr>
+                         <th>Summary</th>
+                      </tr>
+                      <tr><td id="summary"></td></tr>
+                      <tr>
+                         <th>PMID's</th>
+                      </tr>
+                      <tr><td id="pubmed"></td></tr>
+                      <tr>
+                         <th>Orthologs</th>
+                      </tr>
+                      <tr><td id="orthologs"></td></tr>
+                   </table>
+                   </p>
+                </div>
+             </div>
+         </div>
+         <div id="cleared"></div>
+      </div>
+      <script>
+		 //show diagram selected by user
+         function getVisMethod() {
+            var e = document.getElementById("visual");
+         	var value = e.options[e.selectedIndex].text;
+         	if (value == "Sunburst") {
+         	    alert("lets go")
+         		 window.frames["diagram"].src ="/sunburst";
+            }	
+         	if (value == "Tree") {
+         		window.frames["diagram"].src ="/tree";
+         	}
+         }
+         $(document).ready(function(){
+    $('#content_div').bind('wheel mousewheel', function(e){
+        var delta;
+
+        if (e.originalEvent.wheelDelta !== undefined)
+            delta = e.originalEvent.wheelDelta;
+        else
+            delta = e.originalEvent.deltaY * -1;
+
+            if(delta > 0) {
+                $("#content_div").css("width", "+=10");
+            }
+            else{
+                $("#content_div").css("width", "-=10");
+            }
+        });
+    });
+      </script>
+   </body>
+</html>
