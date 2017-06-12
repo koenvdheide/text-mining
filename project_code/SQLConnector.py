@@ -81,7 +81,6 @@ class SQLConnector:
         """
         table_class = self.get_table_class(table_name)
         return table_class(**values)
-
     # https://stackoverflow.com/questions/2546207/does-sqlalchemy-have-an-equivalent-of-djangos-get-or-create
     def get_or_create(self, session, table_name, **kwargs):
 
@@ -98,7 +97,7 @@ class SQLConnector:
         pk = inspect(table).identity
         return pk
 
-    def insert_article(self, annotation_data):
+    def insert_article(self, annotation_data):  # FIX DIT NOG DAMN
 
         organisms_data = annotation_data['Organism']
         gene_data = annotation_data['Gene']
@@ -155,7 +154,9 @@ class SQLConnector:
                 print("Empty organism data found: " + str(organism))
 
         for gene in gene_data:
-            if gene and gene['gene_id'] is not None:
+            if gene and gene['gene_id'] is not None and \
+                            self.get_or_create(session=session, table_name='gene', gene_id=int(gene['gene_id']))[
+                                1] is False:
                 gene_check = self.get_or_create(session=session, table_name='gene',
                                                 gene_id=int(gene['gene_id']), name=str(gene['name']),
                                                 location=str(gene['location']),

@@ -83,7 +83,7 @@ def main():
     condition_searcher = ConditionSearcher(condition_model, keyword="anthocyanin")
 
     ids = NCBISearcher.search("anthocyanin", "pubmed", 1000)
-    sqlconnect = SQLConnector(database='afa')
+    sqlconnect = SQLConnector(database='motor')  # LET OP DB NAAM BRO
     for id in ids:
         article = NCBISearcher.fetch_articles([id])[0]
         abstract = article.get("AB", "?")
