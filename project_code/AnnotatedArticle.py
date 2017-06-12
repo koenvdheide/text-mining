@@ -5,7 +5,7 @@ class AnnotatedArticle:
     can be manipulated and retrieved using getters/setters.
     """
 
-    def __init__(self, id, title, authors, abstract, conditions, genes, organisms):
+    def __init__(self,id, title, authors,abstract, conditions, genes, organisms ):
         """ 
         :param id: The PubMed identifier (id) for the article. 
         :param title: The title of the abstract.
@@ -34,7 +34,7 @@ class AnnotatedArticle:
         :param title: The title of the abstract.
         """
 
-    def set_genes(self, genes):
+    def set_genes(self,genes):
         """
         :param genes: The genes found in the article (as Gene objects).
         """
@@ -107,10 +107,12 @@ class AnnotatedArticle:
         """
         return {"Article": {
             "pubmed_id": self.get_id(),
-            "title": self.get_title(),
-            "authors": self.get_authors(),
+            "title":self.get_title(),
+            "authors":self.get_authors(),
         },
-            "Gene": [gene.to_dict() for gene in self.get_genes() if gene],
-            "Organism": [organism.to_dict() for organism in self.get_organisms() if organism],
-            "Condition": [condition.to_dict() for condition in self.get_conditions()]
+            "Gene": set([gene.to_dict() for gene in self.get_genes() if gene]),
+            "Organism": set([organism.to_dict() for organism in self.get_organisms() if organism]),
+            "Condition": set([condition.to_dict() for condition in self.get_conditions()])
         }
+
+
