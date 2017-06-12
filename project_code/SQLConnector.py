@@ -2,7 +2,6 @@ from sqlalchemy import *
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import sessionmaker
 
-
 class ColumnLengthMismatchException(Exception):
     """
 
@@ -81,6 +80,7 @@ class SQLConnector:
         """
         table_class = self.get_table_class(table_name)
         return table_class(**values)
+
     # https://stackoverflow.com/questions/2546207/does-sqlalchemy-have-an-equivalent-of-djangos-get-or-create
     def get_or_create(self, session, table_name, **kwargs):
 
@@ -189,6 +189,22 @@ class SQLConnector:
                     session.add(stress_insert)
                     session.commit()
                     self.stress_id += 1
+
+    def select(self, table_name, column_where):
+        table = self.get_table_class(table_name)
+        session = self.get_session()
+        return session.query(table).filter_by(**column_where)
+
+
+"""
+EXAMPLE CODE HIER
+
+k = SQLConnector()
+for row in k.select('organism', {'common_name': 'cotton'}):
+    print(row.__dict__)
+"""
+
+
 
                     # textmatch_insert = self.get_or_create(table_name='textmatch', values={})
                     # session.add(textmatch_insert)
