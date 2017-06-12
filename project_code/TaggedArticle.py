@@ -41,9 +41,3 @@ class TaggedArticle:
             self.annotation[tag_type] = old
         else:
             self.annotation[tag_type] = set([value])
-
-
-
-
-
-

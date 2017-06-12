@@ -26,7 +26,6 @@ class ConditionSearcher:
         self.cut_off = cut_off
         self.__build_condition_regex()
 
-
     def __build_condition_regex(self):
         """
         This function builds a regex which will match relevant conditions.
@@ -36,7 +35,6 @@ class ConditionSearcher:
         stress_terms = ["stress", "deficiency", "limiting condition", "limiting", "acclimation"]
         rex_parts = r"(?:\s(?:low|high)\s)?(?:\S+\s+and\s)?\S+[ \t]+(?:", ")"
         self.condition_regex = rex_parts[0] + "|".join(stress_terms) + rex_parts[1]
-
 
     def __extract_conditions(self, sentence):
         """
@@ -57,7 +55,6 @@ class ConditionSearcher:
                 condition_list.append(condition)
         return condition_list
 
-
     def __after_filter(self, conditions):
         """
         This function serves as filter after the regex. This choice was made to reduce
@@ -65,12 +62,11 @@ class ConditionSearcher:
         :param conditions: A list of conditions which should be filtered.
         :return: A list of filtered conditions.
         """
-        remove = ["their", "the", "under", "during", "against", "to", "from", "a", "in", "these","of"]
+        remove = ["their", "the", "under", "during", "against", "to", "from", "a", "in", "these", "of"]
         for condition in conditions:
             if len(condition.split()) == 2 and condition.split()[0] in remove:
                 conditions.remove(condition)
         return conditions
-
 
     def __parse_condition(self, combined_condition):
         """
@@ -84,11 +80,10 @@ class ConditionSearcher:
         cond_list = combined_condition.split()
         if len(cond_list) == 4:  # like salt and water stress
             first, second, cond_type = cond_list[0], cond_list[2], cond_list[3]
-            first,second = first + " " + cond_type, second + " " + cond_type
+            first, second = first + " " + cond_type, second + " " + cond_type
         else:
             first, second = combined_condition.split("and")[0], combined_condition.split("and")[1]
         return first, second
-
 
     def search(self, abstract):
         """
@@ -100,7 +95,8 @@ class ConditionSearcher:
             conditions = []
             for sent in sent_tokenize(abstract):
                 if self.keyword in sent:
-                    score = TextManipulator.compare_to_model(sent, self.model)  # returns similarity percentage (decimal)
+                    score = TextManipulator.compare_to_model(sent,
+                                                             self.model)  # returns similarity percentage (decimal)
                     if score > self.cut_off:
                         for condition in self.__extract_conditions(sent):
                             conditions.append(Condition((score, condition, sent)))

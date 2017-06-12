@@ -5,7 +5,7 @@ class Condition:
     and the sentence in which the condition was found.
     """
 
-    def __init__(self,entry):
+    def __init__(self, entry):
         """
         :param entry: A tuple/list containing the score, condition and sentence.
         """
@@ -13,7 +13,7 @@ class Condition:
         self.condition = entry[1]
         self.sentence = entry[2]
 
-    def set_condition(self,condition):
+    def set_condition(self, condition):
         """
         :param condition: The condition 
         """
@@ -25,7 +25,7 @@ class Condition:
         """
         self.score = score
 
-    def set_sentence(self,sentence):
+    def set_sentence(self, sentence):
         """
         :param sentence: The sentence in which the condition was found.
         """
@@ -50,4 +50,4 @@ class Condition:
         return self.sentence
 
     def to_dict(self):
-        return {"name":self.get_condition(),"sentence":self.get_sentence(),"score":self.get_score()}
+        return {"name": self.get_condition(), "sentence": self.get_sentence(), "score": self.get_score()}

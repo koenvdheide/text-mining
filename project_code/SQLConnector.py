@@ -49,6 +49,11 @@ class SQLConnector:
         return self.Base.classes
 
     def get_table_class(self, table_name):
+        """
+        
+        :param table_name: 
+        :return: 
+        """
         tables = self.get_tables_as_classes()
         if table_name in tables:
             return getattr(self.Base.classes, table_name)
@@ -56,23 +61,34 @@ class SQLConnector:
             raise TableNotFoundException("Specified table not found")
 
     def get_session(self):
+        """
+        
+        :return: 
+        """
         Session = sessionmaker(bind=self.engine)
         session = Session()
         return session
 
     def insertion(self, table_name, values):
+        """
+        
+        :param table_name: 
+        :param values: 
+        :return: 
+        """
         table_class = self.get_table_class(table_name)
         return table_class(**values)
 
     # https://stackoverflow.com/questions/2546207/does-sqlalchemy-have-an-equivalent-of-djangos-get-or-create
-    def get_or_create(self, session, table_name, **values):
+    def get_or_create(self, session, table_name, **kwargs):
+
         table = self.get_table_class(table_name)
-        instance = session.query(table).filter_by(**values).first()
+        instance = session.query(table).filter_by(**kwargs).first()
         if instance:
-            return instance,True
+            return instance, True
         else:
-            instance = table(**values)
-            return instance,False
+            instance = table(**kwargs)
+            return instance, False
 
 # k = SQLConnector()
 # insertoo = k.insertion(table_name='organism', values={'taxonomy_id': 2,

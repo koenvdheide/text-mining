@@ -37,9 +37,8 @@ class JSONBuilder:
             res["children"] = lst
         return res
 
-
     @staticmethod
-    def convert_to_JSON(delimited_data, delimiter = ";"):
+    def convert_to_JSON(delimited_data, delimiter=";"):
         """
         This function builds a JSON tree based on string provided. 
         :param delimited_data: A string in which every leaf is separated by a specific delimiter.
@@ -60,5 +59,3 @@ class JSONBuilder:
             res.append(JSONBuilder.__build_leaf(name, leaf))
 
         return json.dumps(res)
-
-

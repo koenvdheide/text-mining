@@ -1,5 +1,6 @@
 from Organism import Organism
 
+
 class Gene:
     """
     This class is a wrapper for all the information regarding genes.
@@ -28,15 +29,14 @@ class Gene:
         This function parses a NCBI gene entry and stores the corresponding information.
         :param Entry: NCBI gene entry.
         """
-        genomic_info = entry.get('GenomicInfo',None)
-        if len(genomic_info) > 0:   #need to check if there is genomic info
-            self.location = genomic_info[0].get('ChrLoc',None)
-        self.aliases = entry.get('OtherAliases',None)
+        genomic_info = entry.get('GenomicInfo', None)
+        if len(genomic_info) > 0:  # need to check if there is genomic info
+            self.location = genomic_info[0].get('ChrLoc', None)
+        self.aliases = entry.get('OtherAliases', None)
         self.description = entry.get('Description', None)
-        self.id = entry.get('Id',None)
-        self.homologs = entry.get('homologs',None)
-        self.organism = entry.get('Organism',None)
-
+        self.id = entry.get('Id', None)
+        self.homologs = entry.get('homologs', None)
+        self.organism = entry.get('Organism', None)
 
     def get_id(self):
         """
@@ -85,21 +85,15 @@ class Gene:
         :return: Dictionary of this Gene object.
         """
         if self.get_id():
-            return ({"gene_id": self.get_id(),"name":self.get_gene_name(), "aliasses":self.get_aliases(),"description":self.get_description(),"location":self.get_location(),
-                     "Orthologs": self.get_homologs(), "Organism":self.get_organism().to_dict() if self.organism else self.get_organism()})
+            return ({"gene_id": self.get_id(), "name": self.get_gene_name(), "aliasses": self.get_aliases(),
+                     "description": self.get_description(), "location": self.get_location(),
+                     "Orthologs": self.get_homologs(),
+                     "Organism": self.get_organism().to_dict() if self.organism else self.get_organism()})
 
-    def __eq__(self,other):
+    def __eq__(self, other):
         if not isinstance(other, Gene):
             return False
         return self.get_gene_name() == other.get_gene_name()
 
     def __hash__(self):
         return hash(self.get_gene_name())
-
-
-
-
-
-
-
-

@@ -7,13 +7,12 @@ Created on Sun May  7 21:01:53 2017
 
 import retinasdk
 import re
+
 API_KEY = "407a69c0-3192-11e7-b22d-93a4ae922ff1"
 CLIENT = retinasdk.little_client = retinasdk.LiteClient(API_KEY)
 
 
-
 class TextManipulator:
-
     @staticmethod
     def build_filter(sentences):
         """
@@ -23,7 +22,7 @@ class TextManipulator:
         """
         sentence_filter = CLIENT.createCategoryFilter(sentences)
         return sentence_filter
-    
+
     @staticmethod
     def build_filter_from_file(file_path):
         """
@@ -34,12 +33,12 @@ class TextManipulator:
         """
         sentences = []
         with open(file_path, 'r') as file:
-            for line in file: 
-                sentences.append(line.replace(".","").lower().strip())
+            for line in file:
+                sentences.append(line.replace(".", "").lower().strip())
         return TextManipulator.build_filter(sentences)
 
     @staticmethod
-    def compare_to_model(sentence,text_filter):
+    def compare_to_model(sentence, text_filter):
         """
         This function compares a sentence with a category filter and
         returns the similarity score. 

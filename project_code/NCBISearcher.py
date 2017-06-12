@@ -2,6 +2,7 @@ import time
 from Bio import Entrez
 from Bio import Medline
 
+
 class NCBISearcher:
     """
     This Class can be used to query the NCBI PubMed, Gene and Taxonomy database.
@@ -34,7 +35,6 @@ class NCBISearcher:
         except Exception:
             print("A server error occured")
 
-
     @staticmethod
     def fetch_articles(id_list):
         """
@@ -52,7 +52,7 @@ class NCBISearcher:
                 try:
                     article = Medline.parse(handle)
                     articles.append(list(article)[0])
-                    if count == 500: #being nice to NCBI
+                    if count == 500:  # being nice to NCBI
                         print("pause for 30 seconds")
                         time.sleep(30)
                 except:
@@ -60,7 +60,6 @@ class NCBISearcher:
             return articles
         else:
             return None
-
 
     @staticmethod
     def fetch_genes(id_list):
@@ -70,8 +69,8 @@ class NCBISearcher:
         :return: A list of dictionaries, in which each dictionary represents one gene entry. 
         """
         if id_list:
-            record = NCBISearcher.get_records_from_id(db = "gene", id_list= id_list)
-            genes = [NCBISearcher.add_id(dict(entry),id)
+            record = NCBISearcher.get_records_from_id(db="gene", id_list=id_list)
+            genes = [NCBISearcher.add_id(dict(entry), id)
                      for entry in record["DocumentSummarySet"]['DocumentSummary']
                      for id in id_list]
             if len(genes) == 1:
@@ -88,14 +87,13 @@ class NCBISearcher:
         :return: A list of dictionaries, in which each dictionary represents one organism entry. 
         """
         if id_list:
-            record = NCBISearcher.get_records_from_id(db = "taxonomy", id_list= id_list)
+            record = NCBISearcher.get_records_from_id(db="taxonomy", id_list=id_list)
             organisms = [dict(entry) for entry in record]
             if len(organisms) == 1:
                 return organisms[0]
             return organisms
         else:
             return None
-
 
     @staticmethod
     def fetch_homologs(id_list):

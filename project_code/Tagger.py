@@ -23,7 +23,7 @@ class Tagger:
         self.concept = "BioConcept"
         self.format = "BioC"
 
-    def change_concept(self,new_concept):
+    def change_concept(self, new_concept):
         """
         This function can be used to change the concept (see __init__)
         :param new_concept: The new concept that should be used.
@@ -37,7 +37,7 @@ class Tagger:
         """
         self.format = new_format
 
-    def tag(self, pmid_list, wanted_tags = ["Gene","Species"]):
+    def tag(self, pmid_list, wanted_tags=["Gene", "Species"]):
         """
         This function tags a set of articles based on the PMID's provided. 
         :param pmid_list: The PMID's of the articles which need to be tagged.
@@ -47,7 +47,7 @@ class Tagger:
         """
         tagged_articles = []
         for pmid in pmid_list:
-            pmid = str(pmid).replace("PMID:","").strip()
+            pmid = str(pmid).replace("PMID:", "").strip()
             document = self.__retrieve_document(pmid)
             if document:
                 tagged_article = TaggedArticle(pmid)
@@ -55,8 +55,7 @@ class Tagger:
                 tagged_articles.append(tagged_article)
         return tagged_articles
 
-
-    def __retrieve_document(self,pmid):
+    def __retrieve_document(self, pmid):
         """
         This function communicates with the PubTator API to retrieve the tagged article.
         :param pmid: The PMID corresponding to the article which needs to be tagged.
@@ -66,13 +65,12 @@ class Tagger:
         try:
             response = urllib.request.urlopen(url).read()
             collection = self.__decode(response)
-            document = collection.documents[0] #index 0 because we only searcher one PMID
+            document = collection.documents[0]  # index 0 because we only searcher one PMID
         except:
             return None
         return document
 
-
-    def __decode(self,response):
+    def __decode(self, response):
         """
         This function decodes the response from the API to a collection from which
         the tag information can be read. 
@@ -83,8 +81,7 @@ class Tagger:
         collection = bioc.loads(response_decoded, ENCODING)
         return collection
 
-
-    def __extract_tags(self,tagged_article, document, wanted_tags):
+    def __extract_tags(self, tagged_article, document, wanted_tags):
         """
         This function extract the words corresponding to the wanted_tags and 
         lemmatizes these, to reduce redundancy. These words are saved in 
@@ -98,13 +95,6 @@ class Tagger:
             tag = anno.infons['type']
             for wanted_tag in wanted_tags:
                 if wanted_tag == tag:
-                    word = LEMMATIZER.lemmatize(anno.text) #e.g. rats --> rat, so to reduce redundancy
+                    word = LEMMATIZER.lemmatize(anno.text)  # e.g. rats --> rat, so to reduce redundancy
                     tagged_article.add_annotation(tag, word)
         return tagged_article
-
-
-
-
-
-
-

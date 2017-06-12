@@ -19,15 +19,14 @@ class Organism:
         self.genus = None
         self.tax_id = None
 
-
     def load_entry(self, entry):
         """
         This function parses a NCBI gene entry and stores the corresponding information.
         :param Entry: NCBI organism entry. 
         """
-        self.scientific_name = entry.get('ScientificName',None)
-        self.common_name = entry.get('CommonName',None)
-        self.tax_id = entry.get('Id',None)
+        self.scientific_name = entry.get('ScientificName', None)
+        self.common_name = entry.get('CommonName', None)
+        self.tax_id = entry.get('Id', None)
 
     def get_scientific_name(self):
         """
@@ -66,9 +65,10 @@ class Organism:
         """
         :return: Dictionary of this Gene object.
         """
-        return {"taxonomy_id":self.get_id(),"name":self.get_scientific_name(),"common_name":self.get_common_name(),"genus":self.get_genus()}
+        return {"taxonomy_id": self.get_id(), "name": self.get_scientific_name(), "common_name": self.get_common_name(),
+                "genus": self.get_genus()}
 
-    def __eq__(self,other):
+    def __eq__(self, other):
         """
         Override this function to be able to extract unique genes from a list.
         preferable based on the scientific name, but if this information isn't 
