@@ -185,25 +185,27 @@ function computeTextRotation(d) {
 function fillTablex(d) {
 	var depth = d.depth;
 	var name = d.name;
-	var column_for_name = 'name'
+	var column_for_name = 'name';
 
 	if (depth == 1) { //organism ring
 		var head = ["tax_id", "name", "common_name"];
 		var need_textbox  = [];
 		var data = get_data('organism',head, name, column_for_name);
+		alert(data);
 		create_table(head,data, need_textbox)
 	}
 	if (depth == 2) { //condition ring
 		var head = ["name", "sentences"];
 		var need_textbox  = ["sentences"];
 		var data = get_data('condition',head, name, column_for_name);
+		alert(data);
 		create_table(head, data, need_textbox)
     }
     if (depth == 3) { //gene ring
 		var head = ["gene_id", "name", "aliases","location", "description"];
 		var need_textbox  = ["aliases","description"];
 		var data = get_data('gene',head, name, column_for_name);
-		alert(data)
+		alert(data);
 		create_table(head,data, need_textbox)
 	}
 }
@@ -229,9 +231,11 @@ function create_table(head, data, need_textbox) {
 }
 
 function get_data(table, values,  name, keyword_column) {
+			var table_dat = [];
 			$.ajax({
 					type: "POST",
 					url: "/data",
+					async: false,
 					data: {
 						keyword: name,
 						table: table,
@@ -240,14 +244,13 @@ function get_data(table, values,  name, keyword_column) {
 					},
 					success: function(data)
 					{
-						alert(data);
-						return ['x','x','x'] //moet return data worden later
+						table_dat = data.table_data;
 					},
 					error: function(xhr, ajaxOptions, thrownError){
 						alert(xhr.responseText);
 					}
 				 });
-			//return false; // avoid actual submit
+			return table_dat;
 		}
 
 

@@ -28,11 +28,17 @@ def tutorial():
 def get_data():
     print('im here')
     print(str(request.form))
-        #table = request.form['table']
-        #keyword = request.form['keyword']
-        #columns = request.form['columns']
-        #keyword_column = request.form['keyword_column']
-    return 'x'
+    table = request.form['table']
+    keyword = request.form['keyword']
+    columns = request.form['columns']
+    keyword_column = request.form['keyword_column']
+    database_data = query_db(table,columns,keyword,keyword_column)
+    return jsonify(table_data = database_data)
+
+def query_db(table,columns,keyword,keyword_column):
+    return ['x','x','x'] #zo moet je dan ff die data in volgorde van de columns retouneren.
+
+
 
 
 if __name__ == '__main__':
