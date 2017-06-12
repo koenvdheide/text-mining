@@ -64,28 +64,15 @@ class SQLConnector:
         table_class = self.get_table_class(table_name)
         return table_class(**values)
 
-    def check_data(self, session, table_name, value):
-        table = self.get_table_class(table_name)
-        print(value)
-        if value is None:  # empty insert
-            return None
-        else:
-            instance = session.query(table).filter_by(value)
-            if instance:  # insert already exists
-                return instance
-            else:  # insert is new data
-                return False
-
     # https://stackoverflow.com/questions/2546207/does-sqlalchemy-have-an-equivalent-of-djangos-get-or-create
     def get_or_create(self, session, table_name, **values):
-        instance = session.query(table_name).filter_by(**values).first()
+        table = self.get_table_class(table_name)
+        instance = session.query(table).filter_by(**values).first()
         if instance:
-            return instance
+            return instance,True
         else:
-            instance = table_name(**values)
-            session.add(instance)
-            session.commit()
-            return instance
+            instance = table(**values)
+            return instance,False
 
 # k = SQLConnector()
 # insertoo = k.insertion(table_name='organism', values={'taxonomy_id': 2,

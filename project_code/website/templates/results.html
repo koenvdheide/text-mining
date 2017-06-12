@@ -16,9 +16,9 @@
          <div id="sidebar">
 		    <p>
 				<h3> Visualisation options:</h3>
-				<i><b>preferred visualization:</b></i><br>
+				<i><b>Preferred visualization:</b></i><br>
 				<select class="input" onchange="getVisMethod()" id="visual">
-				   <option >None</option>
+				   <option selected disabled hidden>Please choose..</option>
 				   <option >Sunburst</option>
 				   <option >Tree</option>
 				</select><br>
@@ -58,7 +58,6 @@
             var e = document.getElementById("visual");
          	var value = e.options[e.selectedIndex].text;
          	if (value == "Sunburst") {
-         	    alert("lets go")
          		 window.frames["diagram"].src ="/sunburst";
             }	
          	if (value == "Tree") {
