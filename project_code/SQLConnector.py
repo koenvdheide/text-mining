@@ -109,7 +109,7 @@ class SQLConnector:
 
         for organism in organisms_data:  # organisms without genes
 
-            if organism['taxonomy_id'] is not None:
+            if organism and organism['taxonomy_id'] is not None:
                 genus_check = self.get_or_create(session=session, table_name='organism_genus',
                                                  id=self.genus_id, name=str(organism['genus']))
                 genus_insert = genus_check[0]
@@ -138,7 +138,7 @@ class SQLConnector:
                                                         taxonomy_id=int(organism['taxonomy_id']),
                                                         name=str(organism['name']),
                                                         common_name=str(organism['common_name']),
-                                                        Organism_genus_id=genus_insert.id)
+                                                        Organism_genus_id=genus_insert.id)  # wordt iedere keer als uniek beschouwd omdat je nieuwe id krigt?
                     organism_insert = organism_check[0]
                     organism_present = organism_check[1]
 
@@ -154,6 +154,43 @@ class SQLConnector:
             else:
                 print("Empty organism data found: " + str(organism))
 
+        for gene in gene_data:
+            if gene and gene['gene_id'] is not None:
+                gene_check = self.get_or_create(session=session, table_name='gene',
+                                                gene_id=int(gene['gene_id']), name=str(gene['name']),
+                                                location=str(gene['location']),
+                                                aliases=str(gene['aliasses']),
+                                                description=str(gene['description']))
+                gene_insert = gene_check[0]
+                gene_present = gene_check[1]
+                if gene_present == False:
+                    session.add(gene_insert)
+                    session.commit()
+        if article_data and article_data['pubmed_id'] is not None:
+            article_check = self.get_or_create(session=session, table_name='article',
+                                               pubmed_id=int(article_data['pubmed_id']),
+                                               authors=str(article_data['authors']),
+                                               title=str(article_data['title']))
+            article_insert = article_check[0]
+            article_present = article_check[1]
+            if article_present == False:
+                session.add(article_insert)
+                session.commit()
+
+        for stress in textmatch_data:
+            if stress and stress['name'] is not None:
+                stress_check = self.get_or_create(session=session, table_name='stress', name=str(stress['name']),
+                                                  id=self.stress_id)
+
+                stress_insert = stress_check[0]
+                stress_present = stress_check[1]
+                if stress_present == False:
+                    session.add(stress_insert)
+                    session.commit()
+                    self.stress_id += 1
+
+                    # textmatch_insert = self.get_or_create(table_name='textmatch', values={})
+                    # session.add(textmatch_insert)
 
 # k = SQLConnector()
 # insertoo = k.insertion(table_name='organism', values={'taxonomy_id': 2,

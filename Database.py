@@ -1,5 +1,6 @@
 import mysql.connector
-DB = 'project'
+
+DB = 'test'
 cnx = mysql.connector.connect(host="127.0.0.1", user="root", password="usbw", db = DB, port=3307)
 cursor = cnx.cursor()
 
