@@ -21,6 +21,8 @@ def extract_entities(pmid):
     """
     tagger = Tagger()
     tag_object = tagger.tag([pmid])
+    genes = []
+    organisms = []
     if tag_object:
         tag_object = tag_object[0]
         annotation = tag_object.get_annotation()
@@ -29,6 +31,7 @@ def extract_entities(pmid):
         genes = [convert_to_object(gene, "Gene") for gene in genes]
         organisms = [convert_to_object(organism, "Species") for organism in organisms]
     return genes, organisms
+
 
 
 def convert_to_object(data, type):
@@ -80,6 +83,7 @@ def main():
     condition_searcher = ConditionSearcher(condition_model, keyword="anthocyanin")
 
     ids = NCBISearcher.search("anthocyanin", "pubmed", 1000)
+    sqlconnect = SQLConnector(database='texts')
     for id in ids:
         article = NCBISearcher.fetch_articles([id])[0]
         abstract = article.get("AB", "?")
@@ -91,8 +95,8 @@ def main():
             print("condition found: " + str(id))
             genes, organisms = extract_entities(id)
             anno_article = AnnotatedArticle(id, title, authors, abstract, conditions, genes, organisms)
-            # print(anno_article.to_dict())
-            # insert_article(anno_article.to_dict())
+
+            sqlconnect.insert_article(anno_article.to_dict())
 
 
 main()

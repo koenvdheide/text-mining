@@ -18,7 +18,10 @@ class TableNotFoundException(Exception):
 
 
 class SQLConnector:
-    # "mysql+mysqlconnector://root:usbw@localhost:3307/test"
+    genus_id = 0
+    stress_id = 0
+    category_id = 0
+    match_id = 0
     """
     
     """
@@ -89,6 +92,68 @@ class SQLConnector:
         else:
             instance = table(**kwargs)
             return instance, False
+
+    def get_primary_key(self, table_name):
+        table = self.get_table_class(table_name)
+        pk = inspect(table).identity
+        return pk
+
+    def insert_article(self, annotation_data):
+
+        organisms_data = annotation_data['Organism']
+        gene_data = annotation_data['Gene']
+        article_data = annotation_data['Article']
+        textmatch_data = annotation_data['Condition']
+
+        session = self.get_session()
+
+        for organism in organisms_data:  # organisms without genes
+
+            if organism['taxonomy_id'] is not None:
+                genus_check = self.get_or_create(session=session, table_name='organism_genus',
+                                                 id=self.genus_id, name=str(organism['genus']))
+                genus_insert = genus_check[0]
+                genus_present = genus_check[1]
+
+                if genus_present == False:
+                    organism_check = self.get_or_create(session=session, table_name='organism',
+                                                        taxonomy_id=int(organism['taxonomy_id']),
+                                                        name=str(organism['name']),
+                                                        common_name=str(organism['common_name']),
+                                                        organism_genus=genus_insert)
+                    organism_insert = organism_check[0]
+                    organism_present = organism_check[1]
+
+                    if organism_present == False:
+                        session.merge(organism_insert)
+                        session.commit()
+                        self.genus_id += 1
+
+                    elif organism_present:
+                        print("genus niet maar organisme wel, wtf m8")
+                        self.genus_id += 1
+
+                elif genus_present:
+                    organism_check = self.get_or_create(session=session, table_name='organism',
+                                                        taxonomy_id=int(organism['taxonomy_id']),
+                                                        name=str(organism['name']),
+                                                        common_name=str(organism['common_name']),
+                                                        Organism_genus_id=genus_insert.id)
+                    organism_insert = organism_check[0]
+                    organism_present = organism_check[1]
+
+                    if organism_present == False:
+                        session.merge(organism_insert)
+                        session.commit()
+
+                    elif organism_present:
+                        print("identieke shizzle gevonden")
+
+                    else:
+                        print("ERROR")
+            else:
+                print("Empty organism data found: " + str(organism))
+
 
 # k = SQLConnector()
 # insertoo = k.insertion(table_name='organism', values={'taxonomy_id': 2,
