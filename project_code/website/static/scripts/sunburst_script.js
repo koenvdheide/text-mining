@@ -10,7 +10,7 @@ var y = d3.scale.linear()
     .range([0, radius]);
 
 var zoom = d3.behavior.zoom()
-    .scaleExtent([1, 10])
+    .scaleExtent([0.1, 10])
     .on("zoom", zoomed);
 
 var svg = d3.select("body").append("svg")
@@ -21,7 +21,8 @@ var svg = d3.select("body").append("svg")
 	.call(zoom);
 
 function zoomed() {
-  svg.attr("transform", "translate(" + width/2 + "," + height * .52 + ")scale(" + d3.event.scale + ")");
+    svg.attr('transform', 'translate(' + (d3.event.translate[0] + width / 2) +
+        ',' + (d3.event.translate[1] + height / 2) + ') scale(' + d3.event.scale + ')');
 }
 
 
@@ -121,9 +122,8 @@ d3.json("/static/data/flare.json", function(error, root) {
 			}
 		});
 	//THIS CODE IS ADDED BY ME, CONDITION CAN BE REMOVED IF EVERY CLICK SHOULD RESULT IN AN ACTION
-	if (d.depth == 3){
-			fillTable(d)
-		}
+		fillTablex(d)
+
 	}
 });
 
@@ -182,28 +182,75 @@ function computeTextRotation(d) {
 
 
 //added javascript to allow table update_table (by RICK BEELOO)
+function fillTablex(d) {
+	var depth = d.depth;
+	var name = d.name;
+	var column_for_name = 'name'
 
-function fillTable(d) {
-	var head = ["name", "summary", "pubmed","orthologs"];
-	//NEED TO ADD SOME SCRIPTING TO RETRIEVE THE DATA FROM THE DATBASE AND PUT THE DATA IN THE DATA ARRAY
-	var data = [d.name,"Dit is een hele mooie samenvatting van het gen","124354,126623","henkjeHetGen"];
-	var need_textbox = ["summary", "pubmed","orthologs"]
-	var length = head.length;
-	for (var i = 0; i < length; i++){
-		if (need_textbox.includes(head[i])) { //NEED TO LOOK IN need_textbox array!
-			parent.document.getElementById(head[i]).innerHTML = "<textarea class=\"output\" rows=\"4\" cols=\"20\">" + data[i] + "</textarea>";
-		}
-		else {
-			if (head[i] == "name") {
-				var gene_link = "https://www.ncbi.nlm.nih.gov/gene/?term=" + data[i] + "+AND+PLANTS%5BORGN%5D";
-				var hyperlink = "<a href=" + gene_link + ">" + data[i] + "</a>";
-				parent.document.getElementById(head[i]).innerHTML = hyperlink;
-			}
-			else {
-				parent.document.getElementById(head[i]).innerHTML = data[i];
-			}
-
-		}
-
+	if (depth == 1) { //organism ring
+		var head = ["tax_id", "name", "common_name"];
+		var need_textbox  = [];
+		var data = get_data('organism',head, name, column_for_name);
+		create_table(head,data, need_textbox)
+	}
+	if (depth == 2) { //condition ring
+		var head = ["name", "sentences"];
+		var need_textbox  = ["sentences"];
+		var data = get_data('condition',head, name, column_for_name);
+		create_table(head, data, need_textbox)
+    }
+    if (depth == 3) { //gene ring
+		var head = ["gene_id", "name", "aliases","location", "description"];
+		var need_textbox  = ["aliases","description"];
+		var data = get_data('gene',head, name, column_for_name);
+		alert(data)
+		create_table(head,data, need_textbox)
 	}
 }
+
+
+function create_table(head, data, need_textbox) {
+  var i=0, rowEl=null,
+	  tableEl = document.createElement("table");
+	  for (i=0; i < head.length; i++) {
+		rowEl = tableEl.insertRow();  // DOM method for creating table rows
+		rowEl.insertCell().innerHTML = "<b>" + head[i] + "</b>";
+		rowE2 = tableEl.insertRow();
+		if (need_textbox.includes(head[i])) {
+			rowE2.insertCell().innerHTML= "<textarea class='output' rows = '4' readonly = 'readonly'>" + data[i] + "</textarea>";
+		}
+		else {
+			rowE2.insertCell().innerHTML= "<input class ='output' type='text' name='fname' readonly='readonly' value=" + data[i] + ">";
+		}
+	  }
+	parent.document.getElementById('table_result').innerHTML = "";
+	var div = parent.document.getElementById('table_result')
+	div.appendChild(tableEl)
+}
+
+function get_data(table, values,  name, keyword_column) {
+			$.ajax({
+					type: "POST",
+					url: "/data",
+					data: {
+						keyword: name,
+						table: table,
+						columns: JSON.stringify(values),
+						keyword_column: keyword_column
+					},
+					success: function(data)
+					{
+						alert(data);
+						return ['x','x','x'] //moet return data worden later
+					},
+					error: function(xhr, ajaxOptions, thrownError){
+						alert(xhr.responseText);
+					}
+				 });
+			//return false; // avoid actual submit
+		}
+
+
+
+
+

@@ -1,12 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 18 11:06:28 2017
-
-@author: Rick
-"""
-from flask import Flask, render_template
+import json
+from flask import Flask, render_template, request
+from flask import Response, jsonify
 app = Flask(__name__)
-
 
 @app.route('/')
 def index():
@@ -28,6 +23,17 @@ def tree():
 @app.route("/tutorial")
 def tutorial():
     return render_template("tutorial.html")
+
+@app.route("/data", methods=['POST', 'GET'])
+def get_data():
+    print('im here')
+    print(str(request.form))
+        #table = request.form['table']
+        #keyword = request.form['keyword']
+        #columns = request.form['columns']
+        #keyword_column = request.form['keyword_column']
+    return 'x'
+
 
 if __name__ == '__main__':
     app.run()

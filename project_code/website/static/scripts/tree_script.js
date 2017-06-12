@@ -569,7 +569,6 @@ treeJSON = d3.json("/static/data/flare.json", function(error, treeData) {
 				else {
 					parent.document.getElementById(head[i]).innerHTML = data[i];
 				}
-				
 			}
 			
 		}
