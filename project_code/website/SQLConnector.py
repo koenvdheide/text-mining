@@ -22,9 +22,6 @@ class SQLConnector:
     stress_id = 0
     category_id = 0
     match_id = 0
-    """
-    
-    """
 
     def __init__(self, sqldialect="mysql", driver="mysqlconnector", username="root", password="usbw", host="localhost",
                  port="3307", database="test"):
@@ -43,6 +40,15 @@ class SQLConnector:
 
         self.Base = automap_base()
         self.Base.prepare(self.engine, reflect=True)
+
+    def text_select(self, table_name, columns, keyword_column, keyword):
+        columns = ",".join(columns)
+        sql = text('select ' + columns + ' from ' + table_name + ' where ' + keyword_column + '=' + keyword)
+        result = self.engine.execute(sql)
+        names = []
+        for row in result:
+            names.append(row[0])
+        return names
 
     def get_tables_as_classes(self):
         """
@@ -197,16 +203,10 @@ class SQLConnector:
         return session.query(table).filter_by(**column_where).first()
 
 
-k = SQLConnector()
-row = k.select_first('organism', {'common_name': 'cotton'})
-row.__dict__.pop('_sa_instance_state')
-print(row.__dict__)
 
 
-
-
-                    # textmatch_insert = self.get_or_create(table_name='textmatch', values={})
-                    # session.add(textmatch_insert)
+        # textmatch_insert = self.get_or_create(table_name='textmatch', values={})
+        # session.add(textmatch_insert)
 
 # k = SQLConnector()
 # insertoo = k.insertion(table_name='organism', values={'taxonomy_id': 2,
