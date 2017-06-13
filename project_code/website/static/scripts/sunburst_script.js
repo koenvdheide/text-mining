@@ -270,9 +270,9 @@ function kut_koen() {
 		id = "PMID";
 		for (i=0; i < 8; i++) {
     		random_numb = Math.floor((Math.random() * 10) + 1);
-    		id += random_numb + "&#13;&#10;";
+    		id += random_numb;
     }
-    ids.push(id)
+    ids.push(id + "&#13;&#10;";)
 	}
 	return ids
 }
