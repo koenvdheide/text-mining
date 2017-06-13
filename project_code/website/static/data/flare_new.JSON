@@ -1,0 +1,700 @@
+{
+  "name": "",
+  "children": [
+    {
+      "name": "Triticum aestivum",
+      "children": [
+        {
+          "name": "(1) stress",
+          "size": 190
+        },
+        {
+          "name": "osmotic stress",
+          "size": 190
+        }
+      ]
+    },
+    {
+      "name": "Malus domestica",
+      "children": [
+        {
+          "name": " low temperature",
+          "size": 150
+        },
+        {
+          "name": "production, stress",
+          "size": 150
+        },
+        {
+          "name": "cytokine stress",
+          "size": 150
+        },
+        {
+          "name": "oxidative stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana",
+      "children": [
+        {
+          "name": "cold acclimation",
+          "children": [
+            {
+              "name": "HY5",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "nitrogen deficiency",
+          "children": [
+            {
+              "name": "GA3",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "Fe deficiency",
+          "children": [
+            {
+              "name": "F3H",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "oxidative stress",
+          "children": [
+            {
+              "name": "mir408",
+              "size": 150
+            },
+            {
+              "name": "DHAR2",
+              "size": 150
+            },
+            {
+              "name": "miR408",
+              "size": 150
+            },
+            {
+              "name": "MDAR2",
+              "size": 150
+            },
+            {
+              "name": "APX6",
+              "size": 150
+            },
+            {
+              "name": "SPL9",
+              "size": 150
+            },
+            {
+              "name": "AtMYBL2",
+              "size": 150
+            },
+            {
+              "name": "TT8",
+              "size": 150
+            },
+            {
+              "name": "ANAC032",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "During stress",
+          "children": [
+            {
+              "name": "SPL9",
+              "size": 150
+            },
+            {
+              "name": "AtMYBL2",
+              "size": 150
+            },
+            {
+              "name": "TT8",
+              "size": 150
+            },
+            {
+              "name": "ANAC032",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "HL stress",
+          "children": [
+            {
+              "name": "SPL9",
+              "size": 150
+            },
+            {
+              "name": "AtMYBL2",
+              "size": 150
+            },
+            {
+              "name": "TT8",
+              "size": 150
+            },
+            {
+              "name": "ANAC032",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "salinity stress",
+          "children": [
+            {
+              "name": "SPL9",
+              "size": 150
+            },
+            {
+              "name": "AtMYBL2",
+              "size": 150
+            },
+            {
+              "name": "TT8",
+              "size": 150
+            },
+            {
+              "name": "ANAC032",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "as stress",
+          "children": [
+            {
+              "name": "GhMYB25",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "UGT85A1",
+              "size": 150
+            },
+            {
+              "name": "ugt76c1",
+              "size": 150
+            },
+            {
+              "name": "CKX7",
+              "size": 150
+            },
+            {
+              "name": "CKX2",
+              "size": 150
+            },
+            {
+              "name": "UGT76C2",
+              "size": 150
+            },
+            {
+              "name": "UGT76C1",
+              "size": 150
+            },
+            {
+              "name": "ugt76c2",
+              "size": 150
+            },
+            {
+              "name": "ugt85a1",
+              "size": 150
+            },
+            {
+              "name": "MYB75",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": " stress",
+          "children": [
+            {
+              "name": "UGT85A1",
+              "size": 150
+            },
+            {
+              "name": "ugt76c1",
+              "size": 150
+            },
+            {
+              "name": "CKX7",
+              "size": 150
+            },
+            {
+              "name": "CKX2",
+              "size": 150
+            },
+            {
+              "name": "UGT76C2",
+              "size": 150
+            },
+            {
+              "name": "UGT76C1",
+              "size": 150
+            },
+            {
+              "name": "ugt76c2",
+              "size": 150
+            },
+            {
+              "name": "ugt85a1",
+              "size": 150
+            },
+            {
+              "name": "MYB75",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "abiotic stress",
+          "children": [
+            {
+              "name": "fls1",
+              "size": 150
+            },
+            {
+              "name": "MYB12",
+              "size": 150
+            },
+            {
+              "name": "MYB112",
+              "size": 150
+            },
+            {
+              "name": "MYB111",
+              "size": 150
+            },
+            {
+              "name": "MYB32",
+              "size": 150
+            },
+            {
+              "name": "MYB7",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "osmotic stress",
+          "children": [
+            {
+              "name": "fls1",
+              "size": 190
+            },
+            {
+              "name": "MYB90",
+              "size": 190
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "Pi deficiency",
+          "children": [
+            {
+              "name": "pho1",
+              "size": 190
+            },
+            {
+              "name": "SPL3",
+              "size": 190
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "JA-Ile deficiency",
+          "children": [
+            {
+              "name": "CYP94B3",
+              "size": 150
+            },
+            {
+              "name": "CYP94C1",
+              "size": 150
+            },
+            {
+              "name": "CYP94B1",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": " high light stress",
+          "children": [
+            {
+              "name": "MYB12",
+              "size": 150
+            },
+            {
+              "name": "MYB112",
+              "size": 150
+            },
+            {
+              "name": "MYB111",
+              "size": 150
+            },
+            {
+              "name": "MYB32",
+              "size": 150
+            },
+            {
+              "name": "MYB7",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "drought stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Daucus carota",
+      "children": [
+        {
+          "name": "factors limiting",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Oryza sativa",
+      "children": [
+        {
+          "name": "drought stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Vitis vinifera",
+      "children": [
+        {
+          "name": "Fe deficiency",
+          "children": [
+            {
+              "name": "AOMT",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "Drought stress",
+          "children": [
+            {
+              "name": "VvCCoAOMT",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "drought stress",
+          "children": [
+            {
+              "name": "VvCCoAOMT",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "heat stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Sorghum bicolor",
+      "children": [
+        {
+          "name": "cold stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Raphanus sativus",
+      "children": [
+        {
+          "name": "(N) deficiency",
+          "size": 150
+        },
+        {
+          "name": "N deficiency",
+          "size": 150
+        },
+        {
+          "name": "chilling stress",
+          "size": 150
+        },
+        {
+          "name": "salt stress",
+          "size": 150
+        },
+        {
+          "name": "abiotic stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Helianthus annuus",
+      "children": [
+        {
+          "name": "respiration stress",
+          "size": 190
+        },
+        {
+          "name": "oxidative stress",
+          "size": 190
+        }
+      ]
+    },
+    {
+      "name": "Zea mays",
+      "children": [
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "CKX1",
+              "size": 150
+            }
+          ],
+          "size": 190
+        },
+        {
+          "name": " stress",
+          "children": [
+            {
+              "name": "CKX1",
+              "size": 150
+            }
+          ],
+          "size": 190
+        }
+      ]
+    },
+    {
+      "name": "Rattus norvegicus",
+      "children": [
+        {
+          "name": "ROS stress",
+          "children": [
+            {
+              "name": "Iba-1",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "oxidative stress",
+          "children": [
+            {
+              "name": "Iba-1",
+              "size": 150
+            }
+          ],
+          "size": 150
+        },
+        {
+          "name": "control stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Brassica juncea",
+      "children": [
+        {
+          "name": "IMI stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Erythranthe lutea",
+      "children": [
+        {
+          "name": "facultative stress",
+          "size": 190
+        },
+        {
+          "name": "potential stress",
+          "size": 190
+        }
+      ]
+    },
+    {
+      "name": "Brassica rapa",
+      "children": [
+        {
+          "name": "processes stress",
+          "size": 190
+        },
+        {
+          "name": "abiotic stress",
+          "size": 190
+        }
+      ]
+    },
+    {
+      "name": "Dipturus trachyderma",
+      "children": [
+        {
+          "name": "estrogen deficiency",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Solanum lycopersicum",
+      "children": [
+        {
+          "name": "abiotic stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Allium cepa",
+      "children": [
+        {
+          "name": "response, stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Solanum tuberosum",
+      "children": [
+        {
+          "name": "response, stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Ferroplasma acidiphilum",
+      "children": [
+        {
+          "name": "heat stress",
+          "children": [
+            {
+              "name": "T1303",
+              "size": 150
+            }
+          ],
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Spodoptera litura",
+      "children": [
+        {
+          "name": "biotic stress",
+          "size": 150
+        },
+        {
+          "name": "abiotic stress",
+          "size": 150
+        },
+        {
+          "name": "(cold stress",
+          "size": 150
+        },
+        {
+          "name": "cold stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Agrobacterium tumefaciens",
+      "children": [
+        {
+          "name": "biotic stress",
+          "size": 150
+        },
+        {
+          "name": "abiotic stress",
+          "size": 150
+        },
+        {
+          "name": "(cold stress",
+          "size": 150
+        },
+        {
+          "name": "cold stress",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": "Arabidopsis",
+      "children": [
+        {
+          "name": "abiotic stress",
+          "size": 150
+        },
+        {
+          "name": "",
+          "size": 150
+        },
+        {
+          "name": " stress",
+          "size": 150
+        },
+        {
+          "name": "oxidative stress",
+          "size": 150
+        },
+        {
+          "name": "drought stress",
+          "size": 150
+        },
+        {
+          "name": "cold acclimation",
+          "size": 150
+        }
+      ]
+    },
+    {
+      "name": ""
+    }
+  ]
+}

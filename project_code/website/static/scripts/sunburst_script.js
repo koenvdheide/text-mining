@@ -46,7 +46,7 @@ var node;
 var currAngle = 0;
 
 
-d3.json("/static/data/flare.json", function(error, root) {
+d3.json("/static/data/flare_new.json", function(error, root) {
   if (error) throw error;
 
   node = root;
@@ -174,12 +174,15 @@ function arcTweenZoom(d) {
 }
 
 function computeTextRotation(d) {
-  //var a = x(d.x + d.dx/2) * 180 / Math.PI - 180;
-  if(!(d.depth-node.depth)) return (x(d.x + d.dx / 2) * 180) / Math.PI - 180;
-  return (x(d.x + d.dx / 2) * 180) / Math.PI - 90;
-  //return a;
+	var ang =0;
+  if(!(d.depth-node.depth)) {
+      ang = (x(d.x + d.dx / 2) * 180) / Math.PI - 180;
+  }
+  else {
+  	ang =  (x(d.x + d.dx / 2) * 180) / Math.PI - 90;
+  }
+  return ang
 }
-
 
 //added javascript to allow table update_table (by RICK BEELOO)
 function fillTablex(d) {

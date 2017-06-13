@@ -39,7 +39,5 @@ def query_db(table,columns,keyword,keyword_column):
     return ['x','x','x'] #zo moet je dan ff die data in volgorde van de columns retouneren.
 
 
-
-
 if __name__ == '__main__':
     app.run()
