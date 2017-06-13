@@ -31,9 +31,15 @@ class JSONBuilder:
         # add children node if the leaf actually has any children
         if len(leaf.keys()) > 0:
             lst = [JSONBuilder.__build_leaf(k, v, depth) for k, v in leaf.items()]
-            if depth >= 2:
+            if depth >= 1:
+                size = len([d for d in lst])
                 for d in lst:
-                    d['size'] = 100
+                    if size == 1:
+                        d['size'] = 150 + 50 #scale for one value
+                    if size == 2:
+                        d['size'] = 150 + 40 # scale for two values
+                    else:
+                        d['size'] = 150  #>2 scale the same
             res["children"] = lst
         return res
 
@@ -59,3 +65,15 @@ class JSONBuilder:
             res.append(JSONBuilder.__build_leaf(name, leaf))
 
         return json.dumps(res)
+
+def main():
+    text = ""
+    with open('output.txt') as f:
+        for line in f:
+            if "Homo" not in line and "Mus" not in line and "Saccharomyces" not in line and "Drosophila" not in line:
+                spl_line = line.split(";")
+                if len(spl_line) < 4 and len(spl_line[1]) <=20:
+                    text += line
+    json = JSONBuilder.convert_to_JSON(text)
+    print(json)
+main()
