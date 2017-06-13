@@ -116,7 +116,7 @@ class SQLConnector:
         pk = inspect(table).identity
         return pk
 
-    #def strip_none(self):
+    # def strip_none(self):
 
 
 

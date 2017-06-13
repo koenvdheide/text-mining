@@ -13,7 +13,7 @@ class Organism:
         This function saves the organism name and stores None in all other entities.
         :param organism_name: The name of the organism
         """
-        self.name = organism_name
+        self.name = str(organism_name)
         self.scientific_name = None
         self.common_name = None
         self.genus = None
@@ -24,8 +24,8 @@ class Organism:
         This function parses a NCBI gene entry and stores the corresponding information.
         :param Entry: NCBI organism entry. 
         """
-        self.scientific_name = entry.get('ScientificName', None)
-        self.common_name = entry.get('CommonName', None)
+        self.scientific_name = str(entry.get('ScientificName', None))
+        self.common_name = str(entry.get('CommonName', None))
         self.tax_id = entry.get('Id', None)
 
     def get_scientific_name(self):

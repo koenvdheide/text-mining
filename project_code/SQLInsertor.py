@@ -2,23 +2,35 @@ import mysql.connector
 
 
 class SQLInsertor:
+    def __init__(self, host="127.0.0.1", user="root", password="usbw", db="test", port=3307):
+        self.host = host
+        self.user = user
+        self.password = password
+        self.db = db
+        self.port = port
 
-    genus_id = 0
-    stress_id = 0
-    category_id = 0
-    match_id = 0
-
-    def __init__(self, host="127.0.0.1", user="root", password="usbw", db='test', port=3307):
+        # self.genus_id = 0
+        # self.stress_id = 0
+        # self.category_id = 0
+        # self.match_id = 0
 
         try:
-            self.cnx = mysql.connector.connect(user, password, host, port, db)
-
+            self.cnx = mysql.connector.connect(host=self.host, user=self.user, password=self.password, db=self.db,
+                                               port=self.port)
             self.cursor = self.cnx.cursor()
         except mysql.connector.Error as error:
             print("Error occured while connecting to SQL database: {}".format(error))
 
+    def select_data(self, columns, table_name, keyword_column, keyword):
+        sql = 'select ' + str(columns).strip('[]').replace('"',
+                                                           '') + ' from ' + table_name + ' where ' + keyword_column + '= %s'
+        print(sql)
+        self.cursor.execute(sql, keyword)
 
-SQLInsertor()
+
+k = SQLInsertor()
+k.select_data('hai', 'help', 'hoi', 'hao')
+
 
 
 

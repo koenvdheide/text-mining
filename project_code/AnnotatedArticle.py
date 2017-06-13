@@ -16,9 +16,9 @@ class AnnotatedArticle:
         :param organisms: The organisms present in the article (as Organism objects).
         """
         self.id = id
-        self.title = title
+        self.title = str(title)
         self.authors = authors
-        self.abstract = abstract
+        self.abstract = str(abstract)
         self.conditions = conditions
         self.genes = genes
         self.organisms = organisms
