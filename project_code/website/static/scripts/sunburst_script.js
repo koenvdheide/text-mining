@@ -195,7 +195,7 @@ function fillTablex(d) {
 		var need_textbox  = [];
 		var data = get_data('organism',head, name, column_for_name);
 
-		create_table(head,data, need_textbox)
+		create_table(name, head,data, need_textbox)
 	}
 	if (depth == 2) { //condition ring
 	//	var head = ["name"];
@@ -205,20 +205,28 @@ function fillTablex(d) {
 	//	create_table(head, data, need_textbox)
     }
     if (depth == 3) { //gene ring
-		var head = ["gene_id", "name", "aliases","location", "description","orthologs_ids"];
+		var head = ["gene_id", "name", "aliases","location", "description"];
 		var need_textbox  = ["aliases","description"];
 		var data = get_data('gene',head, name, column_for_name);
 
-		create_table(head,data, need_textbox)
+		create_table(name, head,data, need_textbox)
 	}
 }
 
 
-function create_table(head, data, need_textbox) {
+function create_table(name, head, data, need_textbox) {
 	head.push("PMID's");
 	data.push(kut_koen());
 	need_textbox.push("PMID's");
-	
+
+	if (head[2] == "aliases") {
+		head.push("Orthologs");
+		var link = "https://www.ncbi.nlm.nih.gov/homologene/?term=" + name;
+		var hyperlink = "<a href=" + link + "> orthologs </a>";
+		data.push(link + name);
+	}
+
+
   var i=0, rowEl=null,
 	  tableEl = document.createElement("table");
 	  for (i=0; i < head.length; i++) {
@@ -229,7 +237,14 @@ function create_table(head, data, need_textbox) {
 			rowE2.insertCell().innerHTML= "<textarea class='output' rows = '4' readonly = 'readonly'>" + data[i] + "</textarea>";
 		}
 		else {
-			rowE2.insertCell().innerHTML= "<input class ='output' type='text' name='fname' readonly='readonly' value=" + data[i] + ">";
+			alert(head[i])
+			if (head[i] == "Orthologs") {
+				rowE2.insertCell().innerHTML=data[i];
+			}
+			else{
+				rowE2.insertCell().innerHTML= "<input class ='output' type='text' name='fname' readonly='readonly' value=" + data[i] + ">";
+
+			}
 		}
 	  }
 	parent.document.getElementById('table_result').innerHTML = "";
@@ -265,7 +280,6 @@ function kut_koen() {
 	ids = [];
 	aantal =10;
 
-
 	for (j=0; j<aantal; j++ ) {
 		id = "PMID";
 		for (i=0; i < 8; i++) {
@@ -275,6 +289,10 @@ function kut_koen() {
     ids.push(id + "&#13;&#10;");
 	}
 	return ids
+}
+
+function kut_koen2() {
+	return "";
 }
 
 
