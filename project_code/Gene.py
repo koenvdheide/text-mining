@@ -6,8 +6,9 @@ class Gene:
     This class is a wrapper for all the information regarding genes.
     A gene name is needed to initialize this Class. Further a NCBI
     gene entry can be added. This entry will be parsed to retrieve
-    the chromosomal location, description and aliases. Which are 
-    subsequently stored in the Gene object. 
+    the chromosomal location, description, orthologs/homologs,
+    gene id and aliases. Which are subsequently stored in the 
+    Gene object. 
     """
 
     def __init__(self, gene_name):
@@ -28,6 +29,9 @@ class Gene:
         """
         This function parses a NCBI gene entry and stores the corresponding information.
         :param Entry: NCBI gene entry.
+        NOTE: This function is purposely separated from the __init__ because the tex-mining
+        algorithm can find genes which do not have annotation in NCBI and this separation
+        will allow the initiation of a Gene object without having to pass a gene entry. 
         """
         genomic_info = entry.get('GenomicInfo', None)
         if len(genomic_info) > 0:  # need to check if there is genomic info
@@ -78,6 +82,9 @@ class Gene:
         return organism
 
     def get_homologs(self):
+        """
+        :return: The homologs as dictionary. 
+        """
         return self.homologs
 
     def to_dict(self):
@@ -89,11 +96,3 @@ class Gene:
                      "description": self.get_description(), "location": self.get_location(),
                      "Orthologs": self.get_homologs(),
                      "Organism": self.get_organism().to_dict() if self.organism else self.get_organism()})
-
-    def __eq__(self, other):
-        if not isinstance(other, Gene):
-            return False
-        return self.get_gene_name() == other.get_gene_name()
-
-    def __hash__(self):
-        return hash(self.get_gene_name())

@@ -1,9 +1,9 @@
 class TaggedArticle:
     """
-    This class stores the annotation found in an PubMed article.
+    This class stores the annotation found in a PubMed article.
     We chose to use a dictionary to store all the annotation over
     the usage of specific annotation getter/setters. Because this
-    dictionary is generic. 
+    dictionary is more generic. 
     """
 
     def __init__(self, pmid):

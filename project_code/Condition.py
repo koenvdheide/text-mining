@@ -39,7 +39,7 @@ class Condition:
 
     def get_score(self):
         """
-        :return: The similarity score belonging tot the condition.
+        :return: The similarity score belonging to the condition.
         """
         return self.score
 
@@ -50,4 +50,9 @@ class Condition:
         return self.sentence
 
     def to_dict(self):
+        """
+        This function stores the Condition information in a dictionary so all the information can be retrieved at 
+        once and easily because of a dictionary structure. 
+        :return: A dioctionary of this Condtion object. 
+        """
         return {"name": self.get_condition(), "sentence": self.get_sentence(), "score": self.get_score()}
