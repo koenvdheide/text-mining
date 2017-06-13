@@ -3,21 +3,17 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import sessionmaker
 
 
-class ColumnLengthMismatchException(Exception):
-    """
-
-    """
-    pass
-
-
 class TableNotFoundException(Exception):
     """
-
+    This exception gets called if an invalid table name is specified for retrieval
     """
     pass
 
 
 class SQLConnector:
+    """
+    This class facilitates all the inserting and selecting done with the database
+    """
     genus_id = 0
     stress_id = 0
     category_id = 0
@@ -27,13 +23,13 @@ class SQLConnector:
                  port="3307", database="motor"):
         """
         
-        :param sqldialect: 
-        :param driver: 
-        :param username: 
-        :param password: 
-        :param host: 
-        :param port: 
-        :param database: 
+        :param sqldialect: the specific SQL implementation that the database runs on(such as mysql)
+        :param driver: the API to use to actually connect with the db
+        :param username: name of the database user
+        :param password: password of the user
+        :param host: name/adress of the host
+        :param port: port to connect through
+        :param database: name of the database
         """
         engine_argument = sqldialect + "+" + driver + "://" + username + ":" + password + "@" + host + ":" + port + "/" + database
         self.engine = create_engine(engine_argument, echo=False)  # mogelijk text encoding nog toevoegen
@@ -42,29 +38,35 @@ class SQLConnector:
         self.Base.prepare(self.engine, reflect=True)
 
     def text_select(self, table_name, columns, keyword_column, keyword):
+        """
+        creates a select statement
+        :param table_name: name of table to select from
+        :param columns: columns to be select for result
+        :param keyword_column: columns to check 
+        :param keyword: keyword to check columns against
+        :return: list of all rows matching the select statement
+        """
 
         sql = text('select ' + str(columns).strip('[]').replace('"',
                                                                 '') + ' from ' + table_name + ' where ' + keyword_column + '=' + '"' + keyword + '"')
-        print(sql)
         result = self.engine.execute(sql)
         results = []
         for row in result:
             results.append(row)
         return results
 
-
     def get_tables_as_classes(self):
         """
-
-        :return: 
+        returns all of the tables from a reflected database
+        :return: all tables present in the database as Table objects
         """
         return self.Base.classes
 
     def get_table_class(self, table_name):
         """
-        
-        :param table_name: 
-        :return: 
+        returns a specific table from a reflected database
+        :param table_name: the name of the table to retrieve
+        :return: the specific table as a Table object
         """
         tables = self.get_tables_as_classes()
         if table_name in tables:
@@ -74,8 +76,8 @@ class SQLConnector:
 
     def get_session(self):
         """
-        
-        :return: 
+        creates a new session for the current database
+        :return: the Session object
         """
         Session = sessionmaker(bind=self.engine)
         session = Session()
@@ -83,16 +85,23 @@ class SQLConnector:
 
     def insertion(self, table_name, values):
         """
-        
-        :param table_name: 
-        :param values: 
-        :return: 
+        creates an insert statement from given table name and values
+        :param table_name: table to insert values into
+        :param values: values to be inserted
+        :return: the insert statement to be committed 
         """
         table_class = self.get_table_class(table_name)
         return table_class(**values)
 
     # https://stackoverflow.com/questions/2546207/does-sqlalchemy-have-an-equivalent-of-djangos-get-or-create
     def get_or_create(self, session, table_name, **kwargs):
+        """
+        checks if given values already exist in a table, if not an insert will be made for these new values
+        :param session: current session
+        :param table_name: table to check
+        :param kwargs: values to check for
+        :return: the instance and a True (if instance was present) or False (if instance is newly created)
+        """
 
         table = self.get_table_class(table_name)
         instance = session.query(table).filter_by(**kwargs).first()
@@ -106,6 +115,10 @@ class SQLConnector:
         table = self.get_table_class(table_name)
         pk = inspect(table).identity
         return pk
+
+    #def strip_none(self):
+
+
 
     def insert_article(self, annotation_data):  # FIX DIT NOG DAMN
 
@@ -199,105 +212,3 @@ class SQLConnector:
                     session.add(stress_insert)
                     session.commit()
                     self.stress_id += 1
-
-    def select_first(self, table_name, column_where):
-        table = self.get_table_class(table_name)
-        session = self.get_session()
-        return session.query(table).filter_by(**column_where).first()
-
-
-
-
-        # textmatch_insert = self.get_or_create(table_name='textmatch', values={})
-        # session.add(textmatch_insert)
-
-# k = SQLConnector()
-# insertoo = k.insertion(table_name='organism', values={'taxonomy_id': 2,
-#                                                       'name': 'hoi',
-#                                                       'common_name': 'hallo'
-#                                                       ,'organism_genus':k.insertion(table_name='organism_genus',values={'id':2,'name':'HELP'})})
-# sessiono = k.get_session()
-# sessiono.add(insertoo)
-# sessiono.commit()
-# print(insertoo.id)
-
-# try:
-#     ThingOne().go(session)
-#     ThingTwo().go(session)
-#
-#     session.commit()
-# except:
-#     session.rollback()
-#     raise
-# finally:
-#     session.close()
-
-# inserto = k.insertion(table_name='gene',
-#                       values={'gene_id': 9, 'name': "lol", 'sequence': "mkay", 'location': "space",
-#                               'aliases': "bruh,duh",
-#                               'description': "HELP I AM STUCK IN A DATABASE",
-#                               'gene_category': k.insertion(table_name='gene_category',
-#                                                            values={'id': 9, 'name': 'ricardo'})})
-#
-# sessiono = k.get_session()
-# sessiono.add(inserto)
-# sessiono.commit()
-#
-# q = sessiono.query(k.get_table_class('gene'))
-# print(q)
-
-
-# # Return list with table names
-# def get_table_names(self):
-#     """
-#
-#     :return:
-#     """
-#     return list(self.Base.metadata.tables)
-
-# Return dictionary with table names as keys and column names as values
-# def get_tables(self):
-#     """
-#
-#     :return:
-#     """
-#     return self.Base.metadata.tables
-#
-# # Return the table object containing the information of the specified table
-# def get_table(self, table_name):
-#     """
-#
-#     :param table_name:
-#     :return:
-#     """
-#     if table_name in self.Base.metadata.tables:
-#         return self.Base.metadata.tables[table_name]
-#     else:
-#         raise TableNotFoundException("Specified table not found")
-#
-# def __execute(self, query):
-#     """
-#
-#     :param query:
-#     :return:
-#     """
-#     connection = self.engine.connect()
-#     connection.execute(query)
-#
-# def insert_values(self, table_name, values, column_check=False):
-#     """
-#
-#     :param table_name:
-#     :param values:
-#     :param column_check:
-#     :return:
-#     """
-#     table_object = self.get_table(table_name)  # get table object belonging to the table_name
-#
-#     if column_check == True and len(values) != len(table_object.columns):
-#         raise ColumnLengthMismatchException("Amount of columns does not match amount of values to be inserted")
-#
-#     else:
-#         ins = table_object.insert().values(values)
-#         self.__execute(ins)
-#         return ins
