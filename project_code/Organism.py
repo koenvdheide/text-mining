@@ -23,6 +23,9 @@ class Organism:
         """
         This function parses a NCBI gene entry and stores the corresponding information.
         :param Entry: NCBI organism entry. 
+        NOTE: This function is purposely separated from the __init__ because the tex-mining
+        algorithm can find organisms which do not have annotation in NCBI and this separation
+        will allow the initiation of a Organism object without having to pass a gene entry. 
         """
         self.scientific_name = str(entry.get('ScientificName', None))
         self.common_name = str(entry.get('CommonName', None))
@@ -36,9 +39,12 @@ class Organism:
 
     def get_name(self):
         """
-        :return: The name as found in the text
+        :return: The name as found in the text.
         """
-        return self.name
+        if self.get_scientific_name():
+            return self.scientific_name
+        else:
+            return self.name
 
     def get_common_name(self):
         """
@@ -68,26 +74,3 @@ class Organism:
         return {"taxonomy_id": self.get_id(), "name": self.get_scientific_name(), "common_name": self.get_common_name(),
                 "genus": self.get_genus()}
 
-    def __eq__(self, other):
-        """
-        Override this function to be able to extract unique genes from a list.
-        preferable based on the scientific name, but if this information isn't 
-        available the initialisation name will be used. 
-        :param other: The (Organism) object which should be compared with THIS organism object.
-        :return: True if both object share the same name, otherwise False will be returned. 
-        """
-        if not isinstance(other, Organism):
-            return False
-        if self.get_scientific_name() and other.get_scientific_name():
-            return self.get_scientific_name() == other.get_scientific_name()
-        return self.get_name() == other.get_name()
-
-    def __hash__(self):
-        """
-        Override this function to hash based on the scientific_name (proffered) or
-        the initialisation name. 
-        :return: 
-        """
-        if self.get_scientific_name():
-            return hash(self.get_scientific_name())
-        return hash(self.get_name())

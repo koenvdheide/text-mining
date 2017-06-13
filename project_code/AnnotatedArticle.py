@@ -8,9 +8,9 @@ class AnnotatedArticle:
     def __init__(self,id, title, authors,abstract, conditions, genes, organisms ):
         """ 
         :param id: The PubMed identifier (id) for the article. 
-        :param title: The title of the abstract.
+        :param title: The title of the article.
         :param authors: The authors of the article.
-        :param abstract: The article abstract.
+        :param abstract: The abstract of the article.
         :param conditions: The conditions found in the article (as Condition objects).
         :param genes: The genes present in the article (as Gene objects).
         :param organisms: The organisms present in the article (as Organism objects).
@@ -54,7 +54,7 @@ class AnnotatedArticle:
 
     def set_abstract(self, abstract):
         """
-        :param abstract: The article abstract.
+        :param abstract: The abstract of the article. 
         """
         self.abstract = abstract
 
@@ -103,7 +103,7 @@ class AnnotatedArticle:
     def to_dict(self):
         """
         This function convert the AnnotatedArticle object to a dictionary.        
-        :return: A dictionary of the AnnotatedArticle.
+        :return: A dictionary of this AnnotationArticle object. 
         """
         return {"Article": {
             "pubmed_id": self.get_id(),

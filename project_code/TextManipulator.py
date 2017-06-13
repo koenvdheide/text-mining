@@ -18,7 +18,7 @@ class TextManipulator:
         """
         This function build a filter based on a set of sentences provided. 
         :param sentences: The sentences which should be used to build a model. 
-        :return: A category filter. 
+        :return: A category filter (i.e a model). 
         """
         sentence_filter = CLIENT.createCategoryFilter(sentences)
         return sentence_filter
@@ -27,9 +27,9 @@ class TextManipulator:
     def build_filter_from_file(file_path):
         """
         This function converts the content of a file in a sentence list
-        and uses the build_filter function to build a category filter.
+        and uses the build_filter function to build a category filter (i.e model). 
         :param file_path: The path to the file that should be used to build the filter.
-        :return: A caterogry filter. 
+        :return: A category filter. 
         """
         sentences = []
         with open(file_path, 'r') as file:

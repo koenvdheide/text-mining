@@ -9,7 +9,7 @@ class ConditionSearcher:
     identification is based on roughly three steps: keyword check, model comparison
     and regex condition extraction. 
     NOTE: We choose to use the after_filter function instead of further complicating
-    the regex. This choice also increases runtime becuase a lookbehind regex is 
+    the regex. This choice also increases runtime because a lookbehind regex is 
     relatively slow (see: https://stackoverflow.com/questions/35476547/regex-negative-lookbehind-and-lookahead-equivalence-and-performance)
     """
 
