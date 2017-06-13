@@ -272,7 +272,7 @@ function kut_koen() {
     		random_numb = Math.floor((Math.random() * 10) + 1);
     		id += random_numb;
     }
-    ids.push(id + "&#13;&#10;";)
+    ids.push(id + "&#13;&#10;");
 	}
 	return ids
 }
