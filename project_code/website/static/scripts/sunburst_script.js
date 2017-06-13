@@ -205,7 +205,7 @@ function fillTablex(d) {
 	//	create_table(head, data, need_textbox)
     }
     if (depth == 3) { //gene ring
-		var head = ["gene_id", "name", "aliases","location", "description"];
+		var head = ["gene_id", "name", "aliases","location", "description","orthologs_ids"];
 		var need_textbox  = ["aliases","description"];
 		var data = get_data('gene',head, name, column_for_name);
 

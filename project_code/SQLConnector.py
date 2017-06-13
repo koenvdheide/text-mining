@@ -104,6 +104,7 @@ class SQLConnector:
         gene_data = annotation_data['Gene']
         article_data = annotation_data['Article']
         textmatch_data = annotation_data['Condition']
+        ortholog_data = annotation_data['Orthlogs']
 
         session = self.get_session()
 
@@ -205,8 +206,8 @@ print(row.__dict__)
 
 
 
-                    # textmatch_insert = self.get_or_create(table_name='textmatch', values={})
-                    # session.add(textmatch_insert)
+# textmatch_insert = self.get_or_create(table_name='textmatch', values={})
+# session.add(textmatch_insert)
 
 # k = SQLConnector()
 # insertoo = k.insertion(table_name='organism', values={'taxonomy_id': 2,

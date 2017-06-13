@@ -41,7 +41,6 @@ def query_db(table,columns,keyword,keyword_column):
     rows = k.text_select(table, columns, keyword_column, keyword)
     for row in rows:
         return list(row)
-        # zo moet je dan ff die data in volgorde van de columns retouneren.
 
 
 if __name__ == '__main__':

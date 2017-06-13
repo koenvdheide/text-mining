@@ -20,3 +20,13 @@ function kut_koen() {
 	}
 	return ids
 }
+
+function dat_orthologs(){
+    ids = [];
+    ortholog_amount = Math.floor(Math.random() * 8) + 1  }
+    for (i=0;i<ortholog_amount;i++)
+        id = Math.floor(Math.random()*899998)+100001
+        ids.push(id)
+     return ids
+
+}
