@@ -15,9 +15,9 @@ nltk.download()
 ```
 ### How to see results without the usage of the database?
 Go to ```python main.py```
-Comment out the database usages:
-```from SQLConnector import SQLConnector```
-```sqlconnect = SQLConnector(database='motor')```
+Comment out the database usages:  
+```from SQLConnector import SQLConnector```  
+```sqlconnect = SQLConnector(database='motor')```  
 And replace the insert call with a print call, so change:
 ```sqlconnect.insert_article(anno_article.to_dict())``` 
 to:
