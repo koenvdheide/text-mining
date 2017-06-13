@@ -33,15 +33,15 @@ def get_data():
     keyword = request.form['keyword']
     columns = request.form['columns']
     keyword_column = request.form['keyword_column']
-    print(columns)
     database_data = query_db(table,columns,keyword,keyword_column)
     return jsonify(table_data = database_data)
 
 def query_db(table,columns,keyword,keyword_column):
-    # k = SQLConnector()
-    # row = k.select_first('organism', {'common_name': 'cotton'})
-    # print(row.__dict__)
-    return ['hoi', 'hallo', 'help']  # zo moet je dan ff die data in volgorde van de columns retouneren.
+    k = SQLConnector()
+    rows = k.text_select(table, columns, keyword_column, keyword)
+    for row in rows:
+        return list(row)
+        # zo moet je dan ff die data in volgorde van de columns retouneren.
 
 
 if __name__ == '__main__':

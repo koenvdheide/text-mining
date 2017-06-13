@@ -191,24 +191,24 @@ function fillTablex(d) {
 	var column_for_name = 'name';
 
 	if (depth == 1) { //organism ring
-		var head = ["tax_id", "name", "common_name"];
+		var head = ["taxonomy_id", "name", "common_name"];
 		var need_textbox  = [];
 		var data = get_data('organism',head, name, column_for_name);
-		alert(data);
+
 		create_table(head,data, need_textbox)
 	}
 	if (depth == 2) { //condition ring
-		var head = ["name", "sentences"];
-		var need_textbox  = ["sentences"];
-		var data = get_data('condition',head, name, column_for_name);
-		alert(data);
-		create_table(head, data, need_textbox)
+	//	var head = ["name"];
+	//	var need_textbox  = ["sentences"];
+	//	var data = get_data('condition',head, name, column_for_name);
+
+	//	create_table(head, data, need_textbox)
     }
     if (depth == 3) { //gene ring
 		var head = ["gene_id", "name", "aliases","location", "description"];
 		var need_textbox  = ["aliases","description"];
 		var data = get_data('gene',head, name, column_for_name);
-		alert(data);
+
 		create_table(head,data, need_textbox)
 	}
 }

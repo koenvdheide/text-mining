@@ -24,7 +24,7 @@ class SQLConnector:
     match_id = 0
 
     def __init__(self, sqldialect="mysql", driver="mysqlconnector", username="root", password="usbw", host="localhost",
-                 port="3307", database="test"):
+                 port="3307", database="motor"):
         """
         
         :param sqldialect: 
@@ -36,19 +36,22 @@ class SQLConnector:
         :param database: 
         """
         engine_argument = sqldialect + "+" + driver + "://" + username + ":" + password + "@" + host + ":" + port + "/" + database
-        self.engine = create_engine(engine_argument, echo=True)  # mogelijk text encoding nog toevoegen
+        self.engine = create_engine(engine_argument, echo=False)  # mogelijk text encoding nog toevoegen
 
         self.Base = automap_base()
         self.Base.prepare(self.engine, reflect=True)
 
     def text_select(self, table_name, columns, keyword_column, keyword):
-        columns = ",".join(columns)
-        sql = text('select ' + columns + ' from ' + table_name + ' where ' + keyword_column + '=' + keyword)
+
+        sql = text('select ' + str(columns).strip('[]').replace('"',
+                                                                '') + ' from ' + table_name + ' where ' + keyword_column + '=' + '"' + keyword + '"')
+        print(sql)
         result = self.engine.execute(sql)
-        names = []
+        results = []
         for row in result:
-            names.append(row[0])
-        return names
+            results.append(row)
+        return results
+
 
     def get_tables_as_classes(self):
         """
