@@ -205,8 +205,8 @@ function fillTablex(d) {
 	//	create_table(head, data, need_textbox)
     }
     if (depth == 3) { //gene ring
-		var head = ["gene_id", "name", "aliases","location", "description"];
-		var need_textbox  = ["aliases","description"];
+		var head = ["gene_id", "name", "aliases","location", "description","pubmed_id"];
+		var need_textbox  = ["aliases","description","pubmed_id"];
 		var data = get_data('gene',head, name, column_for_name);
 
 		create_table(name, head,data, need_textbox)
@@ -215,9 +215,6 @@ function fillTablex(d) {
 
 
 function create_table(name, head, data, need_textbox) {
-	head.push("PMID's");
-	data.push(kut_koen());
-	need_textbox.push("PMID's");
 
 	if (head[2] == "aliases") {
 		head.push("Orthologs");
@@ -274,26 +271,6 @@ function get_data(table, values,  name, keyword_column) {
 				 });
 			return table_dat;
 		}
-
-
-function kut_koen() {
-	ids = [];
-	aantal =10;
-
-	for (j=0; j<aantal; j++ ) {
-		id = "PMID";
-		for (i=0; i < 8; i++) {
-    		random_numb = Math.floor((Math.random() * 10) + 1);
-    		id += random_numb;
-    }
-    ids.push(id + "&#13;&#10;");
-	}
-	return ids
-}
-
-function kut_koen2() {
-	return "";
-}
 
 
 
