@@ -48,7 +48,7 @@ CREATE TABLE Organism
     taxonomy_id       INTEGER NOT NULL ,
     name              VARCHAR (300) ,
     common_name       VARCHAR (200) ,
-    Organism_genus_id INTEGER NOT NULL
+    Organism_genus_id INTEGER
   ) ;
 ALTER TABLE Organism ADD CONSTRAINT Organism_PK PRIMARY KEY ( taxonomy_id ) ;
 

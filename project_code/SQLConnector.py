@@ -15,7 +15,6 @@ class SQLConnector:
     This class facilitates all the inserting and selecting done with the database
     """
 
-
     def __init__(self, sqldialect="mysql", driver="mysqlconnector", username="root", password="usbw", host="localhost",
                  port="3307", database="test"):
         """
@@ -29,7 +28,7 @@ class SQLConnector:
         :param database: name of the database
         """
         engine_argument = sqldialect + "+" + driver + "://" + username + ":" + password + "@" + host + ":" + port + "/" + database
-        self.engine = create_engine(engine_argument, echo=False)  # mogelijk text encoding nog toevoegen
+        self.engine = create_engine(engine_argument, echo=False)  # turn echo to see sql statements
 
         self.Base = automap_base()
         self.Base.prepare(self.engine, reflect=True)
@@ -53,6 +52,16 @@ class SQLConnector:
             results.append(row)
         return results
 
+    def text_select_join(self, table_name, columns, second_table, first_keyword, second_keyword):
+
+        sql = text('select ' + str(columns).strip('[]').replace('"',
+                                                                '') + ' from ' + table_name + ' join ' + second_table + ' on ' + first_keyword + '=' + second_keyword)
+        result = self.engine.execute(sql)
+        results = []
+        for row in result:
+            results.append(row)
+        return results
+
     def get_tables(self):
         """
         returns all of the tables from a reflected database
@@ -68,10 +77,9 @@ class SQLConnector:
         """
         tables = self.get_tables()
         if table_name in tables:
-            return getattr(self.Base.classes, table_name)
+            return getattr(self.Base.classes, table_name)  # append table_name to Base.classes
         else:
             raise TableNotFoundException("Specified table not found")
-
 
     def get_session(self):
         """
@@ -79,7 +87,7 @@ class SQLConnector:
         :return: the Session object
         """
         Session = sessionmaker(bind=self.engine)
-        session = Session()
+        session = Session(autoflush=False)
         return session
 
     def insertion(self, table_name, values):
@@ -104,24 +112,50 @@ class SQLConnector:
 
         table = self.get_table(table_name)
         instance = session.query(table).filter_by(**kwargs).first()
-        if instance:
+        if instance:  # instance exists in table
             return instance, True
-        else:
+        else:  # instance does not exist (yet)
             instance = table(**kwargs)
             return instance, False
 
-    #
-    # def get_primary_key(self, table_name):
-    #     table = self.get_table_class(table_name)
-    #     pk = inspect(table).identity
-    #     return pk
+    def create_id(self, session, table):
+        """
+        create a primary key id for tables that lack unique identifiers
+        :param session: database session to query database with
+        :param table_name: name of the table to create id for
+        :return: the newly made primary key
+        """
+        last_row = session.query(table).order_by(table.id.desc()).first()
 
+        if last_row:  # has a row been inserted?
+            return last_row.id + 1
+        else:  # return 0 if not
+            return 0
 
+    def check_entry_exists(self, table, table_column, entry):
+        """
+        Checks if a given entry is already present in a column
+        :param table: table to check
+        :param table_column: column in table to check
+        :param entry: entry to check for in the column
+        :return: entry if it exists, None if it does not
+        """
+        session = self.get_session()
+        entry_present = session.query(table).filter(table_column == entry).first()
+
+        if entry_present:
+            return entry_present
+        else:
+            return None
 
     def insert_data(self, annotation_data):
+        """
+        
+        :param annotation_data: 
+        :return: 
+        """
         Gene = self.get_table('gene')
-        Category = self.get_table('gene_category')
-        orthologs = self.get_table('orthologs')
+        Ortholog = self.get_table('orthologs')
         Organism = self.get_table('organism')
         Genus = self.get_table('organism_genus')
         Article = self.get_table('article')
@@ -130,119 +164,60 @@ class SQLConnector:
 
         session = self.get_session()
 
-        genus_id = session.query(Genus).order_by(Genus.id.desc()).first()
-        stress_id = session.query(Stress).order_by(Stress.id.desc()).first()
-        category_id = session.query(Category).order_by(Category.id.desc()).first()
-        match_id = session.query(Textmatch).order_by(Textmatch.id.desc()).first()
+        genus_id = self.create_id(session, Genus)
+        stress_id = self.create_id(session, Stress)
+        match_id = self.create_id(session, Textmatch)
 
-        article = Article(**annotation_data['Article'])
+        genes = []
+        for gene_data in annotation_data['Gene']:
+            if gene_data:  # entry exists?
+                if gene_data['gene_id']:  # skip entries without gene id
+                    gene = self.check_entry_exists(Gene, Gene.gene_id, gene_data['gene_id'])
+                    if not gene:
+                        Gene(gene_id=int(gene_data['gene_id']), name=str(gene_data['name']),
+                             aliases=str(gene_data['aliasses']),
+                             description=str(gene_data['description']))
+                    genes.append(gene)
+                    session.merge(gene)
+                    if gene_data['Orthologs']:
+                        for orthologs_data in gene_data.pop('Orthologs'):
+                            if orthologs_data:
+                                if orthologs_data['GeneID']:
+                                    ortholog = Ortholog(ortholog_id=int(orthologs_data['GeneID']),
+                                                        description=str(orthologs_data['Title']),
+                                                        gene=gene)
+                                    session.merge(ortholog)
 
-        session.add(article)
+        authors = str(annotation_data['Article'].pop('authors'))  # get authors as string instead of list
 
-        for entry in annotation_data['Gene']:
-            gene = Gene(aliases=entry['aliasses'])
-        for entry in annotation_data['Organism']:
-            genus = Genus(id=genus_id, name=entry.pop('genus'))
-            organism = Organism(**entry, organism_genus=genus)
+        for organism_data in annotation_data['Organism']:
+            if organism_data:  # entry exists?
+                if organism_data['taxonomy_id']:  # skip entries without tax id
 
-            session.add(genus)
-            session.add(organism)
+                    genus_name = organism_data.pop('genus')
+                    genus = self.check_entry_exists(Genus, Genus.name, genus_name)
+                    if not genus:  # genus doesn't exist already
+                        genus = Genus(id=genus_id, name=genus_name)
 
+                    organism = Organism(**organism_data, organism_genus=genus)
+                    article = Article(authors=authors, **annotation_data['Article'], organism=organism)
 
+                    for condition in annotation_data['Condition']:
 
-            # for gene in annotation_data['Gene']:
-            #     t = Gene(**gene)
+                        stress = self.check_entry_exists(Stress, Stress.name, condition['name'])
+                        if not stress:
+                            stress = Stress(id=stress_id, name=condition['name'], gene_collection=genes)
 
-    def insert_article(self, annotation_data):
+                        textmatch = self.check_entry_exists(Textmatch, Textmatch.sentence, condition['sentence'])
+                        if not textmatch:
+                            Textmatch(id=match_id, score=condition['score'], sentence=condition['sentence'],
+                                      article=article)
 
-        organisms_data = annotation_data['Organism']
-        gene_data = annotation_data['Gene']
-        article_data = annotation_data['Article']
-        textmatch_data = annotation_data['Condition']
+                        if textmatch:
+                            session.merge(textmatch)
+                        session.merge(stress)
 
-        session = self.get_session()
-
-        for organism in organisms_data:  # organisms without genes
-
-            if organism and organism['taxonomy_id'] is not None:
-                genus_check = self.get_or_create(session=session, table_name='organism_genus',
-                                                 id=self.genus_id, name=str(organism['genus']))
-                genus_insert = genus_check[0]
-                genus_present = genus_check[1]
-
-                if genus_present == False:
-                    organism_check = self.get_or_create(session=session, table_name='organism',
-                                                        taxonomy_id=int(organism['taxonomy_id']),
-                                                        name=str(organism['name']),
-                                                        common_name=str(organism['common_name']),
-                                                        organism_genus=genus_insert)
-                    organism_insert = organism_check[0]
-                    organism_present = organism_check[1]
-
-                    if organism_present == False:
-                        session.merge(organism_insert)
-                        session.commit()
-                        self.genus_id += 1
-
-                    elif organism_present:
-                        print("genus niet maar organisme wel, wtf m8")
-                        self.genus_id += 1
-
-                elif genus_present:
-                    organism_check = self.get_or_create(session=session, table_name='organism',
-                                                        taxonomy_id=int(organism['taxonomy_id']),
-                                                        name=str(organism['name']),
-                                                        common_name=str(organism['common_name']),
-                                                        Organism_genus_id=genus_insert.id)  # wordt iedere keer als uniek beschouwd omdat je nieuwe id krigt?
-                    organism_insert = organism_check[0]
-                    organism_present = organism_check[1]
-
-                    if organism_present == False:
-                        session.merge(organism_insert)
-                        session.commit()
-
-                    elif organism_present:
-                        print("identieke shizzle gevonden")
-
-                    else:
-                        print("ERROR")
-            else:
-                print("Empty organism data found: " + str(organism))
-
-        for gene in gene_data:
-            if gene and gene['gene_id'] is not None and \
-                            self.get_or_create(session=session, table_name='gene', gene_id=int(gene['gene_id']))[
-                                1] is False:
-                gene_check = self.get_or_create(session=session, table_name='gene',
-                                                gene_id=int(gene['gene_id']), name=str(gene['name']),
-                                                location=str(gene['location']),
-                                                aliases=str(gene['aliasses']),
-                                                description=str(gene['description']))
-                gene_insert = gene_check[0]
-                gene_present = gene_check[1]
-                if gene_present == False:
-                    session.add(gene_insert)
+                    session.merge(genus)
+                    session.merge(organism)
+                    session.merge(article)
                     session.commit()
-        if article_data and article_data['pubmed_id'] is not None:
-            article_check = self.get_or_create(session=session, table_name='article',
-                                               pubmed_id=int(article_data['pubmed_id']),
-                                               authors=str(article_data['authors']),
-                                               title=str(article_data['title']))
-            article_insert = article_check[0]
-            article_present = article_check[1]
-            if article_present == False:
-                session.add(article_insert)
-                session.commit()
-
-        for stress in textmatch_data:
-            if stress and stress['name'] is not None:
-                stress_check = self.get_or_create(session=session, table_name='stress', name=str(stress['name']),
-                                                  id=self.stress_id)
-
-                stress_insert = stress_check[0]
-                stress_present = stress_check[1]
-                if stress_present == False:
-                    session.add(stress_insert)
-                    session.commit()
-                    self.stress_id += 1
-

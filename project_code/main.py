@@ -7,6 +7,7 @@ from Gene import Gene
 from Organism import Organism
 from SQLConnector import SQLConnector
 from Bio import Entrez
+from StringConverter import StringConverter
 
 Entrez.email = "r.beeloo@outlook.com"
 
@@ -95,7 +96,9 @@ def main():
             print("condition found: " + str(id))
             genes, organisms = extract_entities(id)
             anno_article = AnnotatedArticle(id, title, authors, abstract, conditions, genes, organisms)
-            sqlconnect.insert_data(anno_article.to_dict())
+            article_as_dict = anno_article.to_dict()
+            fixed_article = StringConverter.convert(article_as_dict)
+            sqlconnect.insert_data(fixed_article)
             # sqlconnect.insert_article(anno_article.to_dict())
 
 
