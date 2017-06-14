@@ -52,10 +52,11 @@ class SQLConnector:
             results.append(row)
         return results
 
-    def text_select_join(self, table_name, columns, second_table, first_keyword, second_keyword):
+    def text_select_join(self, table_name, columns, second_table, first_keyword, second_keyword, keyword_column,
+                         keyword):
 
         sql = text('select ' + str(columns).strip('[]').replace('"',
-                                                                '') + ' from ' + table_name + ' join ' + second_table + ' on ' + first_keyword + '=' + second_keyword)
+                                                                '') + ' from ' + table_name + ' join ' + second_table + ' on ' + first_keyword + '=' + second_keyword + ' where ' + keyword_column + '=' + '"' + keyword + '"')
         result = self.engine.execute(sql)
         results = []
         for row in result:
