@@ -99,7 +99,7 @@ class SQLConnector:
         :return: the Session object
         """
         Session = sessionmaker(bind=self.engine)
-        session = Session(autoflush=False)
+        session = Session()
         return session
 
     def insertion(self, table_name, values):
@@ -162,9 +162,8 @@ class SQLConnector:
 
     def insert_data(self, annotation_data):
         """
-        
-        :param annotation_data: 
-        :return: 
+        inserts the specific data obtained from the text mining
+        :param annotation_data: the data in dictionary form
         """
         Gene = self.get_table('gene')
         Ortholog = self.get_table('orthologs')
@@ -176,6 +175,7 @@ class SQLConnector:
 
         session = self.get_session()
 
+        # database lacks auto increment ids, these tables have no unique identifiers themselves and so need to get ids this way
         genus_id = self.create_id(session, Genus)
         stress_id = self.create_id(session, Stress)
         match_id = self.create_id(session, Textmatch)
@@ -186,14 +186,15 @@ class SQLConnector:
                 if gene_data['gene_id']:  # skip entries without gene id
                     gene = self.check_entry_exists(Gene, Gene.gene_id, gene_data['gene_id'])
                     if not gene:
-                        Gene(gene_id=int(gene_data['gene_id']), name=str(gene_data['name']),
-                             aliases=str(gene_data['aliasses']),
-                             description=str(gene_data['description']))
-                    genes.append(gene)
+                        gene = Gene(gene_id=int(gene_data['gene_id']), name=str(gene_data['name']),
+                                    aliases=str(gene_data['aliasses']),
+                                    description=str(gene_data['description']))
+                    genes.append(gene) # build a list with genes per article to link with stress conditions
+                   # session.merge(gene) #unneeded as ortholog will also insert the genes
                     if gene_data['Orthologs']:
                         for orthologs_data in gene_data.pop('Orthologs'):
-                            if orthologs_data:
-                                if orthologs_data['GeneID']:
+                            if orthologs_data: # ortholog exists?
+                                if orthologs_data['GeneID']: # skip entries without ortholog id
                                     ortholog = Ortholog(ortholog_id=int(orthologs_data['GeneID']),
                                                         description=str(orthologs_data['Title']),
                                                         gene=gene)
@@ -204,30 +205,28 @@ class SQLConnector:
         for organism_data in annotation_data['Organism']:
             if organism_data:  # entry exists?
                 if organism_data['taxonomy_id']:  # skip entries without tax id
-                    genus_name = organism_data.pop('genus')
+                    genus_name = organism_data.pop('genus') # genus is stored as part of the organism data
                     genus = self.check_entry_exists(Genus, Genus.name, genus_name)
                     if not genus:  # genus doesn't exist already
                         genus = Genus(id=genus_id, name=genus_name)
 
+                    session.merge(genus) #technically unneeded (organism also inserts genus)
                     organism = Organism(**organism_data, organism_genus=genus)
                     article = Article(authors=authors, **annotation_data['Article'], organism=organism)
 
-                    # for condition in annotation_data['Condition']:
-                    #     print(condition)
-                    #
-                    #     stress = self.check_entry_exists(Stress, Stress.name, condition['name'])
-                    #     if not stress:
-                    #         stress = Stress(id=stress_id, name=condition['name'], gene_collection=genes)
-                    #
-                    #     textmatch = self.check_entry_exists(Textmatch, Textmatch.sentence, condition['sentence'])
-                    #     if not textmatch:
-                    #         Textmatch(id=match_id, score=condition['score'], sentence=condition['sentence'],
-                    #                   article=article)
-                    #
-                    #     if textmatch:
-                    #         session.merge(textmatch)
-                    #     if stress:
-                    #         session.merge(stress)
+                    for condition in annotation_data['Condition']:
 
-                    session.merge(article)
+                        stress = self.check_entry_exists(Stress, Stress.name, condition['name'])
+                        if not stress: #stress condition doesn't exist yet
+                            stress = Stress(id=stress_id, name=condition['name'], gene_collection=genes)
+
+                        textmatch = self.check_entry_exists(Textmatch, Textmatch.sentence, condition['sentence'])
+                        if not textmatch: #text match not found before (somewhat unlikely)
+                            textmatch = Textmatch(id=match_id, score=condition['score'], sentence=condition['sentence'],
+                                                  article=article)
+
+                        session.merge(textmatch)
+                        session.merge(stress)
+
+                    #session.merge(article)
                     session.commit()

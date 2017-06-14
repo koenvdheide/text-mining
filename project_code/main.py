@@ -84,7 +84,7 @@ def main():
     condition_searcher = ConditionSearcher(condition_model, keyword="anthocyanin")
 
     ids = NCBISearcher.search("anthocyanin", "pubmed", 1000)
-    sqlconnect = SQLConnector(database='test')  # LET OP DB NAAM BRO
+    sqlconnect = SQLConnector(database='test')  # LET OP DB NAAM
     for id in ids:
         article = NCBISearcher.fetch_articles([id])[0]
         abstract = article.get("AB", "?")
@@ -99,7 +99,5 @@ def main():
             article_as_dict = anno_article.to_dict()
             fixed_article = StringConverter.convert(article_as_dict)
             sqlconnect.insert_data(fixed_article)
-            # sqlconnect.insert_article(anno_article.to_dict())
-
 
 main()

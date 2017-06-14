@@ -4,7 +4,7 @@ from flask import Response, jsonify
 from SQLConnector import SQLConnector
 
 app = Flask(__name__)
-
+sqlconnection = SQLConnector()
 
 @app.route('/')
 def index():
@@ -34,22 +34,26 @@ def tutorial():
 
 @app.route("/data", methods=['POST', 'GET'])
 def get_data():
-    print('im here')
-    print(str(request.form))
     table = request.form['table']
     keyword = request.form['keyword']
     columns = request.form['columns']
     keyword_column = request.form['keyword_column']
-    database_data = query_db(table, columns, keyword, keyword_column)
+    if table == 'organism':
+        database_data = query_db_join(table, columns, keyword, keyword_column) #to add pubmed ids from article table
+    else:
+        database_data = query_db(table, columns, keyword, keyword_column)
     return jsonify(table_data=database_data)
 
 
 def query_db(table, columns, keyword, keyword_column):
-    k = SQLConnector()
-    rows = k.text_select(table, columns, keyword_column, keyword)
+    rows = sqlconnection.text_select(table, columns, keyword_column, keyword)
     for row in rows:
         return list(row)
 
+def query_db_join(table, columns, keyword, keyword_column):
+    rows = sqlconnection.text_select_join(table, columns, keyword_column, keyword)
+    for row in rows:
+        return list(row)
 
 if __name__ == '__main__':
     app.run()
