@@ -218,7 +218,7 @@ class SQLConnector:
 
                         stress = self.check_entry_exists(Stress, Stress.name, condition['name'])
                         if not stress: #stress condition doesn't exist yet
-                            stress = Stress(id=stress_id, name=condition['name'], gene_collection=genes)
+                            stress = Stress(id=stress_id, name=condition['name'])
 
                         textmatch = self.check_entry_exists(Textmatch, Textmatch.sentence, condition['sentence'])
                         if not textmatch: #text match not found before (somewhat unlikely)

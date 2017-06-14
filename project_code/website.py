@@ -34,6 +34,10 @@ def tutorial():
 
 @app.route("/data", methods=['POST', 'GET'])
 def get_data():
+    """
+    gets called from javascript when user clicks on a sunburst item to fill in the table with relevant information
+    :return: the data to be shown in the tables in json format
+    """
     table = request.form['table']
     keyword = request.form['keyword']
     columns = request.form['columns']
@@ -46,11 +50,28 @@ def get_data():
 
 
 def query_db(table, columns, keyword, keyword_column):
+    """
+    queries the database for the desired entries
+    :param table: name of the table to search in
+    :param columns: columns to be returned
+    :param keyword: keyword to search for
+    :param keyword_column: column that must contain the keyword
+    :return: first hit in a list format
+    """
     rows = sqlconnection.text_select(table, columns, keyword_column, keyword)
     for row in rows:
         return list(row)
 
+# identical to above except that a join with the article table is also performed
 def query_db_join(table, columns, keyword, keyword_column):
+    """
+    queries the database for the desired entries
+    :param table: name of the table to search in
+    :param columns: columns to be returned
+    :param keyword: keyword to search for
+    :param keyword_column: column that must contain the keyword
+    :return: first hit in a list format
+    """
     rows = sqlconnection.text_select_join(table, columns, keyword_column, keyword)
     for row in rows:
         return list(row)
