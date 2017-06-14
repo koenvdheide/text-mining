@@ -1,3 +1,5 @@
+//This JS was edited from: https://bl.ocks.org/mbostock/4348373.
+//All the edits made to the orignal code are commented below. 
 var width = 1000,
     height = 1000,
     radius = Math.min(width, height) / 2,
@@ -121,7 +123,8 @@ d3.json("/static/data/flare_new.json", function(error, root) {
 					.attr("opacity", 1);
 			}
 		});
-	//THIS CODE IS ADDED BY ME, CONDITION CAN BE REMOVED IF EVERY CLICK SHOULD RESULT IN AN ACTION
+	//ADDED
+	//This code calls the filtablex function to dispaly an information table about the clicked partition. 
 		fillTablex(d)
 
 	}
@@ -184,7 +187,9 @@ function computeTextRotation(d) {
   return ang
 }
 
-//added javascript to allow table update_table (by RICK BEELOO)
+//ADDED
+//This function accepts a partition and uses the name and the depth (i.e. which ring) to
+//retrieve inormation from the database and shows this in a table. 
 function fillTablex(d) {
 	var depth = d.depth;
 	var name = d.name;
@@ -197,13 +202,6 @@ function fillTablex(d) {
 
 		create_table(name, head,data, need_textbox)
 	}
-	if (depth == 2) { //condition ring
-	//	var head = ["name"];
-	//	var need_textbox  = ["sentences"];
-	//	var data = get_data('condition',head, name, column_for_name);
-
-	//	create_table(head, data, need_textbox)
-    }
     if (depth == 3) { //gene ring
 		var head = ["gene_id", "name", "aliases","location", "description"];
 		var need_textbox  = ["aliases","description"];
@@ -213,10 +211,15 @@ function fillTablex(d) {
 	}
 }
 
+//ADDED
+//This function creates a tabale based on the provided data.
+// If the data contains aliasses we know it is a gene and 
+// are able to transform the orhtolog term into a hyperlink
+// to the NCBI database. 
 
 function create_table(name, head, data, need_textbox) {
-
-	if (head[2] == "aliases") {
+	
+	if (head[2] == "aliases") { //if this is present we know it's about genes not about organisms. 
 		head.push("Orthologs");
 		var link = "https://www.ncbi.nlm.nih.gov/homologene/?term=" + name;
 		var hyperlink = "<a href=" + link + "> orthologs </a>";
@@ -234,13 +237,11 @@ function create_table(name, head, data, need_textbox) {
 			rowE2.insertCell().innerHTML= "<textarea class='output' rows = '4' readonly = 'readonly'>" + data[i] + "</textarea>";
 		}
 		else {
-
 			if (head[i] == "Orthologs") {
 				rowE2.insertCell().innerHTML=data[i];
 			}
 			else{
 				rowE2.insertCell().innerHTML= "<input class ='output' type='text' name='fname' readonly='readonly' value=" + data[i] + ">";
-
 			}
 		}
 	  }
@@ -249,6 +250,10 @@ function create_table(name, head, data, need_textbox) {
 	div.appendChild(tableEl)
 }
 
+//Added
+//This function POSTs data to /data (underlaying a Python script).
+// This data is then used to retrieve data form the database and
+// will be returned to this funciton. 
 function get_data(table, values,  name, keyword_column) {
 			var table_dat = [];
 			$.ajax({
