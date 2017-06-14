@@ -31,7 +31,7 @@ class SQLConnector:
         self.engine = create_engine(engine_argument, echo=False)  # turn echo to see sql statements
 
         self.Base = automap_base()
-        self.Base.prepare(self.engine, reflect=True)
+        self.Base.prepare(self.engine, reflect=True)  # reflect needed to load the db that is already present
         self.meta = MetaData()
 
     def text_select(self, table_name, columns, keyword_column, keyword):
@@ -52,11 +52,22 @@ class SQLConnector:
             results.append(row)
         return results
 
-    def text_select_join(self, table_name, columns, second_table, first_keyword, second_keyword, keyword_column,
-                         keyword):
+    def text_select_join(self, table_name, columns, keyword_column, keyword, second_table='article',
+                         first_id='organism.taxonomy_id', second_id='article.Organism_taxonomy_id'):
+        """
+        create a select statement with an additional join
+        :param table_name: name of table to select from
+        :param columns: columns to be select for result
+        :param keyword_column: columns to check 
+        :param keyword: keyword to check columns against
+        :param second_table: table to join with
+        :param first_id: column (probably id) to join on from first table
+        :param second_id: column (probably id) to join on from second table 
+        :return: list of all rows matching the select statement
+        """
 
         sql = text('select ' + str(columns).strip('[]').replace('"',
-                                                                '') + ' from ' + table_name + ' join ' + second_table + ' on ' + first_keyword + '=' + second_keyword + ' where ' + keyword_column + '=' + '"' + keyword + '"')
+                                                                '') + ' from ' + table_name + ' join ' + second_table + ' on ' + first_id + '=' + second_id + ' where ' + keyword_column + '=' + '"' + keyword + '"')
         result = self.engine.execute(sql)
         results = []
         for row in result:
@@ -179,7 +190,6 @@ class SQLConnector:
                              aliases=str(gene_data['aliasses']),
                              description=str(gene_data['description']))
                     genes.append(gene)
-                    session.merge(gene)
                     if gene_data['Orthologs']:
                         for orthologs_data in gene_data.pop('Orthologs'):
                             if orthologs_data:
@@ -194,7 +204,6 @@ class SQLConnector:
         for organism_data in annotation_data['Organism']:
             if organism_data:  # entry exists?
                 if organism_data['taxonomy_id']:  # skip entries without tax id
-
                     genus_name = organism_data.pop('genus')
                     genus = self.check_entry_exists(Genus, Genus.name, genus_name)
                     if not genus:  # genus doesn't exist already
@@ -203,22 +212,22 @@ class SQLConnector:
                     organism = Organism(**organism_data, organism_genus=genus)
                     article = Article(authors=authors, **annotation_data['Article'], organism=organism)
 
-                    for condition in annotation_data['Condition']:
+                    # for condition in annotation_data['Condition']:
+                    #     print(condition)
+                    #
+                    #     stress = self.check_entry_exists(Stress, Stress.name, condition['name'])
+                    #     if not stress:
+                    #         stress = Stress(id=stress_id, name=condition['name'], gene_collection=genes)
+                    #
+                    #     textmatch = self.check_entry_exists(Textmatch, Textmatch.sentence, condition['sentence'])
+                    #     if not textmatch:
+                    #         Textmatch(id=match_id, score=condition['score'], sentence=condition['sentence'],
+                    #                   article=article)
+                    #
+                    #     if textmatch:
+                    #         session.merge(textmatch)
+                    #     if stress:
+                    #         session.merge(stress)
 
-                        stress = self.check_entry_exists(Stress, Stress.name, condition['name'])
-                        if not stress:
-                            stress = Stress(id=stress_id, name=condition['name'], gene_collection=genes)
-
-                        textmatch = self.check_entry_exists(Textmatch, Textmatch.sentence, condition['sentence'])
-                        if not textmatch:
-                            Textmatch(id=match_id, score=condition['score'], sentence=condition['sentence'],
-                                      article=article)
-
-                        if textmatch:
-                            session.merge(textmatch)
-                        session.merge(stress)
-
-                    session.merge(genus)
-                    session.merge(organism)
                     session.merge(article)
                     session.commit()
