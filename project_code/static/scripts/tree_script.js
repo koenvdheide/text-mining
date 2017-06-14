@@ -358,7 +358,6 @@ treeJSON = d3.json("/static/data/flare_new.json", function(error, treeData) {
 
     function click(d) {
         if (d3.event.defaultPrevented) return; // click suppressed
-		fillTable(d);
         d = toggleChildren(d);
         update(d);
         centerNode(d);
@@ -549,28 +548,3 @@ treeJSON = d3.json("/static/data/flare_new.json", function(error, treeData) {
     update(root);
     centerNode(root);
 		
-	//added javascript to allow table update_table (by RICK BEELOO)
-	function fillTable(d) {
-		var head = ["name", "summary", "pubmed","orthologs"];
-		//NEED TO ADD SOME SCRIPTING TO RETRIEVE THE DATA FROM THE DATBASE AND PUT THE DATA IN THE DATA ARRAY
-		var data = [d.name,"Dit is een hele mooie samenvatting van het gen","124354,126623","henkjeHetGen"];
-		var need_textbox = ["summary", "pubmed","orthologs"]
-		var length = head.length;
-		for (var i = 0; i < length; i++){
-			if (need_textbox.includes(head[i])) { //NEED TO LOOK IN need_textbox array!
-				parent.document.getElementById(head[i]).innerHTML = "<textarea class=\"output\" rows=\"4\" cols=\"20\">" + data[i] + "</textarea>";
-			}
-			else {
-				if (head[i] == "name") {
-					var gene_link = "https://www.ncbi.nlm.nih.gov/gene/?term=" + data[i] + "+AND+PLANTS%5BORGN%5D";
-					var hyperlink = "<a href=" + gene_link + ">" + data[i] + "</a>";
-					parent.document.getElementById(head[i]).innerHTML = hyperlink;
-				}
-				else {
-					parent.document.getElementById(head[i]).innerHTML = data[i];
-				}
-			}
-			
-		}
-	}
-});
