@@ -191,8 +191,8 @@ function fillTablex(d) {
 	var column_for_name = 'name';
 
 	if (depth == 1) { //organism ring
-		var head = ["taxonomy_id", "name", "common_name"];
-		var need_textbox  = [];
+		var head = ["taxonomy_id", "name", "common_name","pubmed_id"];
+		var need_textbox  = ["pubmed_id"];
 		var data = get_data('organism',head, name, column_for_name);
 
 		create_table(name, head,data, need_textbox)
@@ -205,8 +205,8 @@ function fillTablex(d) {
 	//	create_table(head, data, need_textbox)
     }
     if (depth == 3) { //gene ring
-		var head = ["gene_id", "name", "aliases","location", "description","pubmed_id"];
-		var need_textbox  = ["aliases","description","pubmed_id"];
+		var head = ["gene_id", "name", "aliases","location", "description"];
+		var need_textbox  = ["aliases","description"];
 		var data = get_data('gene',head, name, column_for_name);
 
 		create_table(name, head,data, need_textbox)
